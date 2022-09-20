@@ -1,0 +1,55 @@
+WELCOME TO THE GIT CHEAT SHEET 
+
+    AUTHOR:         ESHAN KALP TRIVEDI  (EshanTrivedi21)
+    START DATE:     20/09/22
+    END DATE:       ~~~~~~~~
+    DESCRIPTION:    Your very own Git Cheat Sheet having basic Windows Terminal Cheats as well!
+
+*** GO ON FROM HERE, ALL THE BEST ***
+
+
+
+TERMINAL BASICS: 
+
+    >> ls           (it is the LIST command which LISTS all the contents of a Directory)
+
+    >> ls foldername            (LOCATES to a directory and then LISTS the contents)
+
+    >> pwd          (PRINT WORKING DIRECTORY)
+
+    >> cd C:\User\Eshan\foldername          (CHANGES and HOPS onto the respective Working Directory)
+
+    >> cd ..            (HOPS onto the Parent Directory of the Working Directory)
+
+    >> clear            (CLEARS the used Terminal)
+
+    >> q            (QUITS out of a entered command)
+
+    >> mkdir foldername         (CREATES an Empty directory inside the Working Directory)
+
+    >> rm filename          (DELETES the file)
+
+    >> rm -rf foldername         (DELETES the directory)
+
+    >> start .          (OPENS the File Explorer to the ROOT Directory)
+
+
+
+SETTING GIT USER NAME AND EMAIL: 
+
+    >> git config user.name          (to CHECK if git User-Name is set)
+
+    >> git config user.email         (to CHECK if git User-Email is set)
+
+    >> git config --global user.name "Eshan Trivedi"            (To SET or CHANGE git User-Name)
+
+    >> git config --global user.email eshan.trivedi.9@gmail.com         (To SET or CHANGE git User-Email)
+
+
+
+CREATING A GIT REPOSITORY:
+
+    STEP 1:     >> git init         (INITIALIZES an empty repository)
+
+    STEP 2:     >> git status           (to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deletec)
+
