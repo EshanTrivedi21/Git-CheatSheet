@@ -11,47 +11,47 @@ WELCOME TO THE GIT CHEAT SHEET
 
 TERMINAL BASICS: 
 
-    >> ls           (it is the LIST command which LISTS all the contents of a Directory)
+    >> ls                                   (it is the LIST command which LISTS all the contents of a Directory)
 
-    >> ls foldername            (LOCATES to a directory and then LISTS the contents)
+    >> ls foldername                        (LOCATES to a directory and then LISTS the contents)
 
-    >> pwd          (PRINT WORKING DIRECTORY)
+    >> pwd                                  (PRINT WORKING DIRECTORY)
 
     >> cd C:\User\Eshan\foldername          (CHANGES and HOPS onto the respective Working Directory)
 
-    >> cd ..            (HOPS onto the Parent Directory of the Working Directory)
+    >> cd ..                                (HOPS onto the Parent Directory of the Working Directory)
 
-    >> clear            (CLEARS the used Terminal)
+    >> clear                                (CLEARS the used Terminal)
 
-    >> q            (QUITS out of a entered command)
+    >> q                                    (QUITS out of a entered command)
 
-    >> mkdir foldername         (CREATES an Empty directory inside the Working Directory)
+    >> mkdir foldername                     (CREATES an Empty directory inside the Working Directory)
 
-    >> rm filename          (DELETES the file)
+    >> rm filename                          (DELETES the file)
 
-    >> rm -rf foldername         (DELETES the directory)
+    >> rm -rf foldername                    (DELETES the directory)
 
-    >> start .          (OPENS the File Explorer to the ROOT Directory)
+    >> start .                              (OPENS the File Explorer to the ROOT Directory)
 
 
 
 SETTING GIT USER NAME AND EMAIL: 
 
-    >> git config user.name          (to CHECK if git User-Name is set)
+    >> git config user.name                                             (to CHECK if git User-Name is set)
 
-    >> git config user.email         (to CHECK if git User-Email is set)
+    >> git config user.email                                            (to CHECK if git User-Email is set)
 
-    >> git config --global user.name "Eshan Trivedi"            (To SET or CHANGE git User-Name)
+    >> git config --global user.name "Eshan Trivedi"                    (To SET or CHANGE git User-Name)
 
     >> git config --global user.email eshan.trivedi.9@gmail.com         (To SET or CHANGE git User-Email)
 
-    >> git config --global core.editor "code --wait"
+    >> git config --global core.editor "code --wait"                    (to SET or CHANGE default code editor as VsCode)
 
 
 
 CREATING A GIT REPOSITORY:
 
-    STEP 1:     >> git init         (INITIALIZES an empty repository)
+    STEP 1:     >> git init             (INITIALIZES an empty repository)
 
     STEP 2:     >> git status           (to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deletec)
 
@@ -59,9 +59,9 @@ CREATING A GIT REPOSITORY:
 
 STAGING FILE/FILES OF THE REPOSITORY
 
-    >> git add filename.txt         (STAGES the file)
+    >> git add filename.txt                           (STAGES the file)
 
-    >> git rm --cached filename.txt     (UN-STAGES the file)
+    >> git rm --cached filename.txt                   (UN-STAGES the file)
 
     >> git add --all      OR      >> git all .        (STAGES all files in the repository)
 
@@ -71,11 +71,11 @@ COMMITING A COMMIT
 
     >> git commit -m "commit message"       (COMMITS the STAGED files with a commit message)
 
-    >> git log          (LOGS all the commits done to the repository)
+    >> git log                              (LOGS all the commits done to the repository)
 
-    >> git log --oneline        (LOG commits in a single line)
+    >> git log --oneline                    (LOG commits in a single line)
 
-    >> git commit --ammend          (AMMENDS the previous commit)
+    >> git commit --ammend                  (AMMENDS the previous commit)
 
 
 
