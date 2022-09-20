@@ -45,6 +45,8 @@ SETTING GIT USER NAME AND EMAIL:
 
     >> git config --global user.email eshan.trivedi.9@gmail.com         (To SET or CHANGE git User-Email)
 
+    >> git config --global core.editor "code --wait"
+
 
 
 CREATING A GIT REPOSITORY:
@@ -61,4 +63,24 @@ STAGING FILE/FILES OF THE REPOSITORY
 
     >> git rm --cached filename.txt     (UN-STAGES the file)
 
-    
+    >> git add --all      OR      >> git all .        (STAGES all files in the repository)
+
+
+
+COMMITING A COMMIT 
+
+    >> git commit -m "commit message"       (COMMITS the STAGED files with a commit message)
+
+    >> git log          (LOGS all the commits done to the repository)
+
+    >> git log --oneline        (LOG commits in a single line)
+
+    >> git commit --ammend          (AMMENDS the previous commit)
+
+
+
+EVERYTHING ABOUT GIT IGNORE
+
+    STEP 1:     create a .gitignore file
+
+    STEP 2:     add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
