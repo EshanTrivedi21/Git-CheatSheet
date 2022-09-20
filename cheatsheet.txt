@@ -53,3 +53,12 @@ CREATING A GIT REPOSITORY:
 
     STEP 2:     >> git status           (to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deletec)
 
+
+
+STAGING FILE/FILES OF THE REPOSITORY
+
+    >> git add filename.txt         (STAGES the file)
+
+    >> git rm --cached filename.txt     (UN-STAGES the file)
+
+    
