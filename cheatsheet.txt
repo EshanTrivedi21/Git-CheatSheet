@@ -83,16 +83,34 @@ COMMITING A COMMIT
 
 EVERYTHING ABOUT GIT IGNORE
 
-    STEP 1:     create a .gitignore file
+    STEP 1:             create a .gitignore file
 
-    STEP 2:     add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
+    STEP 2:             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
 
 
 
 GIT BRANCHING 
 
-    >> git branch                       (LOGS all the branches of the Working Repository with an * in the Current Head)
+    >> git branch                       (LOGS all the branches of the Working Repository with an * in the Current Head or GO to .git\refs\heads)
 
     >> git branch branchname            (CREATES a new branch but the branch is not yet SWITCHED)
 
-    >> git switch branchname            (SWITCHES the Branch from one to another or CHANGING HEAD)
+    >> git switch branchname            (SWITCHES the Branch from one to another or CHANGING HEAD, but the current changes need to be STASHED or COMMITED)
+
+    >> git switch -c newbranch          (CREATES a new branch and then SWITCHES to the branches)
+
+    >> git branch -D newbranch          (DELETES newbranch, but you cant be Headed on the Branch you want to delete)
+
+    >> git branch -M finalbranch        (CHANGES the name of the Branch you are Headed on)
+
+
+
+MERGING BRANCHES 
+
+    FAST FORWARD MERGE (NO CHANGES done on the Master Branch)
+
+        STEP 1:         >> git switch master            (SWITCH the HEAD first to the first branch)
+
+        STEP 2:         >> git merge newbranch          (MERGES newbranch into master with HEAD on master)
+
+    
