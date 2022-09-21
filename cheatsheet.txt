@@ -69,13 +69,15 @@ STAGING FILE/FILES OF THE REPOSITORY
 
 COMMITING A COMMIT 
 
-    >> git commit -m "commit message"       (COMMITS the STAGED files with a commit message)
+    >> git commit -m "commit message"           (COMMITS the STAGED files with a commit message)
 
-    >> git log                              (LOGS all the commits done to the repository)
+    >> git commit -a -m "commit message"        (SKIPS the Staging part and directly COMMITS)
 
-    >> git log --oneline                    (LOG commits in a single line)
+    >> git log                                  (LOGS all the commits done to the repository)
 
-    >> git commit --ammend                  (AMMENDS the previous commit)
+    >> git log --oneline                        (LOG commits in a single line)
+
+    >> git commit --ammend                      (AMMENDS the previous commit)
 
 
 
@@ -84,3 +86,13 @@ EVERYTHING ABOUT GIT IGNORE
     STEP 1:     create a .gitignore file
 
     STEP 2:     add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
+
+
+
+GIT BRANCHING 
+
+    >> git branch                       (LOGS all the branches of the Working Repository with an * in the Current Head)
+
+    >> git branch branchname            (CREATES a new branch but the branch is not yet SWITCHED)
+
+    >> git switch branchname            (SWITCHES the Branch from one to another or CHANGING HEAD)
