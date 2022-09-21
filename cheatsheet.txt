@@ -113,4 +113,30 @@ MERGING BRANCHES
 
         STEP 2:         >> git merge newbranch          (MERGES newbranch into master with HEAD on master)
 
-    
+    NOT ALL MERGES ARE FAST FORWARD MERGES
+
+        1. WITHOUT MERGE CONFLICTS
+
+            >> git switch master
+
+            >> git merge -m "mergering message"         (CREATES a new commit unlike fastforwarding merges)
+
+        2. MERGE CONFLICTS
+
+            (only if conflict message occurs)
+
+            STEP 1:         OPEN UP files having merge conflicts 
+
+            STEP 2:         REMOVE the conflicts 
+
+                OPTION 1:           ACCEPT INCOMING CHANGES
+
+                OPTION 2:           ACCEPT CURRENT CHANGES
+
+                OPTION 3:           ACCEPT BOTH CHANGES
+
+                OPTION 4:           COMPARE CHANGES 
+
+            STEP 3:         REMOVE the conflict markers
+
+            STEP 4:         STAGE and COMMIT the changes
