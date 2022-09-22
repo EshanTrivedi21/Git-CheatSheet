@@ -1,8 +1,7 @@
-WELCOME TO THE GIT CHEAT SHEET 
+*** WELCOME TO THE GIT CHEAT SHEET ***
 
     AUTHOR:         ESHAN KALP TRIVEDI  (EshanTrivedi21)
     START DATE:     20/09/22
-    END DATE:       ~~~~~~~~
     DESCRIPTION:    Your very own Git Cheat Sheet having basic Windows Terminal Cheats as well!
 
 *** GO ON FROM HERE, ALL THE BEST ***
@@ -59,6 +58,8 @@ CREATING A GIT REPOSITORY:
 
 STAGING FILE/FILES OF THE REPOSITORY
 
+    (to keep a track of modifications or changes)
+
     >> git add filename.txt                           (STAGES the file)
 
     >> git rm --cached filename.txt                   (UN-STAGES the file)
@@ -68,6 +69,8 @@ STAGING FILE/FILES OF THE REPOSITORY
 
 
 COMMITING A COMMIT 
+
+    (come on who doesnt know about commits)
 
     >> git commit -m "commit message"           (COMMITS the STAGED files with a commit message)
 
@@ -79,9 +82,13 @@ COMMITING A COMMIT
 
     >> git commit --ammend                      (AMMENDS the previous commit)
 
+    >> git diff                                 (LOGS the changes)
+
 
 
 EVERYTHING ABOUT GIT IGNORE
+
+    (git doesnt consider the files/folders which are in .gitignore)
 
     STEP 1:             create a .gitignore file
 
@@ -90,6 +97,8 @@ EVERYTHING ABOUT GIT IGNORE
 
 
 GIT BRANCHING 
+
+    (if you  are trying something out but do on want to play with the main branch)
 
     >> git branch                       (LOGS all the branches of the Working Repository with an * in the Current Head or GO to .git\refs\heads)
 
@@ -140,3 +149,80 @@ MERGING BRANCHES
             STEP 3:         REMOVE the conflict markers
 
             STEP 4:         STAGE and COMMIT the changes
+
+
+
+STASHING IN GIT
+
+    (needed when switching branches but the changes arent commit ready but by not stashing, the changes will behave wierdly)
+
+    1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCHE
+
+    2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS
+
+    (hence to prevent this staging is important, its like a save but doesnt show up anywhere unless popped)
+
+        >> git stash            (STASHES the changes)
+
+        >> git stash pop        (UN STASHES the changes, use it when you resume your work) 
+
+        >> git stash apply      (APPLY stashed changes into another or the same branch)
+
+        IF WORKING WITH MULTIPLE STASHES
+
+            >> git stash list                   (LOGS all the stashes)
+
+            >> git stash apply stash@{1}        (STASHES the changes in the Stash index 1)
+
+            >> git stash drop stash@{1}         (DELETES the stash, p.s. applying the stash doesnt delete it)
+
+            >> git stash clear                  (CLEARS the whole stash list)
+
+
+
+TIME TRAVELLING WITH GIT
+
+    1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
+
+        >> git checkout 604a39a             (DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because HEAD is meant to map a whole branch and not a specific commit)
+
+                OR 
+
+        >> git checkout HEAD~1              (DETACHES HEAD and ATTACHES it to the previous commit)
+
+        >> git switch master                (RE-ATTACHES HEAD and now the head properly maps onto the master branch)
+
+    2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a
+
+        >> git checkout 604a39a             
+
+        >> git switch -c "new branch"       (now the head is perfect where it should have been)
+
+    3. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT
+
+        >> git checkout HEAD filename.txt
+
+                    OR           
+
+        >> git restore filename.txt
+
+    4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
+
+        >> git restore --source HEAD~1 filename.txt
+
+    5. UNSTAGE A FILE 
+
+        >> git restore --unstaged filename.txt 
+
+    6. RESETING THE REPOSITORY TO A PARTICULAR COMMIT
+
+        >> git reset 604a39a            (NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is no commit made after commit id 604a39a)
+
+        >> git reset --hard 604a39a     (LOOSES the commit as well as LOOSES the contents of the commit)
+
+    7. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT
+
+        >> git revert 604a39a           (REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while collaboration)
+
+
+    
