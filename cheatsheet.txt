@@ -56,7 +56,7 @@ CREATING A GIT REPOSITORY:
 
 
 
-STAGING FILE/FILES OF THE REPOSITORY
+STAGING FILE/FILES OF THE REPOSITORY:
 
     (to keep a track of modifications or changes)
 
@@ -68,7 +68,7 @@ STAGING FILE/FILES OF THE REPOSITORY
 
 
 
-COMMITING A COMMIT 
+COMMITING A COMMIT:
 
     (come on who doesnt know about commits)
 
@@ -86,7 +86,7 @@ COMMITING A COMMIT
 
 
 
-EVERYTHING ABOUT GIT IGNORE
+EVERYTHING ABOUT GIT IGNORE:
 
     (git doesnt consider the files/folders which are in .gitignore)
 
@@ -96,7 +96,7 @@ EVERYTHING ABOUT GIT IGNORE
 
 
 
-GIT BRANCHING 
+GIT BRANCHING:
 
     (if you  are trying something out but do on want to play with the main branch)
 
@@ -114,7 +114,7 @@ GIT BRANCHING
 
 
 
-MERGING BRANCHES 
+MERGING BRANCHES:
 
     FAST FORWARD MERGE (NO CHANGES done on the Master Branch)
 
@@ -152,7 +152,7 @@ MERGING BRANCHES
 
 
 
-STASHING IN GIT
+STASHING IN GIT:
 
     (needed when switching branches but the changes arent commit ready but by not stashing, the changes will behave wierdly)
 
@@ -180,7 +180,7 @@ STASHING IN GIT
 
 
 
-TIME TRAVELLING WITH GIT
+TIME TRAVELLING WITH GIT:
 
     1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
 
@@ -226,3 +226,21 @@ TIME TRAVELLING WITH GIT
 
 
     
+CREATING GITHUB RESPOSITORIES:
+
+    1. BUILD A NEW REPOSITORYAND START WORKING FROM SCRATCH
+
+        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
+
+        STEP 2:         >> git clone <copied url>                  (CLONES the github repositoryon your local machine, but make sure that youre not cloning something inside an existing repository)
+
+    2. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
+
+        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
+
+        STEP 2:         >> git remote add origin <copied url>           (CREATES a new REMOTE DESTINATION for the github repository)
+
+                        >> git remote -v                                (LOGS out the REMOTE URL if any)
+
+        STEP 3:         
+
