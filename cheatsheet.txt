@@ -2,7 +2,9 @@
 
     AUTHOR:         ESHAN KALP TRIVEDI  (EshanTrivedi21)
     START DATE:     20/09/22
-    DESCRIPTION:    Your very own Git Cheat Sheet having basic Windows Terminal Cheats as well!
+    END DATE:       ~~~~~~~~
+    REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
+    DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
 *** GO ON FROM HERE, ALL THE BEST ***
 
@@ -228,13 +230,36 @@ TIME TRAVELLING WITH GIT:
     
 CREATING GITHUB RESPOSITORIES:
 
-    1. BUILD A NEW REPOSITORYAND START WORKING FROM SCRATCH
+    1. BUILD A NEW REPOSITORYAND START WORKING FROM SCRATCH (BY REMOTING)
 
         STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
-        STEP 2:         >> git clone <copied url>                  (CLONES the github repositoryon your local machine, but make sure that youre not cloning something inside an existing repository)
+        STEP 2:         >> git init                                     (CREATES an empty git repository)
 
-    2. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
+        STEP 3:         WRITE YOUR PIECE OF CODE            
+
+        STEP 4:         >> git commit -a -m "first commit"              (a commit is needed to push any files to github)
+
+        STEP 5:         >> git remote add origin <copied url>           (CREATES a new REMOTE DESTINATION for the github repository)
+
+                        >> git remote -v                                (LOGS out the REMOTE URL if any)
+
+        STEP 6:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future) 
+
+    1. BUILD A NEW REPOSITORYAND START WORKING FROM SCRATCH (BY CLONING)
+
+        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
+
+        STEP 2:         >> git clone <copied url>                       (CLONES as well as automatically sets the REMOTE DESTINATION)
+
+        STEP 3:         WRITE YOUR PIECE OF CODE
+
+        STEP 4:         >> git commit -a -m "first commit"              (a commit is needed to push any files to github)
+
+        STEP 5:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future) 
+
+    
+    3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
 
         STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
@@ -242,5 +267,9 @@ CREATING GITHUB RESPOSITORIES:
 
                         >> git remote -v                                (LOGS out the REMOTE URL if any)
 
-        STEP 3:         
+        STEP 3:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future)
+
+
+
+FETCHING AND PULLING:
 
