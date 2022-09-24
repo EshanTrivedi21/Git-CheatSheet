@@ -271,5 +271,27 @@ CREATING GITHUB RESPOSITORIES:
 
 
 
-FETCHING AND PULLING:
+THE origin/master THEORY
 
+    origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH
+
+        >> git branch -r                        (LOGS the remote tracking branch)
+
+        >> git checkout origin/master           (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)
+
+
+    NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   THEN TECHNICALLY ALL THE BRANCHES SHOULD HAVE BEEN LOGGED, BUT THIS IS  NOT THE CASE ONLY MASTER BRANCH IS LOGGED, THIS IS BECAUSE BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS:
+
+        >> git branch -r                        (to check all the branches available) 
+
+        >> git switch branchname                (this automatically CONNECTS the two branches and we can freely work on them now)
+
+        >> git branch                           (now this correctly LOGS all the connected branches)
+
+
+
+FETCHING AND PULLING
+
+    FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
+
+        
