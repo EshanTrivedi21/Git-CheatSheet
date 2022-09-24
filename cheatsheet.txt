@@ -294,4 +294,15 @@ FETCHING AND PULLING
 
     FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
 
-        
+        >> git fetch origin     or      >> git fetch origin branchname              (CREATES a new branch having the changes but this doesnt interfere in the working directory, the origin/master now heads on to this new branch and the master branch would be one branch behind the origin/master)
+
+        >> git checkout origin/master                                               (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)
+
+    PULLING INTERFERES IN THE WORKING DIRECTORY (PULL = FETCH + MERGE)
+
+        >> git pull origin      or      >> git push origin branchname               (PULLS the changes and merges the changes with the branch you want to OR default)
+
+        SOLVE MERGE CONFLICTS IF ANY 
+
+
+
