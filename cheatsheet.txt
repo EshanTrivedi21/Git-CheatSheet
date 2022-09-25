@@ -271,7 +271,7 @@ CREATING GITHUB RESPOSITORIES:
 
 
 
-THE origin/master THEORY
+THE origin/master THEORY:
 
     origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH
 
@@ -290,7 +290,7 @@ THE origin/master THEORY
 
 
 
-FETCHING AND PULLING
+FETCHING AND PULLING:
 
     FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
 
@@ -306,3 +306,34 @@ FETCHING AND PULLING
 
 
 
+GITHUB COLLABORATION:
+
+    CENTRALIZED WORKFLOW:                   EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.
+
+    FEATURE BRANCH WORKFLOW:                EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS 
+
+    GITHUB PULL REQUEST WORKFLOW:           Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+    GITHUB FORKS AND CLONE WORKFLOW:        Forking nd then opening a pull request to the owner of the main repository.
+
+
+
+GIT REBASING:
+
+    REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
+
+        >> git switch newbranch
+    
+        >> git rebase master                (REBASES or MERGES master into newbranch)
+
+    CONFLICTS WHILE REBASING
+
+        STEP 1:         Resolve the CONFLICTS MANUALLY
+
+        STEP 2:         >> git add .
+
+        STEP 3:         >> git rebase --continue
+
+    CLEAN UP USING REBASING
+
+        
