@@ -246,7 +246,7 @@ CREATING GITHUB RESPOSITORIES:
 
         STEP 6:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future) 
 
-    1. BUILD A NEW REPOSITORYAND START WORKING FROM SCRATCH (BY CLONING)
+    1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)
 
         STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
@@ -334,6 +334,22 @@ GIT REBASING:
 
         STEP 3:         >> git rebase --continue
 
-    CLEAN UP USING REBASING
+    INTERACTIVE REBASING
+
+        >> git rebase -i HEAD~n         (OPENS up the code editor where you can play with the nth last commits and above)
+
+        reword                          (CHANGES the name of a specific commit)
+
+        fixup                           (COMBINES the changes of that commit to the previous commit and then deletes it)
+
+        drop                            (DELETES the commit and the commit changes as if they were never written)
+
+
+
+GIT TAGS:
+
+
+
+
 
         
