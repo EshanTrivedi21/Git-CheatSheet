@@ -2,7 +2,7 @@
 
     AUTHOR:         ESHAN KALP TRIVEDI  (EshanTrivedi21)
     START DATE:     20/09/22
-    END DATE:       ~~~~~~~~
+    END DATE:       25/09/22
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
@@ -348,8 +348,30 @@ GIT REBASING:
 
 GIT TAGS:
 
+    TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
 
+    Semanting Versioning Format is widely used for tags and releases (v1.0.1)
 
+        >> git tag -l                           (LOGS all the tags)
 
+        >> git tag -l "v17"                     (LOGS tag name v17)
 
-        
+        >> git tag -l "v17*"                    (LOGS tag names that start with v17..)
+
+        >> git tag -l "*beta*"                  (LOGS tags which include beta in their name)
+
+        TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT 
+
+        >> git diff v16.0.1 v16.1.1             (LOGS the changes between both the versions)
+
+        >> git tag tagname                      (CREATES a lightweight tag)
+
+        >> git tag -a tagname                   (CREATES an annotated tag)
+
+        >> git show annotation                  (LOGS the message of the git tag "annotated")
+
+        >> git tag -a tagname 604a39a           (CREATES a tag at commit number 604a39a)
+
+        >> git tag -d tagname                   (DELETES the tag)
+
+        >> git push origin tagname              (TR5ANSFERS tags to remote servers)    
