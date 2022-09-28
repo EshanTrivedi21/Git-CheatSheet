@@ -46,6 +46,10 @@ SETTING GIT USER NAME AND EMAIL:
 
     >> git config --global core.editor "code --wait"                    (to SET or CHANGE default code editor as VsCode)
 
+    >> git config --global --edit                                       (to CHANGE git User-Name and git User-Email directly in the config file using vim)
+
+    >> escape + :wq                                                     (To exit vim)
+
 
 
 CREATING A GIT REPOSITORY:
@@ -60,11 +64,11 @@ STAGING FILE/FILES OF THE REPOSITORY:
 
     (to keep a track of modifications or changes)
 
-    >> git add filename.txt                           (STAGES the file)
+    >> git add filename.txt                                   (STAGES the file)
 
-    >> git rm --cached filename.txt                   (UN-STAGES the file)
+    >> git rm --cached filename.txt                           (UN-STAGES the file)
 
-    >> git add --all      OR      >> git all .        (STAGES all files in the repository)
+    >> git add --all  OR  >> git all . OR >> git add .        (STAGES all files in the repository)
 
 
 
@@ -107,6 +111,8 @@ GIT BRANCHING:
     >> git switch branchname            (SWITCHES the Branch from one to another or CHANGING HEAD, but the current changes need to be STASHED or COMMITED)
 
     >> git switch -c newbranch          (CREATES a new branch and then SWITCHES to the branches)
+
+    >> git checkout -b newbranch        (CREATES a new branch and then SWITCHES to the branch)
 
     >> git branch -D newbranch          (DELETES newbranch, but you cant be Headed on the Branch you want to delete)
 
