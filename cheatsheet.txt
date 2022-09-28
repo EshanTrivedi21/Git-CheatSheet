@@ -1,8 +1,6 @@
 *** WELCOME TO THE GIT CHEAT SHEET ***
 
-    AUTHOR:         ESHAN KALP TRIVEDI  (EshanTrivedi21)
-    START DATE:     20/09/22
-    END DATE:       25/09/22
+    AUTHOR:         ESHAN KALP TRIVEDI  (Github: EshanTrivedi21)
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
@@ -375,3 +373,7 @@ GIT TAGS:
         >> git tag -d tagname                   (DELETES the tag)
 
         >> git push origin tagname              (TR5ANSFERS tags to remote servers)    
+
+
+
+*** YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF ***
