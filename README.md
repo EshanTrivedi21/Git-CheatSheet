@@ -5,8 +5,9 @@
 
 ## Contributions Needed: 
 
-+ ### Converting .txt to a .md markdown file with has a much better readability
-+ ### Adding Important yet Missed out Commands
++ ### Converting .txt to a .md markdown file with has a much better readability.
++ ### Adding Important yet Missed out Commands.
++ ### Other Contributions are welcomed as well.
 
 ---
 
