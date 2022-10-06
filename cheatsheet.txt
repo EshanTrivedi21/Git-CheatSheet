@@ -412,6 +412,30 @@ GIT TAGS:
 
         >> git push origin tagname              (TR5ANSFERS tags to remote servers)    
 
+GITHUB DESKTOP:
 
+    Interact with GitHub using a GUI instead of the command line or a web browser
+
+    1.Installing and authenticating
+
+        STEP 1: Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).
+
+        STEP 2: Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get authentication.
+
+    2.Contributing to projects with GitHub Desktop
+
+        STEP 1: You can create a new repository by selecting the File menu and clicking New repository.
+
+        STEP 2: You can add a repository from your local computer by selecting the File menu and clicking Add Local Repository.
+
+        STEP 3: You can clone a repository from GitHub by selecting the File menu and clicking Clone Repository.
+
+        STEP 4: You can use GitHub Desktop to create a branch of a project.
+
+        STEP 5: After you make changes to a branch, you can review them in GitHub Desktop and make a commit to keep track of your changes.
+
+        STEP 6: You can use GitHub Desktop to create issues or pull requests to collaborate on projects with other people.
+
+        STEP 7: When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.    
 
 *** YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF ***
