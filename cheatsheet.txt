@@ -52,6 +52,12 @@ SETTING GIT USER NAME AND EMAIL:
 
 
 
+GETTING  GIT HELP
+
+    >> git command --help                                              (Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.)                     
+
+
+
 CREATING A GIT REPOSITORY:
 
     STEP 1:     >> git init             (INITIALIZES an empty repository)
@@ -183,7 +189,7 @@ STASHING IN GIT:
             >> git stash drop stash@{1}         (DELETES the stash, p.s. applying the stash doesnt delete it)
 
             >> git stash clear                  (CLEARS the whole stash list)
-
+            
 
 
 TIME TRAVELLING WITH GIT:
@@ -203,8 +209,12 @@ TIME TRAVELLING WITH GIT:
         >> git checkout 604a39a             
 
         >> git switch -c "new branch"       (now the head is perfect where it should have been)
+    
+    3. To RESTORE ALL CHANGES TO TRACKED FILES
+        
+        >> git reset origin/main --hard
 
-    3. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT
+    4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT
 
         >> git checkout HEAD filename.txt
 
@@ -212,23 +222,23 @@ TIME TRAVELLING WITH GIT:
 
         >> git restore filename.txt
 
-    4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
+    5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
 
         >> git restore --source HEAD~1 filename.txt
 
-    5. UNSTAGE A FILE 
+    6. UNSTAGE A FILE 
 
         >> git restore --unstaged filename.txt 
 
-    6. RESETING THE REPOSITORY TO A PARTICULAR COMMIT
+    7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT
 
         >> git reset 604a39a            (NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is no commit made after commit id 604a39a)
 
         >> git reset --hard 604a39a     (LOOSES the commit as well as LOOSES the contents of the commit)
 
-    7. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT
+    8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT
 
-        >> git revert 604a39a           (REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while collaboration)
+        >> git revert 604a39a           (REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while                                                    collaboration)
 
 
     
@@ -248,7 +258,7 @@ CREATING GITHUB RESPOSITORIES:
 
                         >> git remote -v                                (LOGS out the REMOTE URL if any)
 
-        STEP 6:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future) 
+        STEP 6:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and                                                                            master branch as a default so that we can use just >> git push in future) 
 
     1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)
 
@@ -260,7 +270,7 @@ CREATING GITHUB RESPOSITORIES:
 
         STEP 4:         >> git commit -a -m "first commit"              (a commit is needed to push any files to github)
 
-        STEP 5:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future) 
+        STEP 5:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and                                                                            master branch as a default so that we can use just >> git push in future) 
 
     
     3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
@@ -281,10 +291,10 @@ THE origin/master THEORY:
 
         >> git branch -r                        (LOGS the remote tracking branch)
 
-        >> git checkout origin/master           (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)
+        >> git checkout origin/master           (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is                                                  ahead of the remote branch and not up to date, push to make it up to date)
 
 
-    NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   THEN TECHNICALLY ALL THE BRANCHES SHOULD HAVE BEEN LOGGED, BUT THIS IS  NOT THE CASE ONLY MASTER BRANCH IS LOGGED, THIS IS BECAUSE BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS:
+NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   THEN TECHNICALLY ALL THE BRANCHES SHOULD HAVE BEEN LOGGED, BUT THIS IS  NOT THE CASE ONLY MASTER BRANCH IS LOGGED, THIS IS BECAUSE BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS:
 
         >> git branch -r                        (to check all the branches available) 
 
@@ -298,15 +308,36 @@ FETCHING AND PULLING:
 
     FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
 
-        >> git fetch origin     or      >> git fetch origin branchname              (CREATES a new branch having the changes but this doesnt interfere in the working directory, the origin/master now heads on to this new branch and the master branch would be one branch behind the origin/master)
+        >> git fetch                                                                (To receive the new commits)
+        
+        >> git fetch origin     or      >> git fetch origin branchname              (CREATES a new branch having the changes but this doesnt interfere in the working                                                                                         directory, the origin/master now heads on to this new branch 
+                                                                                       and the master branch would be one branch behind the origin/master)
+                                                                                       
+                                                                                       
 
-        >> git checkout origin/master                                               (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)
+        >> git checkout origin/master                                               (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD,                                                                                      in a case where the local branch is ahead of the remote branch
+                                                                                     and not up to date, push to make it up to date)
 
-    PULLING INTERFERES IN THE WORKING DIRECTORY (PULL = FETCH + MERGE)
+
+
+PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
 
         >> git pull origin      or      >> git push origin branchname               (PULLS the changes and merges the changes with the branch you want to OR default)
 
         SOLVE MERGE CONFLICTS IF ANY 
+
+
+
+
+FORCE PUSH AND PULL :
+
+        >> git push origin <your_branch_name> -f                                          (This will delete your previous commit(s) and push your current one.
+                                                                                           f signifies force )
+ 
+        >> git pull --rebase=interactive   or  git pull --rebase=i                        (This is nothing but fetch + rebase. This will invoke rebase in interactive                                                                                               mode where you can choose how to apply each individual commit
+                                                                                          that isn't in the history you are rebasing on .)
+ 
+        REFER TIME TRAVELLING WITH GIT for more git force pulling commands
 
 
 
@@ -316,9 +347,10 @@ GITHUB COLLABORATION:
 
     FEATURE BRANCH WORKFLOW:                EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS 
 
-    GITHUB PULL REQUEST WORKFLOW:           Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+    GITHUB PULL REQUEST WORKFLOW:           Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up                                                   commits before your changes are merged into the base branch.
 
     GITHUB FORKS AND CLONE WORKFLOW:        Forking nd then opening a pull request to the owner of the main repository.
+
 
 
 
