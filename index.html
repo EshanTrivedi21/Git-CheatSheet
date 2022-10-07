@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="cheatsheet">
+      <h1 id="welcome-to-the-git-cheat-sheet">WELCOME TO THE GIT CHEAT SHEET</h1>
+<pre><code>AUTHOR:         ESHAN KALP TRIVEDI  (Github: EshanTrivedi21)
+REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
+DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
+</code></pre>
+<h2 id="terminal-basics">Terminal Basics</h2>
+<p><strong>It is the LIST command which LISTS all the contents of a Directory</strong></p>
+<pre><code class="language-bash">$ ls
+</code></pre>
+<p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
+<pre><code class="language-bash">$ ls foldername
+</code></pre>
+<p><strong>Print Working Directory</strong></p>
+<pre><code class="language-bash">$ pwd
+</code></pre>
+<p><strong>CHANGES and HOPS onto the respective Working Directory</strong></p>
+<pre><code class="language-bash">$ cd C:\User\&lt;UserName&gt;\foldername
+</code></pre>
+<p><strong>Hops to Parent Directory</strong></p>
+<pre><code class="language-bash">$ cd ..
+</code></pre>
+<p><strong>Clears the Used Terminal</strong></p>
+<pre><code class="language-bash">$ clear
+</code></pre>
+<p><strong>Quits out of a command</strong></p>
+<pre><code class="language-bash">$ q
+</code></pre>
+<p><strong>CREATES an Empty directory inside the Working Directory</strong></p>
+<pre><code class="language-bash">$ mkdir foldername
+</code></pre>
+<p><strong>Deletes the file</strong></p>
+<pre><code class="language-bash">$ rm filename
+</code></pre>
+<p><strong>Deletes the directory</strong></p>
+<pre><code class="language-bash">$ rm -rf foldername
+</code></pre>
+<p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
+<pre><code class="language-bash">$ start .
+</code></pre>
+<h2 id="setting-git-user-name-and-email">SETTING GIT USER NAME AND EMAIL</h2>
+<p><strong>to CHECK if git User-Name is set</strong></p>
+<pre><code class="language-bash">$ git config user.name
+</code></pre>
+<p><strong>to CHECK if git User-Email is set</strong></p>
+<pre><code class="language-bash">$ git config user.email
+</code></pre>
+<p><strong>To SET or CHANGE git User-Name</strong></p>
+<pre><code class="language-bash">$ git config --global user.name &quot;Eshan Trivedi&quot;
+</code></pre>
+<p><strong>To SET or CHANGE git User-Email</strong></p>
+<pre><code class="language-bash">$ git config --global user.email eshan.trivedi.9@gmail.com
+</code></pre>
+<p><strong>to SET or CHANGE default code editor as VsCode</strong></p>
+<pre><code class="language-bash">$ git config --global core.editor &quot;code --wait&quot;
+</code></pre>
+<p><strong>to CHANGE git User-Name and git User-Email directly in the config file using vim</strong></p>
+<pre><code class="language-bash">$ git config --global --edit
+</code></pre>
+<p><strong>To exit vim</strong></p>
+<pre><code class="language-bash">$ `escape key` + :wq
+</code></pre>
+<h2 id="getting-git-help">GETTING GIT HELP</h2>
+<p><strong>Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.</strong></p>
+<pre><code class="language-bash">$ git command --help
+</code></pre>
+<h2 id="creating-a-git-repository">CREATING A GIT REPOSITORY</h2>
+<p><strong>STEP 1:</strong></p>
+<p><strong>INITIALIZES an empty repository</strong></p>
+<pre><code class="language-bash">$ git init
+</code></pre>
+<p><strong>STEP 2:</strong></p>
+<p><strong>to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git directory is deleted</strong></p>
+<pre><code class="language-bash">$ git status
+</code></pre>
+<h2 id="staging-filefiles-of-the-repository">STAGING FILE/FILES OF THE REPOSITORY:</h2>
+<p><strong>to keep a track of modifications or changes</strong>
+<strong>STAGES the file</strong></p>
+<pre><code class="language-bash">$ git add filename.txt
+</code></pre>
+<p><strong>UN-STAGES the file</strong></p>
+<pre><code class="language-bash">$ git rm --cached filename.txt
+</code></pre>
+<p><strong>STAGES all files in the repository</strong></p>
+<pre><code class="language-bash">$ git add --all
+# OR
+$ git all .
+# OR
+$ git add .
+</code></pre>
+<h2 id="commiting-a-commit">COMMITING A COMMIT:</h2>
+<p><strong>come on who doesnt know about commits</strong>
+<strong>COMMITS the STAGED files with a commit message</strong></p>
+<pre><code class="language-bash">$ git commit -m &quot;commit message&quot;
+</code></pre>
+<p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
+<pre><code class="language-bash">$ git commit -a -m &quot;commit message&quot;
+</code></pre>
+<p><strong>LOGS all the commits done to the repository</strong></p>
+<pre><code class="language-bash">$ git log
+</code></pre>
+<p><strong>LOG commits in a single line</strong></p>
+<pre><code class="language-bash">$ git log --oneline
+</code></pre>
+<p><strong>AMMENDS the previous commit</strong></p>
+<pre><code class="language-bash">$ git commit --ammend
+</code></pre>
+<p><strong>LOGS the changes</strong></p>
+<pre><code class="language-bash">$ git diff
+</code></pre>
+    </section>
+    <footer>
+      <a href="https://github.com/EshanTrivedi21">Eshan Trivedi</a>
+      <a href="https://github.com/EshanTrivedi21/Git-CheatSheet">Repository</a>
+      <a
+        href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors"
+        >Contributers</a
+      >
+    </footer>
+  </body>
+</html>
