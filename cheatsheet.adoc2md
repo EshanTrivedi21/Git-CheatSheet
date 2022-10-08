@@ -1,0 +1,6 @@
+#!/bin/sh
+
+asciidoc -b docbook cheatsheet.adoc
+pandoc -f docbook -t markdown_strict cheatsheet.xml -o cheatsheet_adoc.md
+iconv -t utf-8 cheatsheet.xml | pandoc -f docbook -t markdown_strict | iconv -f utf-8 > cheatsheet_adoc.md
+iconv -t utf-8 cheatsheet.xml | pandoc -f docbook -t markdown_strict --wrap=none | iconv -f utf-8 > cheatsheet_adoc.md
