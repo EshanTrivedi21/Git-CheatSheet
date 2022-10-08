@@ -1,5 +1,5 @@
 # Git-CheatSheet
-## Your all in one Git, Github and Terminal Cheatsheet.. Feel free to contribute
+## Your all in one Git, Github and Terminal Cheatsheet. Feel free to contribute
 ---
 ## How to contribute?
 1) Create a [fork of the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
