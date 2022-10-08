@@ -1,123 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-    <title>Git-CheatSheet</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <section class="cheatsheet">
-      <h1 id="welcome-to-the-git-cheat-sheet">WELCOME TO THE GIT CHEAT SHEET</h1><br>
-<pre><code>AUTHOR:         <a href="https://github.com/EshanTrivedi21">EshanTrivedi21</a> and <a href="https://github.com/VinayKanase">VinayKanase</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <title>Git-CheatSheet</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <section class="cheatsheet">
+    <h1 id="welcome-to-the-git-cheat-sheet">WELCOME TO THE GIT CHEAT SHEET</h1><br>
+    <pre><code>AUTHOR:         <a href="https://github.com/EshanTrivedi21">EshanTrivedi21</a> and <a href="https://github.com/VinayKanase">VinayKanase</a>
 REFERENCE:      Git-Github Bootcamp (Colt Steele) - Udemy
 DESCRIPTION:    Your very own Git and Github Cheatsheet!
 REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet">https://github.com/EshanTrivedi21/Git-CheatSheet</a>\
 CONTRIBUTORS:   <a href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors">Contributers</a>
 </code></pre><br>
-<h2 id="terminal-basics">TERMINAL BASICS</h2>
-<p><strong>It is the LIST command which LISTS all the contents of a Directory</strong></p>
-<pre><code class="language-bash">$ ls
-</code></pre>
-<p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
-<pre><code class="language-bash">$ ls foldername
-</code></pre>
-<p><strong>Prints Working Directory</strong></p>
-<pre><code class="language-bash">$ pwd
-</code></pre>
-<p><strong>CHANGES and HOPS onto the respective Working Directory</strong></p>
-<pre><code class="language-bash">$ cd C:\User\&lt;UserName&gt;\foldername
-</code></pre>
-<p><strong>HOPS to Parent Directory</strong></p>
-<pre><code class="language-bash">$ cd ..
-</code></pre>
-<p><strong>CLEARS the Used Terminal</strong></p>
-<pre><code class="language-bash">$ clear
-</code></pre>
-<p><strong>QUITS out of a command</strong></p>
-<pre><code class="language-bash">$ q
-</code></pre>
-<p><strong>CREATES an Empty directory inside the Working Directory</strong></p>
-<pre><code class="language-bash">$ mkdir foldername
-</code></pre>
-<p><strong>DELETES the file</strong></p>
-<pre><code class="language-bash">$ rm filename
-</code></pre>
-<p><strong>DELETES the directory</strong></p>
-<pre><code class="language-bash">$ rm -rf foldername
-</code></pre>
-<p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
-<pre><code class="language-bash">$ start .
-</code></pre><br>
-<h2 id="setting-git-user-name-and-email">SETTING GIT USER NAME AND EMAIL</h2>
-<p><strong>to CHECK if git User-Name is set</strong></p>
-<pre><code class="language-bash">$ git config user.name
-</code></pre>
-<p><strong>to CHECK if git User-Email is set</strong></p>
-<pre><code class="language-bash">$ git config user.email
-</code></pre>
-<p><strong>To SET or CHANGE git User-Name</strong></p>
-<pre><code class="language-bash">$ git config --global user.name &quot;Eshan Trivedi&quot;
-</code></pre>
-<p><strong>To SET or CHANGE git User-Email</strong></p>
-<pre><code class="language-bash">$ git config --global user.email eshan.trivedi.9@gmail.com
-</code></pre>
-<p><strong>to SET or CHANGE default code editor as VsCode</strong></p>
-<pre><code class="language-bash">$ git config --global core.editor &quot;code --wait&quot;
-</code></pre>
-<p><strong>to CHANGE git User-Name and git User-Email directly in the config file using vim</strong></p>
-<pre><code class="language-bash">$ git config --global --edit
-</code></pre>
-<p><strong>To EXIT vim</strong></p>
-<pre><code class="language-bash">$ `escape key` + :wq
-</code></pre><br>
-<h2 id="getting-git-help">GETTING GIT HELP</h2>
-<p><strong>LOGS help details</strong></p>
-<pre><code class="language-bash">$ git command --help
-</code></pre><br>
-<h2 id="creating-a-git-repository">CREATING A GIT REPOSITORY</h2>
-<p><strong>STEP 1:</strong>&nbsp;<strong>INITIALIZES an empty repository</strong></p>
-<pre><code class="language-bash">$ git init
-</code></pre>
-<p><strong>STEP 2:</strong>&nbsp;<strong>to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git directory is deleted</strong></p>
-<pre><code class="language-bash">$ git status
-</code></pre><br>
-<h2 id="staging-filefiles-of-the-repository">STAGING FILE/FILES OF THE REPOSITORY:</h2>
-<p><strong>to KEEP TRACK of modifications or changes</strong>
-<strong>STAGES the file</strong></p>
-<pre><code class="language-bash">$ git add filename.txt
-</code></pre>
-<p><strong>UN-STAGES the file</strong></p>
-<pre><code class="language-bash">$ git rm --cached filename.txt
-</code></pre>
-<p><strong>STAGES all files in the repository</strong></p>
-<pre><code class="language-bash">$ git add --all
+    <h2 id="terminal-basics">TERMINAL BASICS</h2>
+    <p><strong>It is the LIST command which LISTS all the contents of a Directory</strong></p>
+    <code class="language-bash">
+    <pre>$ ls</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
+    <code class="language-bash">
+  <pre>$ ls foldername</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>Prints Working Directory</strong></p>
+    <code class="language-bash">
+  <pre>$ pwd</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>CHANGES and HOPS onto the respective Working Directory</strong></p>
+    <code class="language-bash">
+  <pre>$ cd C:\User\&lt;UserName&gt;\foldername</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>HOPS to Parent Directory</strong></p>
+    <code class="language-bash">
+  <pre>$ cd ..</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>CLEARS the Used Terminal</strong></p>
+    <code class="language-bash">
+  <pre>$ clear</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>QUITS out of a command</strong></p>
+    <code class="language-bash">
+  <pre>$ q</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>CREATES an Empty directory inside the Working Directory</strong></p>
+    <code class="language-bash">
+  <pre>$ mkdir foldername</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>DELETES the file</strong></p>
+    <code class="language-bash">
+  <pre>$ rm filename</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>DELETES the directory</strong></p>
+    <code class="language-bash">
+  <pre>$ rm -rf foldername</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
+    <code class="language-bash">
+  <pre>$ start .</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <h2 id="setting-git-user-name-and-email">SETTING GIT USER NAME AND EMAIL</h2>
+    <p><strong>to CHECK if git User-Name is set</strong></p>
+    <code class="language-bash">
+  <pre>$ git config user.name</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>to CHECK if git User-Email is set</strong></p>
+    <code class="language-bash">
+  <pre>$ git config user.email</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>To SET or CHANGE git User-Name</strong></p>
+    <code class="language-bash">
+  <pre>$ git config --global user.name &quot;Eshan Trivedi&quot;</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>To SET or CHANGE git User-Email</strong></p>
+    <code class="language-bash">
+  <pre>$ git config --global user.email eshan.trivedi.9@gmail.com</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>to SET or CHANGE default code editor as VsCode</strong></p>
+    <code class="language-bash">
+  <pre>$ git config --global core.editor &quot;code --wait&quot;</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>to CHANGE git User-Name and git User-Email directly in the config file using vim</strong></p>
+    <code class="language-bash">
+  <pre>$ git config --global --edit</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>To EXIT vim</strong></p>
+    <code class="language-bash">
+  <pre>$ `escape key` + :wq</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <h2 id="getting-git-help">GETTING GIT HELP</h2>
+    <p><strong>LOGS help details</strong></p>
+    <code class="language-bash">
+  <pre>$ git command --help</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <h2 id="creating-a-git-repository">CREATING A GIT REPOSITORY</h2>
+    <p><strong>STEP 1:</strong>&nbsp;<strong>INITIALIZES an empty repository</strong></p>
+    <code class="language-bash">
+  <pre>$ git init</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>STEP 2:</strong>&nbsp;<strong>to CHECK the status of a repository, a .git directory is created, all git
+        history is deleted if .git directory is deleted</strong></p>
+    <code class="language-bash">
+    <pre>$ git status</pre>
+    <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <h2 id="staging-filefiles-of-the-repository">STAGING FILE/FILES OF THE REPOSITORY:</h2>
+    <p><strong>to KEEP TRACK of modifications or changes</strong>
+      <strong>STAGES the file</strong>
+    </p>
+    <code class="language-bash">
+  <pre>$ git add filename.txt</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>UN-STAGES the file</strong></p>
+    <code class="language-bash">
+  <pre>$ git rm --cached filename.txt</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>STAGES all files in the repository</strong></p>
+    <code class="language-bash">
+  <pre>$ git add --all
 # OR
 $ git all .
 # OR
-$ git add .
-</code></pre><br>
-<h2 id="commiting-a-commit">COMMITING A COMMIT:</h2>
-<p><strong>COMMITS the STAGED files with a commit message</strong></p>
-<pre><code class="language-bash">$ git commit -m &quot;commit message&quot;
-</code></pre>
-<p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
-<pre><code class="language-bash">$ git commit -a -m &quot;commit message&quot;
-</code></pre>
-<p><strong>LOGS all the commits done to the repository</strong></p>
-<pre><code class="language-bash">$ git log
-</code></pre>
-<p><strong>LOG commits in a single line</strong></p>
-<pre><code class="language-bash">$ git log --oneline
-</code></pre>
-<p><strong>AMMENDS the previous commit</strong></p>
-<pre><code class="language-bash">$ git commit --ammend
-</code></pre>
-<p><strong>LOGS the changes</strong></p>
-<pre><code class="language-bash">$ git diff
-</code></pre>
-    </section><br>
-  </body>
+$ git add .</pre>
+    <span style="position: absolute; display: none">$ git add .</span>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <h2 id="commiting-a-commit">COMMITING A COMMIT:</h2>
+    <p><strong>COMMITS the STAGED files with a commit message</strong></p>
+    <code class="language-bash">
+  <pre>$ git commit -m &quot;commit message&quot;</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
+    <code class="language-bash">
+  <pre>$ git commit -a -m &quot;commit message&quot;</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>LOGS all the commits done to the repository</strong></p>
+    <code class="language-bash">
+  <pre>$ git log</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>LOG commits in a single line</strong></p>
+    <code class="language-bash">
+  <pre>$ git log --oneline</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>AMMENDS the previous commit</strong></p>
+    <code class="language-bash">
+  <pre>$ git commit --ammend</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+    <p><strong>LOGS the changes</strong></p>
+    <code class="language-bash">
+  <pre>$ git diff</pre>
+  <button class="copy-btn"><img src="./copy-icon.svg" alt="copy" /></button>
+</code>
+  </section><br>
+</body>
+<script>
+  const copyButton = document.querySelectorAll('.copy-btn');
+  copyButton.forEach(btn => {
+    btn.addEventListener('click', () => {
+      var code = btn.previousElementSibling.innerText;
+      code = code.slice(2, code.length);
+      navigator.clipboard.writeText(code);
+    });
+  });
+</script>
+
 </html>
