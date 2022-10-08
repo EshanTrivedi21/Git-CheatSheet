@@ -1,10 +1,10 @@
 # WELCOME TO THE GIT CHEAT SHEET
 
-    AUTHOR:         ESHAN KALP TRIVEDI  (Github: EshanTrivedi21)
-    REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
-    DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
+    AUTHOR:         EshanTrivedi2, Arya-A-Nair and VinayKanase
+    REFERENCE:      Git-Github Bootcamp (Colt Steele) Udemy
+    DESCRIPTION:    Your very own Git and Github Cheatsheet!
 
-## Terminal Basics
+## TERMINAL BASICS
 
 **It is the LIST command which LISTS all the contents of a Directory**
 
@@ -27,22 +27,22 @@ $ pwd
 **CHANGES and HOPS onto the respective Working Directory**
 
 ```bash
-$ cd C:\User\<UserName>\foldername
+$ cd C:\User\UserName\foldername
 ```
 
-**Hops to Parent Directory**
+**HOPS to Parent Directory**
 
 ```bash
 $ cd ..
 ```
 
-**Clears the Used Terminal**
+**CLEARS the Used Terminal**
 
 ```bash
 $ clear
 ```
 
-**Quits out of a command**
+**QUITS out of a command**
 
 ```bash
 $ q
@@ -54,13 +54,13 @@ $ q
 $ mkdir foldername
 ```
 
-**Deletes the file**
+**DELETES the file**
 
 ```bash
 $ rm filename
 ```
 
-**Deletes the directory**
+**DELETES the directory**
 
 ```bash
 $ rm -rf foldername
@@ -110,7 +110,7 @@ $ git config --global core.editor "code --wait"
 $ git config --global --edit
 ```
 
-**To exit vim**
+**To EXIT vim**
 
 ```bash
 $ `escape key` + :wq
@@ -126,17 +126,13 @@ $ git command --help
 
 ## CREATING A GIT REPOSITORY
 
-**STEP 1:**
-
-**INITIALIZES an empty repository**
+`STEP 1:` **INITIALIZES an empty repository**
 
 ```bash
 $ git init
 ```
 
-**STEP 2:**
-
-**to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git directory is deleted**
+`STEP 2:`  **to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git directory is deleted**
 
 ```bash
 $ git status
@@ -144,7 +140,7 @@ $ git status
 
 ## STAGING FILE/FILES OF THE REPOSITORY:
 
-**to keep a track of modifications or changes**
+**to KEEP A TRACK of modifications or changes**
 **STAGES the file**
 
 ```bash
@@ -161,15 +157,14 @@ $ git rm --cached filename.txt
 
 ```bash
 $ git add --all
-# OR
+    OR
 $ git all .
-# OR
+    OR
 $ git add .
 ```
 
 ## COMMITING A COMMIT:
 
-**come on who doesnt know about commits**
 **COMMITS the STAGED files with a commit message**
 
 ```bash
@@ -188,7 +183,7 @@ $ git commit -a -m "commit message"
 $ git log
 ```
 
-**LOG commits in a single line**
+**LOGS commits in a single line**
 
 ```bash
 $ git log --oneline
