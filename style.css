@@ -40,6 +40,7 @@ pre::-webkit-scrollbar-thumb {
 
 p {
   margin: 10px;
+  font-size: 17.5px;
 }
 
 a {
@@ -49,15 +50,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.6;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  color:cornflowerblue;
 }
 
 @keyframes fadeIn {
@@ -71,8 +64,10 @@ footer {
 
 h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 h2 {
   text-align: center;
+  font-size: 27.5px;
 }
