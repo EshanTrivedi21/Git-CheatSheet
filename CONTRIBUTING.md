@@ -10,7 +10,9 @@
 
 ## Contributions Needed: 
 
-+ ### Converting .txt to a .md markdown file with has a much better readability.
++ ### Converting .txt to a .md markdown file.
++ ### Converting .md to a .adoc file.
++ ### Contributing to the Website.
 + ### Adding Important yet Missed out Commands.
 + ### Other Contributions are welcomed as well.
 
