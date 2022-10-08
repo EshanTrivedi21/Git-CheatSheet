@@ -4,8 +4,13 @@ body {
   overflow-x: hidden;
   animation: fadeIn 1s 1 ease-in forwards;
   background-color: #30363d;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
   color: rgb(182, 182, 182);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cheatsheet {
@@ -13,13 +18,14 @@ body {
   padding: 5px;
   width: 100%;
   max-width: 900px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 code {
   position: relative;
 }
 
-code:hover > .copy-btn{
+code:hover > .copy-btn {
   opacity: 1;
 }
 
@@ -32,6 +38,7 @@ pre {
   color: rgb(192, 192, 192);
   margin: 15px;
   overflow-x: auto;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
 }
 
 .copy-btn {
