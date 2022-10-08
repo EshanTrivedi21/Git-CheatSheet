@@ -103,3 +103,12 @@ h2 {
   text-align: center;
   font-size: 27.5px;
 }
+
+.img {
+  width: 250px;
+}
+
+.contributors {
+  display: flex;
+  align-items: center;
+}
