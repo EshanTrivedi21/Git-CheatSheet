@@ -3,23 +3,27 @@ body {
   padding: 0;
   overflow-x: hidden;
   animation: fadeIn 1s 1 ease-in forwards;
+  background-color: #fbeec1;
 }
+
 .cheatsheet {
   margin: 0 auto;
   padding: 5px;
   width: 100%;
   max-width: 900px;
 }
+
 pre {
-  font-size: 16px;
+  font-size: 17.5px;
   font-family: monospace, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   border-radius: 6px;
-  color: white;
-  margin: 10px;
+  color:azure;
+  margin: 15px;
   overflow-x: auto;
 }
+
 pre::-webkit-scrollbar {
   height: 8px;
 }
@@ -33,22 +37,26 @@ pre::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 1px solid white;
 }
+
 p {
   margin: 10px;
 }
+
 a {
   text-decoration: none;
   color: white;
   transition: all 0.3s;
 }
+
 a:hover {
   opacity: 0.6;
 }
+
 footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
 }
 
@@ -59,4 +67,12 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
