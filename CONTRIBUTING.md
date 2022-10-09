@@ -8,6 +8,8 @@
 + ### Converting .md to a .adoc file.
 + ### Contributing to the Website.
 + ### Adding Important yet Missed out Commands.
++ ### Creating a PDF from the Text File
++ ### Adding a download button which download the PDF (Website)
 + ### Other Contributions are welcomed as well.
 
 ---
