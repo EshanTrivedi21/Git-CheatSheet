@@ -5,10 +5,10 @@
 
 ### The Contents of this Cheatsheet are:
 
-+ #### [Website]( https://eshantrivedi21.github.io/Git-CheatSheet)
-+ #### [Text File](Txt/Cheatsheet_TXT.txt)
-+ #### [Markdown File](Md/Cheatsheet_MD.md )
-+ #### [Adoc File](Adoc/Cheatsheet.adoc )
++ ### [Website]( https://eshantrivedi21.github.io/Git-CheatSheet)
++ ### [Text File](Txt/Cheatsheet_TXT.txt)
++ ### [Markdown File](Md/Cheatsheet_MD.md )
++ ### [Adoc File](Adoc/Cheatsheet.adoc )
 
 ---
 
