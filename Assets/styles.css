@@ -124,3 +124,25 @@ h2 {
   display: flex;
   align-items: center;
 }
+
+.download-button {
+  margin: 10px;
+  text-align: center;
+}
+.download-button button{
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border:solid 1px transparent;
+  font-size: medium;
+  transition: scale 1s;
+}
+.download-button button:hover{
+  background-color: white;
+  color: black;
+  scale: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+
+}
