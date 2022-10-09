@@ -200,3 +200,42 @@ $ git commit --ammend
 ```bash
 $ git diff
 ```
+
+## BRANCHES
+
+**Display List of all Local Branches**
+
+```bash
+$ git branch
+```
+
+**Create a new Branch**
+
+```bash
+$ git branch <new-branch>
+```
+
+**Switch to new branch and update the working directory**
+
+```bash
+$ git checkout <new-branch>
+```
+
+**Create a branch and switch to it**
+
+```bash
+$ git checkout -b <new-branch>
+```
+
+**To delete a merged branch**
+
+```bash
+$ git branch -d <branch>
+```
+
+**Delete a branch whether merged or not**
+
+```bash
+$ git branch -D <branch>
+```
+
