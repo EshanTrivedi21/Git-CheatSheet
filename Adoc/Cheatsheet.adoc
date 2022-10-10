@@ -164,6 +164,9 @@ NOT ALL MERGES ARE FAST FORWARD MERGES
 
 * STEP 4:         STAGE and COMMIT the changes
 
+. MERGE ABORT
+
+`git merge --abort`
 
 
 === STASHING IN GIT:
