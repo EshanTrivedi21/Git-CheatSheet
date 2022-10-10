@@ -28,7 +28,7 @@ code {
   position: relative;
 }
 
-code:hover > .copy-btn {
+code:hover>.copy-btn {
   opacity: 1;
 }
 
@@ -59,12 +59,15 @@ pre {
   opacity: 0;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
+
 .copy-btn:hover {
   background-color: #6f6f6fef;
 }
+
 .copy-btn:active {
   background-color: #1b1b1b;
 }
+
 pre::-webkit-scrollbar {
   height: 8px;
 }
@@ -116,6 +119,18 @@ h2 {
   margin-top: 60px;
 }
 
+h3 {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+h4 {
+  font-size: 22.5x;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 .img {
   width: 250px;
 }
@@ -129,20 +144,21 @@ h2 {
   margin: 10px;
   text-align: center;
 }
-.download-button button{
+
+.download-button button {
   background-color: black;
   color: white;
   padding: 12px;
   border-radius: 10px;
-  border:solid 1px transparent;
+  border: solid 1px transparent;
   font-size: medium;
   transition: scale 1s;
 }
-.download-button button:hover{
+
+.download-button button:hover {
   background-color: white;
   color: black;
   scale: 1.2;
   font-weight: 600;
   cursor: pointer;
-
 }
