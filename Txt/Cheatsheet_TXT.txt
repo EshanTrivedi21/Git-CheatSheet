@@ -48,6 +48,8 @@ SETTING GIT USER NAME AND EMAIL:
 
     >> git config --global --edit                                       (to CHANGE git User-Name and git User-Email directly in the config file using vim)
 
+    >> git config credential.helper store                               (to Store git User-Name and git User-Email in disk)
+
     >> escape + :wq                                                     (To exit vim)
 
 
