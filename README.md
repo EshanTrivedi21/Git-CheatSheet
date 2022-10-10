@@ -3,7 +3,7 @@
 
 ---
 
-### The Contents of this Cheatsheet are:
+### You have various way to access and use the Cheatsheet:
 
 + ### [Website]( https://eshantrivedi21.github.io/Git-CheatSheet)
 + ### [Text File](Txt/Cheatsheet_TXT.txt)
