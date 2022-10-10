@@ -162,7 +162,9 @@ MERGING BRANCHES:
 
             STEP 4:         STAGE and COMMIT the changes
 
+        3. ABORT MERGE (UNDO merge when mistakenly code merged & multiple unresolvable merging conflicts occur)
 
+            >> git merge --abort
 
 STASHING IN GIT:
 
