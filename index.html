@@ -955,6 +955,11 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       var code = btn.previousElementSibling.innerText;
       code = code.slice(2, code.length);
       navigator.clipboard.writeText(code);
+//    Adding Alert When text is copied and removing after 800ms
+      btn.classList.add("copied")
+      setTimeout(function(){
+        btn.classList.remove("copied")
+      } ,800)
     });
   });
 </script>
