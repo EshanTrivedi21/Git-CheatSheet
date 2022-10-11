@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <input type="checkbox" id="toggle-btn">
+    <label for="toggle-btn">
+      <img src="./Assets/sun-icon.png" id="icon" class="sun-icon" alt="">
+      <img src="./Assets/moon-icon.png" id="icon" class="moon-icon" alt="">
+    </label>
     <section class="cheatsheet">
       <h1 id="welcome-to-the-git-cheat-sheet">
         WELCOME TO THE GIT CHEAT SHEET
@@ -941,6 +946,7 @@ GITHUB FORKS AND CLONE WORKFLOW: Forking nd then opening a pull request to the o
     </section>
     <div class="download-button">
       <a id="download-pdf" target="_blank" href="./Assets/Cheatsheet.pdf" download><button>Download pdf</button></a>
+      <button class="btn1" onclick="window.print(); return false;">Print this page</button>
     </div>
   </body>
   <script>
@@ -952,5 +958,12 @@ GITHUB FORKS AND CLONE WORKFLOW: Forking nd then opening a pull request to the o
         navigator.clipboard.writeText(code);
       });
     });
+
+    const toggleButton =document.getElementById("toggle-btn");
+    toggleButton.onclick=function(){
+      document.body.classList.toggle("light-theme");
+    }
+
+
   </script>
 </html>
