@@ -1,14 +1,84 @@
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+label{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 10px;
+  background: white;
+}
+
+.sun-icon{
+  font-size: 25px;
+  transform: translateX(25px);
+  transition: 1s;
+}
+.moon-icon{
+  font-size: 25px;
+  transform: translateX(25px);
+  transition: 1s;
+  opacity: 0;
+}
+#toggle-btn:checked ~ label > .sun-icon{
+  opacity: 0;
+  transform: translateX(0px);
+}
+#toggle-btn:checked ~ label > .moon-icon{
+  opacity: 1;
+  transform: translateX(-25px);
+}
+
+:root{
+  --body-bg-color:#30363d;
+  --body-color:rgb(182, 182, 182);
+  --cheatsheet-bg:rgba(0, 0, 0, 0.4);
+  --pre-bg-color:rgba(0, 0, 0, 0.8);
+  --pre-color:rgb(192, 192, 192);
+  --pre-box-shadow:rgba(255, 255, 255, 0.1);
+  --copy-btn-border:#9a9a9aef;
+  --copy-bg-color:rgb(62, 62, 62);
+  --copy-btn-hover-bg:#6f6f6fef;
+  --copy-btn-active:#1b1b1b;
+  --a-color:white;
+
+}
+.light-theme{
+  --body-bg-color:#dee4e7;
+  --body-color:black;
+  --cheatsheet-bg:white;
+  --pre-bg-color:#edf4f5;
+  --pre-color:#717474;
+  --pre-box-shadow:rgba(255, 255, 255, 0.1);
+  --copy-btn-border:black;
+  --copy-bg-color:black;
+  --copy-btn-hover-bg:gray;
+  --copy-btn-active:#1b1b1b;
+  --a-color:#90a4ae;
+
+}
+
 body {
   margin: 2%;
   padding: 0;
   overflow-x: hidden;
   animation: fadeIn 1s 1 ease-in forwards;
-  background-color: #30363d;
+  background-color: var(--body-bg-color);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   background-attachment: fixed;
-  color: rgb(182, 182, 182);
+  color:var(--body-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,7 +91,7 @@ section {
   padding: 5px;
   width: 100%;
   max-width: 900px;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--cheatsheet-bg);
 }
 
 code {
@@ -35,13 +105,13 @@ code:hover > .copy-btn {
 pre {
   font-size: 17.5px;
   font-family: monospace, sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--pre-bg-color);
   padding: 10px;
   border-radius: 6px;
-  color: rgb(192, 192, 192);
+  color: var(--pre-color);
   margin: 15px;
   overflow-x: auto;
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
 }
 
 .copy-btn {
@@ -54,16 +124,16 @@ pre {
   height: 30px;
   width: 30px;
   padding: 5px;
-  border: 2px solid #9a9a9aef;
-  background-color: rgb(62, 62, 62);
+  border: 2px solid var(--copy-btn-border);
+  background-color: var(--copy-bg-color);
   opacity: 0;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
 .copy-btn:hover {
-  background-color: #6f6f6fef;
+  background-color: var(--copy-btn-hover-bg);
 }
 .copy-btn:active {
-  background-color: #1b1b1b;
+  background-color: var(--copy-btn-active);
 }
 pre::-webkit-scrollbar {
   height: 8px;
@@ -86,7 +156,7 @@ p {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--a-color);
   transition: all 0.3s;
 }
 

@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <input type="checkbox" id="toggle-btn">
+    <label for="toggle-btn">
+      <img src="./Assets/sun-icon.png" id="icon" class="sun-icon" alt="">
+      <img src="./Assets/moon-icon.png" id="icon" class="moon-icon" alt="">
+    </label>
     <section class="cheatsheet">
       <h1 id="welcome-to-the-git-cheat-sheet">
         WELCOME TO THE GIT CHEAT SHEET
@@ -333,5 +338,12 @@ $ git add .</pre
         navigator.clipboard.writeText(code);
       });
     });
+
+    const toggleButton =document.getElementById("toggle-btn");
+    toggleButton.onclick=function(){
+      document.body.classList.toggle("light-theme");
+    }
+
+
   </script>
 </html>
