@@ -177,6 +177,13 @@ a:hover {
   }
 }
 
+.topics
+{
+  text-align: left !important;
+  margin-left: 20px !important;
+}
+
+
 h1 {
   text-align: center;
   font-size: 30px;
