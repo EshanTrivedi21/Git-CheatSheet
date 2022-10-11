@@ -126,6 +126,7 @@ GIT BRANCHING:
 
     >> git branch -M finalbranch        (CHANGES the name of the Branch you are Headed on)
 
+    >> git push --delete origin branchname (TO DELETE A REMOTE BRANCH IN GIT)
 
 
 MERGING BRANCHES:

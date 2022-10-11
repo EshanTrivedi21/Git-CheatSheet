@@ -30,7 +30,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 <a href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors" target="_blank">
   <img class="img" src="https://contrib.rocks/image?repo=EshanTrivedi21/Git-CheatSheet" />
 </a> </span>
-</code></pre>
+</code></pre> 
     <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
     <ul>
       <li><a href="#terminal-basics">Terminal Basics</a></li>
@@ -292,63 +292,69 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
               </button>
             </code>
 
+      <h2 id="git-branching">GIT BRANCHING</h2>
+      <p><strong>LOGS all the branches of the Working Repository</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>CREATES a new branch</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch &lt;new-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD</strong></p>
+      <code class="language-bash">
+        <pre>$ git switch &lt;new-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
+      <code class="language-bash">
+        <pre>$ git switch -c &lt;new-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
+      <code class="language-bash">
+        <pre>$ git checkout -b &lt;new-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>DELETES newbranch</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch -D &lt;new-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch -M &lt;final-branch&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
+      <code class="language-bash">
+        <pre>$ git push --delete &lt;origin branchname&gt;</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      
     <h2 id="git-ignore">GIT IGNORE</h2>
     <p><strong>STEP 1: create a .gitignore file</strong></p>
     <p><strong>STEP 2: add files or folders inside the file to ignore, now the files are are untracked by github and
         wont be staged or
         commited</strong></p>
-
-    <h2 id="git-branching">GIT BRANCHING</h2>
-    <p><strong>LOGS all the branches of the Working Repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a new branch but the branch is not yet SWITCHED</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD but the current changes need to be STASHED or
-        COMMITED</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch -c &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
-    <code class="language-bash">
-              <pre>$ git checkout -b &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES newbranch, but you cant be Headed on the Branch you want to delete</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch -D &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch -M &lt;final-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
 
     <h2 id="merging-branches">MERGING BRANCHES</h2>
     <h3>FAST FORWARD MERGE</h3>
