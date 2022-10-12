@@ -1,12 +1,14 @@
-*** WELCOME TO THE GIT CHEAT SHEET ***
+### WELCOME TO THE GIT CHEAT SHEET 
 
     AUTHOR:         ESHAN KALP TRIVEDI  (Github: EshanTrivedi21)
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
-*** GO ON FROM HERE, ALL THE BEST ***
+## GO ON FROM HERE, ALL THE BEST ____
 
 
+
+____
 
 TERMINAL BASICS: 
 
@@ -33,6 +35,7 @@ TERMINAL BASICS:
     >> start .                              (OPENS the File Explorer to the ROOT Directory)
 
 
+____
 
 SETTING GIT USER NAME AND EMAIL: 
 
@@ -53,12 +56,14 @@ SETTING GIT USER NAME AND EMAIL:
     >> escape + :wq                                                     (To exit vim)
 
 
+____
 
 GETTING  GIT HELP
 
     >> git command --help                                              (Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.)                     
 
 
+____
 
 CREATING A GIT REPOSITORY:
 
@@ -67,6 +72,7 @@ CREATING A GIT REPOSITORY:
     STEP 2:     >> git status           (to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deletec)
 
 
+____
 
 STAGING FILE/FILES OF THE REPOSITORY:
 
@@ -78,6 +84,7 @@ STAGING FILE/FILES OF THE REPOSITORY:
 
     >> git add --all  OR  >> git all . OR >> git add .        (STAGES all files in the repository)
 
+____
 
 
 COMMITING A COMMIT:
@@ -97,6 +104,7 @@ COMMITING A COMMIT:
     >> git diff                                 (LOGS the changes)
 
 
+____
 
 EVERYTHING ABOUT GIT IGNORE:
 
@@ -107,6 +115,7 @@ EVERYTHING ABOUT GIT IGNORE:
     STEP 2:             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
 
 
+____
 
 GIT BRANCHING:
 
@@ -128,6 +137,7 @@ GIT BRANCHING:
 
     >> git push --delete origin branchname (TO DELETE A REMOTE BRANCH IN GIT)
 
+____
 
 MERGING BRANCHES:
 
@@ -196,6 +206,7 @@ STASHING IN GIT:
             >> git stash clear                  (CLEARS the whole stash list)
             
 
+____
 
 TIME TRAVELLING WITH GIT:
 
@@ -246,7 +257,8 @@ TIME TRAVELLING WITH GIT:
         >> git revert 604a39a           (REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while                                                    collaboration)
 
 
-    
+____
+
 CREATING GITHUB RESPOSITORIES:
 
     1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
@@ -288,7 +300,7 @@ CREATING GITHUB RESPOSITORIES:
 
         STEP 3:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future)
 
-
+______
 
 THE origin/master THEORY:
 
@@ -307,7 +319,7 @@ NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   
 
         >> git branch                           (now this correctly LOGS all the connected branches)
 
-
+_______
 
 FETCHING AND PULLING:
 
@@ -323,7 +335,7 @@ FETCHING AND PULLING:
         >> git checkout origin/master                                               (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD,                                                                                      in a case where the local branch is ahead of the remote branch
                                                                                      and not up to date, push to make it up to date)
 
-
+_______
 
 PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
 
@@ -332,7 +344,7 @@ PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
         SOLVE MERGE CONFLICTS IF ANY 
 
 
-
+_______
 
 FORCE PUSH AND PULL:
 
@@ -344,7 +356,7 @@ FORCE PUSH AND PULL:
  
         REFER TIME TRAVELLING WITH GIT for more git force pulling commands
 
-
+______
 
 GITHUB COLLABORATION:
 
@@ -357,7 +369,7 @@ GITHUB COLLABORATION:
     GITHUB FORKS AND CLONE WORKFLOW:        Forking nd then opening a pull request to the owner of the main repository.
 
 
-
+______
 
 GIT REBASING:
 
@@ -386,7 +398,7 @@ GIT REBASING:
         drop                            (DELETES the commit and the commit changes as if they were never written)
 
 
-
+_____
 GIT TAGS:
 
     TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
@@ -443,4 +455,4 @@ GITHUB DESKTOP:
 
         STEP 7: When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.    
 
-*** YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF ***
+**YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF**
