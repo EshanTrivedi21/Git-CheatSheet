@@ -4,7 +4,7 @@
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
-## GO ON FROM HERE, ALL THE BEST#### 
+## GO ON FROM HERE, ALL THE BEST
 
 
 
