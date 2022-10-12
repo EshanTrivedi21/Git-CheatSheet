@@ -11,6 +11,8 @@ label{
   display: flex;
   width: fit-content;
   position: sticky;
+  top: 20px;
+  right: 20px;
   z-index: 2;
   box-shadow: 0px 0px 20px var(--pre-color);
   border: 2px solid var(--body-color);
