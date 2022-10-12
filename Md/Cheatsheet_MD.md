@@ -4,13 +4,13 @@
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
-## GO ON FROM HERE, ALL THE BEST ____
+## GO ON FROM HERE, ALL THE BEST#### 
 
 
 
 ____
 
-TERMINAL BASICS: 
+#### TERMINAL BASICS: 
 
     >> ls                                   (it is the LIST command which LISTS all the contents of a Directory)
 
@@ -37,7 +37,7 @@ TERMINAL BASICS:
 
 ____
 
-SETTING GIT USER NAME AND EMAIL: 
+#### SETTING GIT USER NAME AND EMAIL: 
 
     >> git config user.name                                             (to CHECK if git User-Name is set)
 
@@ -58,14 +58,14 @@ SETTING GIT USER NAME AND EMAIL:
 
 ____
 
-GETTING  GIT HELP
+#### GETTING  GIT HELP
 
     >> git command --help                                              (Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.)                     
 
 
 ____
 
-CREATING A GIT REPOSITORY:
+#### CREATING A GIT REPOSITORY:
 
     STEP 1:     >> git init             (INITIALIZES an empty repository)
 
@@ -74,7 +74,7 @@ CREATING A GIT REPOSITORY:
 
 ____
 
-STAGING FILE/FILES OF THE REPOSITORY:
+#### STAGING FILE/FILES OF THE REPOSITORY:
 
     (to keep a track of modifications or changes)
 
@@ -87,7 +87,7 @@ STAGING FILE/FILES OF THE REPOSITORY:
 ____
 
 
-COMMITING A COMMIT:
+#### COMMITING A COMMIT:
 
     (come on who doesnt know about commits)
 
@@ -106,7 +106,7 @@ COMMITING A COMMIT:
 
 ____
 
-EVERYTHING ABOUT GIT IGNORE:
+#### EVERYTHING ABOUT GIT IGNORE:
 
     (git doesnt consider the files/folders which are in .gitignore)
 
@@ -117,7 +117,7 @@ EVERYTHING ABOUT GIT IGNORE:
 
 ____
 
-GIT BRANCHING:
+#### GIT BRANCHING:
 
     (if you  are trying something out but do on want to play with the main branch)
 
@@ -139,7 +139,7 @@ GIT BRANCHING:
 
 ____
 
-MERGING BRANCHES:
+#### MERGING BRANCHES:
 
     FAST FORWARD MERGE (NO CHANGES done on the Master Branch)
 
@@ -179,7 +179,7 @@ MERGING BRANCHES:
 
             >> git merge --abort
 
-STASHING IN GIT:
+#### STASHING IN GIT:
 
     (needed when switching branches but the changes arent commit ready but by not stashing, the changes will behave wierdly)
 
@@ -208,7 +208,7 @@ STASHING IN GIT:
 
 ____
 
-TIME TRAVELLING WITH GIT:
+#### TIME TRAVELLING WITH GIT:
 
     1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
 
@@ -259,7 +259,7 @@ TIME TRAVELLING WITH GIT:
 
 ____
 
-CREATING GITHUB RESPOSITORIES:
+#### CREATING GITHUB RESPOSITORIES:
 
     1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
 
@@ -302,7 +302,7 @@ CREATING GITHUB RESPOSITORIES:
 
 ______
 
-THE origin/master THEORY:
+#### THE origin/master THEORY:
 
     origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH
 
@@ -321,7 +321,7 @@ NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   
 
 _______
 
-FETCHING AND PULLING:
+#### FETCHING AND PULLING:
 
     FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
 
@@ -337,7 +337,7 @@ FETCHING AND PULLING:
 
 _______
 
-PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
+#### PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
 
         >> git pull origin      or      >> git push origin branchname               (PULLS the changes and merges the changes with the branch you want to OR default)
 
@@ -346,7 +346,7 @@ PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
 
 _______
 
-FORCE PUSH AND PULL:
+#### FORCE PUSH AND PULL:
 
         >> git push origin <your_branch_name> -f                                          (This will delete your previous commit(s) and push your current one.
                                                                                            f signifies force )
@@ -358,7 +358,7 @@ FORCE PUSH AND PULL:
 
 ______
 
-GITHUB COLLABORATION:
+#### GITHUB COLLABORATION:
 
     CENTRALIZED WORKFLOW:                   EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.
 
@@ -371,7 +371,7 @@ GITHUB COLLABORATION:
 
 ______
 
-GIT REBASING:
+#### GIT REBASING:
 
     REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
 
@@ -399,7 +399,7 @@ GIT REBASING:
 
 
 _____
-GIT TAGS:
+#### GIT TAGS:
 
     TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
 
@@ -429,7 +429,9 @@ GIT TAGS:
 
         >> git push origin tagname              (TR5ANSFERS tags to remote servers)    
 
-GITHUB DESKTOP:
+______
+
+#### GITHUB DESKTOP:
 
     Interact with GitHub using a GUI instead of the command line or a web browser
 
