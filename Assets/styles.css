@@ -8,24 +8,36 @@ input[type="checkbox"]{
 }
 
 label{
-  position: absolute;
+  display: flex;
+  width: fit-content;
+  position: sticky;
   top: 20px;
   right: 20px;
-  border: 2px solid gray;
+  z-index: 2;
+  box-shadow: 0px 0px 20px var(--pre-color);
+  border: 2px solid var(--body-color);
   border-radius: 30px;
-  padding: 5px;
-  cursor: pointer;
   margin: 10px;
-  background: white;
+  padding: 10px;
+  background: var(--a-color);
+  cursor: pointer;
+  transition-duration: 200ms;
+  /* User select to none just because there appears a binking cursor near the icon when clicked on it. Now it doesn't allow the user to selec that icon and only click*/
+  user-select: none; 
 }
 
 .sun-icon{
-  font-size: 25px;
+  font-size: 20px;
   transform: translateX(25px);
   transition: 1s;
 }
+
+label:hover {
+  box-shadow: 0px 0px 50px var(--pre-color);
+}
+
 .moon-icon{
-  font-size: 25px;
+  font-size: 20px;
   transform: translateX(25px);
   transition: 1s;
   opacity: 0;
