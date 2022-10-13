@@ -8,10 +8,10 @@
 
 
 <br/>
-<br/>
+
 
 ## TERMINAL BASICS:
-<hr/>
+
 
 It is the LIST command which LISTS all the contents of a Directory
 
@@ -59,10 +59,8 @@ OPENS the File Explorer to the ROOT Directory
 
 
 <br/>
-<br/>
 
 ## SETTING GIT USER NAME AND EMAIL: 
-<hr/>
 
 to CHECK if git User-Name is set
 
@@ -97,21 +95,17 @@ To exit vim
     $ escape + :wq                                                     
 
 <br/>
-<br/>
 
 
 ## GETTING  GIT HELP
-<hr/>
 
 Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.                     
 
     $ git command --help                                              
 
 <br/>
-<br/>
 
 ## CREATING A GIT REPOSITORY:
-<hr/>
 
 
 **STEP 1** :   INITIALIZES an empty repository
@@ -124,10 +118,8 @@ Use for more details and examples on any of the below (or above) commands e.g. p
 
 
 <br/>
-<br/>
 
 ## STAGING FILE/FILES OF THE REPOSITORY:
-<hr/>
 
 *(to keep a track of modifications or changes)*
 
@@ -154,10 +146,8 @@ OR
     $ git add .        
 
 <br/>
-<br/>
 
 ## COMMITING A COMMIT:
-<hr/>
 
 *(come on who doesnt know about commits)*
 
@@ -189,10 +179,8 @@ LOGS the changes
     $ git diff                                 
 
 <br/>
-<br/>
 
 ## EVERYTHING ABOUT GIT IGNORE:
-<hr/>
 
 *(git doesnt consider the files/folders which are in .gitignore)*
 
@@ -202,10 +190,8 @@ LOGS the changes
 
 
 <br/>
-<br/>
 
 ## GIT BRANCHING:
-<hr/>
 
 *(if you  are trying something out but do on want to play with the main branch)*
 
@@ -242,10 +228,8 @@ TO DELETE A REMOTE BRANCH IN GIT
     $ git push --delete origin branchname 
 
 <br/>
-<br/>
 
 ## MERGING BRANCHES:
-<hr/>
 
 *FAST FORWARD MERGE (NO CHANGES done on the Master Branch)*
 
@@ -294,7 +278,6 @@ TO DELETE A REMOTE BRANCH IN GIT
         $ git merge --abort
 
 <br/>
-<br/>
 
 
 ## STASHING IN GIT:
@@ -338,10 +321,8 @@ TO DELETE A REMOTE BRANCH IN GIT
         $ git stash clear                  
             
 <br/>
-<br/>
 
 ## TIME TRAVELLING WITH GIT:
-<hr/>
 
  1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
 
@@ -408,10 +389,8 @@ TO DELETE A REMOTE BRANCH IN GIT
 
 
 <br/>
-<br/>
 
 ## CREATING GITHUB RESPOSITORIES:
-<hr/>
 
 1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
 
@@ -494,10 +473,8 @@ TO DELETE A REMOTE BRANCH IN GIT
     in future
 
 <br/>
-<br/>
 
 ## THE origin/master THEORY:
-<hr/>
 
 *origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH*
 
@@ -529,10 +506,8 @@ now this correctly LOGS all the connected branches
     $ git branch                           
 
 <br/>
-<br/>
 
 ## FETCHING AND PULLING:
-<hr/>
 
 *FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY*
 
@@ -555,10 +530,8 @@ to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD
 
 
 <br/>
-<br/>
 
 ## PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
-<hr/>
 
 PULLS the changes and merges the changes with the branch you want to OR default
         
@@ -573,10 +546,8 @@ SOLVE MERGE CONFLICTS IF ANY
 
 
 <br/>
-<br/>
 
 ## FORCE PUSH AND PULL:
-<hr/>
 
     $ git push origin <your_branch_name> -f                                          
         
@@ -594,10 +565,8 @@ This is nothing but fetch + rebase. This will invoke rebase in interactive mode 
 REFER TIME TRAVELLING WITH GIT for more git force pulling commands
 
 <br/>
-<br/>
 
 ## GITHUB COLLABORATION:
-<hr/>
     
 **CENTRALIZED WORKFLOW** : EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.
 
@@ -609,10 +578,8 @@ REFER TIME TRAVELLING WITH GIT for more git force pulling commands
 
 
 <br/>
-<br/>
 
 ## GIT REBASING:
-<hr/>
     
 REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
 
@@ -635,10 +602,8 @@ CONFLICTS WHILE REBASING
     $ git rebase --continue
 
  <br/>   
- <br/>
 
 ## INTERACTIVE REBASING
-<hr/>
 
 OPENS up the code editor where you can play with the nth last commits and above
     
@@ -657,10 +622,8 @@ DELETES the commit and the commit changes as if they were never written
     drop                            
 
 <br/>
-<br/>
 
 ## GIT TAGS:
-<hr/>
 
 TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
 Semanting Versioning Format is widely used for tags and releases (v1.0.1)
@@ -713,10 +676,8 @@ TR5ANSFERS tags to remote servers)
 
 
 <br/>
-<br/>
 
 ## GITHUB DESKTOP:
-<hr/>
 
 Interact with GitHub using a GUI instead of the command line or a web browser
 
