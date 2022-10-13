@@ -1,460 +1,695 @@
-### WELCOME TO THE GIT CHEAT SHEET 
+# **WELCOME TO THE GIT CHEAT SHEET**
 
     AUTHOR:         ESHAN KALP TRIVEDI  (Github: EshanTrivedi21)
     REFERENCE:      GIT GITHUB BOOTCAMP - COLT STEELE (UDEMY)
     DESCRIPTION:    Your very own Git AND Github Cheat Sheet having basic Windows Terminal Cheats as well!
 
-## GO ON FROM HERE, ALL THE BEST
+***GO ON FROM HERE, ALL THE BEST***
 
 
+<br/>
 
-____
+## TERMINAL BASICS:
 
-#### TERMINAL BASICS: 
+It is the LIST command which LISTS all the contents of a Directory
 
-    >> ls                                   (it is the LIST command which LISTS all the contents of a Directory)
+    $ ls                                   
 
-    >> ls foldername                        (LOCATES to a directory and then LISTS the contents)
+LOCATES to a directory and then LISTS the contents
 
-    >> pwd                                  (PRINT WORKING DIRECTORY)
+    $ ls foldername                        
 
-    >> cd C:\User\Eshan\foldername          (CHANGES and HOPS onto the respective Working Directory)
+PRINT WORKING DIRECTORY
 
-    >> cd ..                                (HOPS onto the Parent Directory of the Working Directory)
+    $ pwd                                  
 
-    >> clear                                (CLEARS the used Terminal)
+CHANGES and HOPS onto the respective Working Directory
 
-    >> q                                    (QUITS out of a entered command)
+    $ cd C:\User\Eshan\foldername        
 
-    >> mkdir foldername                     (CREATES an Empty directory inside the Working Directory)
+HOPS onto the Parent Directory of the Working Directory
 
-    >> rm filename                          (DELETES the file)
+    $ cd ..   
 
-    >> rm -rf foldername                    (DELETES the directory)
+CLEARS the used Terminal                             
 
-    >> start .                              (OPENS the File Explorer to the ROOT Directory)
+    $ clear                                
 
+QUITS out of a entered command
 
-____
+    $ q                                    
 
-#### SETTING GIT USER NAME AND EMAIL: 
+CREATES an Empty directory inside the Working Directory
 
-    >> git config user.name                                             (to CHECK if git User-Name is set)
+    $ mkdir foldername                     
 
-    >> git config user.email                                            (to CHECK if git User-Email is set)
+DELETES the file
 
-    >> git config --global user.name "Eshan Trivedi"                    (To SET or CHANGE git User-Name)
+    $ rm filename                          
 
-    >> git config --global user.email eshan.trivedi.9@gmail.com         (To SET or CHANGE git User-Email)
+DELETES the directory
 
-    >> git config --global core.editor "code --wait"                    (to SET or CHANGE default code editor as VsCode)
+    $ rm -rf foldername                    
 
-    >> git config --global --edit                                       (to CHANGE git User-Name and git User-Email directly in the config file using vim)
+OPENS the File Explorer to the ROOT Directory
 
-    >> git config credential.helper store                               (to Store git User-Name and git User-Email in disk)
+    $ start .                              
 
-    >> escape + :wq                                                     (To exit vim)
+<br/>
 
+## SETTING GIT USER NAME AND EMAIL: 
 
-____
+to CHECK if git User-Name is set
 
-#### GETTING  GIT HELP
+    $ git config user.name   
 
-    >> git command --help                                              (Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.)                     
+to CHECK if git User-Email is set
 
+    $ git config user.email                                            
 
-____
+To SET or CHANGE git User-Name
 
-#### CREATING A GIT REPOSITORY:
+    $ git config --global user.name "Eshan Trivedi"                    
 
-    STEP 1:     >> git init             (INITIALIZES an empty repository)
+To SET or CHANGE git User-Email
 
-    STEP 2:     >> git status           (to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deletec)
+    $ git config --global user.email eshan.trivedi.9@gmail.com         
 
+to SET or CHANGE default code editor as VsCode
 
-____
+    $ git config --global core.editor "code --wait"                    
 
-#### STAGING FILE/FILES OF THE REPOSITORY:
+to CHANGE git User-Name and git User-Email directly in the config file using vim
 
-    (to keep a track of modifications or changes)
+    $ git config --global --edit                                       
 
-    >> git add filename.txt                                   (STAGES the file)
+to Store git User-Name and git User-Email in disk
 
-    >> git rm --cached filename.txt                           (UN-STAGES the file)
+    $ git config credential.helper store                               
 
-    >> git add --all  OR  >> git all . OR >> git add .        (STAGES all files in the repository)
+To exit vim
 
-____
+    $ escape + :wq                                                     
 
+<br/>
 
-#### COMMITING A COMMIT:
 
-    (come on who doesnt know about commits)
+## GETTING  GIT HELP
 
-    >> git commit -m "commit message"           (COMMITS the STAGED files with a commit message)
+Use for more details and examples on any of the below (or above) commands e.g. push, pull etc.                     
 
-    >> git commit -a -m "commit message"        (SKIPS the Staging part and directly COMMITS)
+    $ git command --help                                              
 
-    >> git log                                  (LOGS all the commits done to the repository)
+<br/>
 
-    >> git log --oneline                        (LOG commits in a single line)
+## CREATING A GIT REPOSITORY:
 
-    >> git commit --ammend                      (AMMENDS the previous commit)
+**STEP 1** :   INITIALIZES an empty repository
+    
+    $ git init             
 
-    >> git diff                                 (LOGS the changes)
+**STEP 2** : to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deleted
 
+    $ git status           
 
-____
+<br/>
 
-#### EVERYTHING ABOUT GIT IGNORE:
+## STAGING FILE/FILES OF THE REPOSITORY:
 
-    (git doesnt consider the files/folders which are in .gitignore)
+*(to keep a track of modifications or changes)*
 
-    STEP 1:             create a .gitignore file
+<br/>
 
-    STEP 2:             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
+STAGES the file
 
+    $ git add filename.txt         
 
-____
+UN-STAGES the file
 
-#### GIT BRANCHING:
+    $ git rm --cached filename.txt                           
 
-    (if you  are trying something out but do on want to play with the main branch)
+STAGES all files in the repository
 
-    >> git branch                       (LOGS all the branches of the Working Repository with an * in the Current Head or GO to .git\refs\heads)
+    $ git add --all 
 
-    >> git branch branchname            (CREATES a new branch but the branch is not yet SWITCHED)
+OR  
 
-    >> git switch branchname            (SWITCHES the Branch from one to another or CHANGING HEAD, but the current changes need to be STASHED or COMMITED)
+    $ git all . 
 
-    >> git switch -c newbranch          (CREATES a new branch and then SWITCHES to the branches)
+OR
 
-    >> git checkout -b newbranch        (CREATES a new branch and then SWITCHES to the branch)
+    $ git add .        
 
-    >> git branch -D newbranch          (DELETES newbranch, but you cant be Headed on the Branch you want to delete)
+<br/>
 
-    >> git branch -M finalbranch        (CHANGES the name of the Branch you are Headed on)
+## COMMITING A COMMIT:
 
-    >> git push --delete origin branchname (TO DELETE A REMOTE BRANCH IN GIT)
+<br/>
 
-____
 
-#### MERGING BRANCHES:
+COMMITS the STAGED files with a commit message
 
-    FAST FORWARD MERGE (NO CHANGES done on the Master Branch)
+    $ git commit -m "commit message"           
 
-        STEP 1:         >> git switch master            (SWITCH the HEAD first to the first branch)
+SKIPS the Staging part and directly COMMITS
 
-        STEP 2:         >> git merge newbranch          (MERGES newbranch into master with HEAD on master)
+    $ git commit -a -m "commit message"        
 
-    NOT ALL MERGES ARE FAST FORWARD MERGES
+LOGS all the commits done to the repository
+    
+    $ git log                                  
 
-        1. WITHOUT MERGE CONFLICTS
+LOG commits in a single line
 
-            >> git switch master
+    $ git log --oneline                        
 
-            >> git merge -m "mergering message"         (CREATES a new commit unlike fastforwarding merges)
+AMMENDS the previous commit
 
-        2. MERGE CONFLICTS
+    $ git commit --ammend                      
 
-            (only if conflict message occurs)
+LOGS the changes
 
-            STEP 1:         OPEN UP files having merge conflicts 
+    $ git diff                                 
 
-            STEP 2:         REMOVE the conflicts 
+<br/>
 
-                OPTION 1:           ACCEPT INCOMING CHANGES
+## EVERYTHING ABOUT GIT IGNORE:
 
-                OPTION 2:           ACCEPT CURRENT CHANGES
+*(git doesnt consider the files/folders which are in .gitignore)*
 
-                OPTION 3:           ACCEPT BOTH CHANGES
+**STEP 1** :             create a .gitignore file
 
-                OPTION 4:           COMPARE CHANGES 
+**STEP 2** :             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
 
-            STEP 3:         REMOVE the conflict markers
+<br/>
 
-            STEP 4:         STAGE and COMMIT the changes
+## GIT BRANCHING:
 
-        3. ABORT MERGE (UNDO merge when mistakenly code merged & multiple unresolvable merging conflicts occur)
+*(if you  are trying something out but do on want to play with the main branch)*
 
-            >> git merge --abort
+LOGS all the branches of the Working Repository with an * in the Current Head or GO to .git\refs\heads
 
-#### STASHING IN GIT:
+    $ git branch                       
 
-    (needed when switching branches but the changes arent commit ready but by not stashing, the changes will behave wierdly)
+CREATES a new branch but the branch is not yet SWITCHED
+    
+    $ git branch branchname            
 
-    1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH
+SWITCHES the Branch from one to another or CHANGING HEAD, but the current changes need to be STASHED or COMMITED
 
-    2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS
+    $ git switch branchname            
+
+CREATES a new branch and then SWITCHES to the branches
+
+    $ git switch -c newbranch          
+
+CREATES a new branch and then SWITCHES to the branch
+
+    $ git checkout -b newbranch        
+
+DELETES newbranch, but you cant be Headed on the Branch you want to delete
+
+    $ git branch -D newbranch          
+
+CHANGES the name of the Branch you are Headed on
+    
+    $ git branch -M finalbranch        
+
+TO DELETE A REMOTE BRANCH IN GIT
+
+    $ git push --delete origin branchname 
+
+<br/>
+
+## MERGING BRANCHES:
+
+*FAST FORWARD MERGE (NO CHANGES done on the Master Branch)*
+
+**STEP 1** : SWITCH the HEAD first to the first branch         
+    
+    $ git switch master     
+
+**STEP 2** : MERGES newbranch into master with HEAD on master        
+    
+    $ git merge newbranch          
+
+   
+*NOT ALL MERGES ARE FAST FORWARD MERGES*
+
+1. WITHOUT MERGE CONFLICTS
+
+        $ git switch master
+    
+    CREATES a new commit unlike fastforwarding merges
+
+        $ git merge -m "mergering message"         
+
+2. MERGE CONFLICTS
+
+    *(only if conflict message occurs)*
+
+    **STEP 1** : OPEN UP files having merge conflicts 
+
+    **STEP 2** : REMOVE the conflicts 
+
+       OPTION 1:           ACCEPT INCOMING CHANGES
+
+       OPTION 2:           ACCEPT CURRENT CHANGES
+
+       OPTION 3:           ACCEPT BOTH CHANGES
+
+       OPTION 4:           COMPARE CHANGES 
+
+    **STEP 3** : REMOVE the conflict markers
+
+    **STEP 4** : STAGE and COMMIT the changes
+
+3. ABORT MERGE (UNDO merge when mistakenly code merged & multiple unresolvable merging conflicts occur)
+
+        $ git merge --abort
+
+<br/>
+
+
+## STASHING IN GIT:
+
+*(needed when switching branches but the changes arent commit ready but by not stashing, the changes will behave wierdly)*
+
+1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH
+
+2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS
 
     (hence to prevent this staging is important, its like a save but doesnt show up anywhere unless popped)
 
-        >> git stash            (STASHES the changes)
+    STASHES the changes
 
-        >> git stash pop        (UN STASHES the changes, use it when you resume your work) 
+        $ git stash
 
-        >> git stash apply      (APPLY stashed changes into another or the same branch)
+    UN STASHES the changes, use it when you resume your work
+  
+        $ git stash pop         
+    
+    APPLY stashed changes into another or the same branch
 
-        IF WORKING WITH MULTIPLE STASHES
+        $ git stash apply      
 
-            >> git stash list                   (LOGS all the stashes)
+    IF WORKING WITH MULTIPLE STASHES
 
-            >> git stash apply stash@{1}        (STASHES the changes in the Stash index 1)
+    LOGS all the stashes
 
-            >> git stash drop stash@{1}         (DELETES the stash, p.s. applying the stash doesnt delete it)
+        $ git stash list                   
 
-            >> git stash clear                  (CLEARS the whole stash list)
+    STASHES the changes in the Stash index 1
+    
+        $ git stash apply stash@{1}        
+    
+    DELETES the stash, p.s. applying the stash doesnt delete it
+
+        $ git stash drop stash@{1}         
+
+    CLEARS the whole stash list
+    
+        $ git stash clear                  
             
+<br/>
 
-____
+## TIME TRAVELLING WITH GIT:
 
-#### TIME TRAVELLING WITH GIT:
+ 1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
 
-    1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a
+    DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because HEAD is meant to map a whole branch and not a specific commit
 
-        >> git checkout 604a39a             (DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because HEAD is meant to map a whole branch and not a specific commit)
+        $ git checkout 604a39a             
 
-                OR 
-
-        >> git checkout HEAD~1              (DETACHES HEAD and ATTACHES it to the previous commit)
-
-        >> git switch master                (RE-ATTACHES HEAD and now the head properly maps onto the master branch)
-
-    2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a
-
-        >> git checkout 604a39a             
-
-        >> git switch -c "new branch"       (now the head is perfect where it should have been)
+    OR
     
-    3. TO RESTORE ALL CHANGES TO TRACKED FILES
+    DETACHES HEAD and ATTACHES it to the previous commit
+
+        $ git checkout HEAD~1              
+    
+    RE-ATTACHES HEAD and now the head properly maps onto the master branch
+
+        $ git switch master                
+    
+2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a
+
+        $ git checkout 604a39a             
+    
+    now the head is perfect where it should have been
+
+        $ git switch -c "new branch"       
+    
+3. TO RESTORE ALL CHANGES TO TRACKED FILES
         
-        >> git reset origin/main --hard
+        $ git reset origin/main --hard
 
-    4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT
+   
+ 4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT
 
-        >> git checkout HEAD filename.txt
+        $ git checkout HEAD filename.txt
 
-                    OR           
+    OR           
 
-        >> git restore filename.txt
+        $ git restore filename.txt
 
-    5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
+5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
 
-        >> git restore --source HEAD~1 filename.txt
+        $ git restore --source HEAD~1 filename.txt
 
-    6. UNSTAGE A FILE 
+6. UNSTAGE A FILE 
 
-        >> git restore --unstaged filename.txt 
+        $ git restore --unstaged filename.txt 
 
-    7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT
+7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT
+    
+    **NOTE** : it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is no commit made after commit id 604a39a
 
-        >> git reset 604a39a            (NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is no commit made after commit id 604a39a)
+        $ git reset 604a39a            
 
-        >> git reset --hard 604a39a     (LOOSES the commit as well as LOOSES the contents of the commit)
+    LOOSES the commit as well as LOOSES the contents of the commit
 
-    8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT
+        $ git reset --hard 604a39a     
 
-        >> git revert 604a39a           (REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while                                                    collaboration)
+8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT
+
+    REVERTS the changes in that particular commit and CREATES a new commit after reverting changes 
+
+        $ git revert 604a39a           
+
+    p.s. this helps while collaboration
 
 
-____
+<br/>
 
-#### CREATING GITHUB RESPOSITORIES:
+## CREATING GITHUB RESPOSITORIES:
 
-    1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
+1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
 
-        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
+    **STEP 1** : CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
-        STEP 2:         >> git init                                     (CREATES an empty git repository)
+    **STEP 2** : CREATES an empty git repository    
+    
+        $ git init                                     
 
-        STEP 3:         WRITE YOUR PIECE OF CODE            
+    **STEP 3** : WRITE YOUR PIECE OF CODE            
 
-        STEP 4:         >> git commit -a -m "first commit"              (a commit is needed to push any files to github)
+    **STEP 4** : a commit is needed to push any files to github       
+    
+        $ git commit -a -m "first commit"              
 
-        STEP 5:         >> git remote add origin <copied url>           (CREATES a new REMOTE DESTINATION for the github repository)
+    **STEP 5** : CREATES a new REMOTE DESTINATION for the github repository
+    
+        $ git remote add origin <copied url>           
 
-                        >> git remote -v                                (LOGS out the REMOTE URL if any)
+    LOGS out the REMOTE URL if any
 
-        STEP 6:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and                                                                            master branch as a default so that we can use just >> git push in future) 
-
-    2. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)
-
-        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
-
-        STEP 2:         >> git clone <copied url>                       (CLONES as well as automatically sets the REMOTE DESTINATION)
-
-        STEP 3:         WRITE YOUR PIECE OF CODE
-
-        STEP 4:         >> git commit -a -m "first commit"              (a commit is needed to push any files to github)
-
-        STEP 5:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and                                                                            master branch as a default so that we can use just >> git push in future) 
+        $ git remote -v                                
 
     
-    3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
-
-        STEP 1:         CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
-
-        STEP 2:         >> git remote add origin <copied url>           (CREATES a new REMOTE DESTINATION for the github repository)
-
-                        >> git remote -v                                (LOGS out the REMOTE URL if any)
-
-        STEP 3:         >> git push -u origin branchname                (PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future)
-
-______
-
-#### THE origin/master THEORY:
-
-    origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH
-
-        >> git branch -r                        (LOGS the remote tracking branch)
-
-        >> git checkout origin/master           (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is                                                  ahead of the remote branch and not up to date, push to make it up to date)
-
-
-NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN    >> git branch   THEN TECHNICALLY ALL THE BRANCHES SHOULD HAVE BEEN LOGGED, BUT THIS IS  NOT THE CASE ONLY MASTER BRANCH IS LOGGED, THIS IS BECAUSE BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS:
-
-        >> git branch -r                        (to check all the branches available) 
-
-        >> git switch branchname                (this automatically CONNECTS the two branches and we can freely work on them now)
-
-        >> git branch                           (now this correctly LOGS all the connected branches)
-
-_______
-
-#### FETCHING AND PULLING:
-
-    FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY
-
-        >> git fetch                                                                (To receive the new commits)
+    **STEP 6** :   PUSHES the last commited code to github        
         
-        >> git fetch origin     or      >> git fetch origin branchname              (CREATES a new branch having the changes but this doesnt interfere in the working                                                                                         directory, the origin/master now heads on to this new branch 
-                                                                                       and the master branch would be one branch behind the origin/master)
-                                                                                       
-                                                                                       
-
-        >> git checkout origin/master                                               (to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD,                                                                                      in a case where the local branch is ahead of the remote branch
-                                                                                     and not up to date, push to make it up to date)
-
-_______
-
-#### PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
-
-        >> git pull origin      or      >> git push origin branchname               (PULLS the changes and merges the changes with the branch you want to OR default)
-
-        SOLVE MERGE CONFLICTS IF ANY 
-
-
-_______
-
-#### FORCE PUSH AND PULL:
-
-        >> git push origin <your_branch_name> -f                                          (This will delete your previous commit(s) and push your current one.
-                                                                                           f signifies force )
- 
-        >> git pull --rebase=interactive   or  git pull --rebase=i                        (This is nothing but fetch + rebase. This will invoke rebase in interactive                                                                                               mode where you can choose how to apply each individual commit
-                                                                                          that isn't in the history you are rebasing on.)
- 
-        REFER TIME TRAVELLING WITH GIT for more git force pulling commands
-
-______
-
-#### GITHUB COLLABORATION:
-
-    CENTRALIZED WORKFLOW:                   EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.
-
-    FEATURE BRANCH WORKFLOW:                EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS 
-
-    GITHUB PULL REQUEST WORKFLOW:           Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up                                                   commits before your changes are merged into the base branch.
-
-    GITHUB FORKS AND CLONE WORKFLOW:        Forking nd then opening a pull request to the owner of the main repository.
-
-
-______
-
-#### GIT REBASING:
-
-    REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
-
-        >> git switch newbranch
+        $ git push -u origin branchname                
     
-        >> git rebase master                (REBASES or MERGES master into newbranch)
+    p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just 
+    
+        $ git push 
+        
+    in future.
 
-    CONFLICTS WHILE REBASING
+ 2. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)
 
-        STEP 1:         Resolve the CONFLICTS MANUALLY
+    **STEP 1** : CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
-        STEP 2:         >> git add .
+    **STEP 2** : CLONES as well as automatically sets the REMOTE DESTINATION
+    
+        $ git clone <copied url>                       
 
-        STEP 3:         >> git rebase --continue
+    **STEP 3** : WRITE YOUR PIECE OF CODE
 
-    INTERACTIVE REBASING
+    **STEP 4** : a commit is needed to push any files to github
+    
+        $  git commit -a -m "first commit"              
+        
+    **STEP 5** : PUSHES the last commited code to github
+    
+        $ git push -u origin branchname
+    
+    p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just 
+        
+        $ git push 
+        
+    in future. 
 
-        >> git rebase -i HEAD~n         (OPENS up the code editor where you can play with the nth last commits and above)
+    
+3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
 
-        reword                          (CHANGES the name of a specific commit)
+    **STEP 1** : CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL
 
-        fixup                           (COMBINES the changes of that commit to the previous commit and then deletes it)
+    **STEP 2** :  CREATES a new REMOTE DESTINATION for the github repository
 
-        drop                            (DELETES the commit and the commit changes as if they were never written)
+        $ git remote add origin <copied url>           
+
+    LOGS out the REMOTE URL if any
+
+        $ git remote -v                               
+
+    **STEP 3** : PUSHES the last commited code to github
+    
+        $ git push -u origin branchname                 
+    
+    p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just 
+    
+        $ git push 
+    
+    in future
+
+<br/>
+
+## THE origin/master THEORY:
+
+*origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH*
+
+LOGS the remote tracking branch
+
+    $ git branch -r                        
+    
+to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is                                                  ahead of the remote branch and not up to date, push to make it up to date
+
+    $ git checkout origin/master           
+
+NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN  
+
+    $ git branch
+    
+THEN TECHNICALLY ALL THE BRANCHES SHOULD HAVE BEEN LOGGED, BUT THIS IS  NOT THE CASE ONLY MASTER BRANCH IS LOGGED, THIS IS BECAUSE BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS:
+
+to check all the branches available
+
+    $ git branch -r                        
+
+this automatically CONNECTS the two branches and we can freely work on them now
+
+    $ git switch branchname                
+
+now this correctly LOGS all the connected branches
+
+    $ git branch                           
+
+<br/>
+
+## FETCHING AND PULLING:
+
+*FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY*
+ 
+To receive the new commits
+
+    $ git fetch                                                                
+
+CREATES a new branch having the changes but this doesnt interfere in the working directory, the origin/master now heads on to this new branch and the master branch would be one branch behind the origin/master)
+
+    $ git fetch origin
+
+or      
+
+    $ git fetch origin branchname              
+
+to CHECK out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)         
+
+    $ git checkout origin/master                                               
+
+<br/>
+
+## PULLING INTERFERES IN THE WORKING DIRECTORY (REGULAR PULL = FETCH + MERGE)
+
+PULLS the changes and merges the changes with the branch you want to OR default
+        
+    $ git pull origin      
+    
+or
+
+    $ git push origin branchname               
+
+        
+SOLVE MERGE CONFLICTS IF ANY 
+
+<br/>
+
+## FORCE PUSH AND PULL:
+
+    $ git push origin <your_branch_name> -f                                          
+        
+This will delete your previous commit(s) and push your current one. f signifies force .
+ 
+       
+    $ git pull --rebase=interactive   
+    
+OR
+ 
+    $ git pull --rebase=i                        
+    
+This is nothing but fetch + rebase. This will invoke rebase in interactive mode where you can choose how to apply each individual commit that isn't in the history you are rebasing on.
+ 
+REFER TIME TRAVELLING WITH GIT for more git force pulling commands
+
+<br/>
+
+## GITHUB COLLABORATION:
+    
+**CENTRALIZED WORKFLOW** : EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.
+
+**FEATURE BRANCH WORKFLOW** : EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS 
+
+**GITHUB PULL REQUEST WORKFLOW** : Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+**GITHUB FORKS AND CLONE WORKFLOW** : Forking nd then opening a pull request to the owner of the main repository.
 
 
-_____
-#### GIT TAGS:
+<br/>
 
-    TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
+## GIT REBASING:
+    
+REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
 
-    Semanting Versioning Format is widely used for tags and releases (v1.0.1)
+    $ git switch newbranch
 
-        >> git tag -l                           (LOGS all the tags)
+REBASES or MERGES master into newbranch   
+    
+    $ git rebase master                
 
-        >> git tag -l "v17"                     (LOGS tag name v17)
+CONFLICTS WHILE REBASING
 
-        >> git tag -l "v17*"                    (LOGS tag names that start with v17..)
+**STEP 1** : Resolve the CONFLICTS MANUALLY
 
-        >> git tag -l "*beta*"                  (LOGS tags which include beta in their name)
+**STEP 2** :         
+    
+    $ git add .
 
-        TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT 
+**STEP 3** :        
 
-        >> git diff v16.0.1 v16.1.1             (LOGS the changes between both the versions)
+    $ git rebase --continue
 
-        >> git tag tagname                      (CREATES a lightweight tag)
+ <br/>   
 
-        >> git tag -a tagname                   (CREATES an annotated tag)
+## INTERACTIVE REBASING
 
-        >> git show annotation                  (LOGS the message of the git tag "annotated")
+OPENS up the code editor where you can play with the nth last commits and above
+    
+    $ git rebase -i HEAD~n    
 
-        >> git tag -a tagname 604a39a           (CREATES a tag at commit number 604a39a)
+ CHANGES the name of a specific commit
 
-        >> git tag -d tagname                   (DELETES the tag)
+    reword                         
 
-        >> git push origin tagname              (TR5ANSFERS tags to remote servers)    
+COMBINES the changes of that commit to the previous commit and then deletes it
 
-______
+    fixup                           
 
-#### GITHUB DESKTOP:
+DELETES the commit and the commit changes as if they were never written
 
-    Interact with GitHub using a GUI instead of the command line or a web browser
+    drop                            
 
-    1.Installing and authenticating
+<br/>
 
-        STEP 1: Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).
+## GIT TAGS:
 
-        STEP 2: Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get authentication.
+TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT)
+Semanting Versioning Format is widely used for tags and releases (v1.0.1)
 
-    2.Contributing to projects with GitHub Desktop
+LOGS all the tags
+    
+    $ git tag -l      
 
-        STEP 1: You can create a new repository by selecting the File menu and clicking New repository.
+LOGS tag name v17                     
+    
+    $ git tag -l "v17"                     
 
-        STEP 2: You can add a repository from your local computer by selecting the File menu and clicking Add Local Repository.
+LOGS tag names that start with v17..
 
-        STEP 3: You can clone a repository from GitHub by selecting the File menu and clicking Clone Repository.
+    $ git tag -l "v17*"                    
 
-        STEP 4: You can use GitHub Desktop to create a branch of a project.
+LOGS tags which include beta in their name
 
-        STEP 5: After you make changes to a branch, you can review them in GitHub Desktop and make a commit to keep track of your changes.
+    $ git tag -l "*beta*"                  
 
-        STEP 6: You can use GitHub Desktop to create issues or pull requests to collaborate on projects with other people.
+*TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT*
 
-        STEP 7: When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.    
+LOGS the changes between both the versions
 
-**YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF**
+    $ git diff v16.0.1 v16.1.1             
+
+CREATES a lightweight tag
+
+    $ git tag tagname         
+
+CREATES an annotated tag
+
+    $ git tag -a tagname                   
+
+LOGS the message of the git tag "annotated"
+
+    $ git show annotation                  
+
+CREATES a tag at commit number 604a39a
+
+    $ git tag -a tagname 604a39a           
+
+DELETES the tag
+
+    $ git tag -d tagname                   
+
+TR5ANSFERS tags to remote servers)   
+
+    $ git push origin tagname              
+
+<br/>
+
+## GITHUB DESKTOP:
+
+Interact with GitHub using a GUI instead of the command line or a web browser
+
+1.Installing and authenticating
+
+**STEP 1** : Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).
+
+**STEP 2** : Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get authentication.
+
+2.Contributing to projects with GitHub Desktop
+
+**STEP 1** : You can create a new repository by selecting the File menu and clicking New repository.
+
+**STEP 2**: You can add a repository from your local computer by selecting the File menu and clicking Add Local Repository.
+
+**STEP 3** : You can clone a repository from GitHub by selecting the File menu and clicking Clone Repository.
+
+**STEP 4** : You can use GitHub Desktop to create a branch of a project.
+
+**STEP 5** : After you make changes to a branch, you can review them in GitHub Desktop and make a commit to keep track of your changes.
+
+**STEP 6** : You can use GitHub Desktop to create issues or pull requests to collaborate on projects with other people.
+
+**STEP 7** : When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.    
+
+<br/>
+
+
+***YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF***
