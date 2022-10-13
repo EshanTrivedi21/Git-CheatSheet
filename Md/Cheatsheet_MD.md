@@ -9,9 +9,7 @@
 
 <br/>
 
-
 ## TERMINAL BASICS:
-
 
 It is the LIST command which LISTS all the contents of a Directory
 
@@ -56,7 +54,6 @@ DELETES the directory
 OPENS the File Explorer to the ROOT Directory
 
     $ start .                              
-
 
 <br/>
 
@@ -107,7 +104,6 @@ Use for more details and examples on any of the below (or above) commands e.g. p
 
 ## CREATING A GIT REPOSITORY:
 
-
 **STEP 1** :   INITIALIZES an empty repository
     
     $ git init             
@@ -115,7 +111,6 @@ Use for more details and examples on any of the below (or above) commands e.g. p
 **STEP 2** : to CHECK the status of a repository, a .git directory is created, all git history is deleted if .git is deleted
 
     $ git status           
-
 
 <br/>
 
@@ -148,8 +143,6 @@ OR
 <br/>
 
 ## COMMITING A COMMIT:
-
-*(come on who doesnt know about commits)*
 
 <br/>
 
@@ -187,7 +180,6 @@ LOGS the changes
 **STEP 1** :             create a .gitignore file
 
 **STEP 2** :             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
-
 
 <br/>
 
@@ -236,7 +228,6 @@ TO DELETE A REMOTE BRANCH IN GIT
 **STEP 1** : SWITCH the HEAD first to the first branch         
     
     $ git switch master     
-
 
 **STEP 2** : MERGES newbranch into master with HEAD on master        
     
@@ -486,7 +477,6 @@ to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD
 
     $ git checkout origin/master           
 
-
 NOW IF YOU CLONE A REPOSITORY WITH MULTIPLE BRANCHES AND RUN  
 
     $ git branch
@@ -510,7 +500,6 @@ now this correctly LOGS all the connected branches
 ## FETCHING AND PULLING:
 
 *FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY*
-
  
 To receive the new commits
 
@@ -524,10 +513,9 @@ or
 
     $ git fetch origin branchname              
 
-to check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)         
+to CHECK out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date)         
 
     $ git checkout origin/master                                               
-
 
 <br/>
 
@@ -544,7 +532,6 @@ or
         
 SOLVE MERGE CONFLICTS IF ANY 
 
-
 <br/>
 
 ## FORCE PUSH AND PULL:
@@ -556,7 +543,7 @@ This will delete your previous commit(s) and push your current one. f signifies 
        
     $ git pull --rebase=interactive   
     
-or
+OR
  
     $ git pull --rebase=i                        
     
@@ -674,7 +661,6 @@ TR5ANSFERS tags to remote servers)
 
     $ git push origin tagname              
 
-
 <br/>
 
 ## GITHUB DESKTOP:
@@ -704,5 +690,6 @@ Interact with GitHub using a GUI instead of the command line or a web browser
 **STEP 7** : When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.    
 
 <br/>
+
 
 ***YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF***

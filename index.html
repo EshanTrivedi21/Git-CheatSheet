@@ -949,6 +949,12 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
   </div>
 </body>
 <script>
+  //adding toggle button for light and dark mode 
+    const toggleButton =document.getElementById("toggle-btn");
+    toggleButton.onclick=function(){
+      document.body.classList.toggle("light-theme");
+    }
+
   const copyButton = document.querySelectorAll(".copy-btn");
   copyButton.forEach((btn) => {
     btn.addEventListener("click", () => {
