@@ -6,9 +6,8 @@
 ### You have various way to access and use the Cheatsheet:
 
 + ### [WEBSITE](https://eshantrivedi21.github.io/Git-CheatSheet)
-+ ### [TEXT-FILE](Txt/Cheatsheet_TXT.txt)
-+ ### [MARKDOWN-FILE](Md/Cheatsheet_MD.md ) 
-+ ### [PDF-FILE](Assets/Cheatsheet_MD.pdf)
++ ### [MARKDOWN-FILE](MARKDOWN/Cheatsheet_MD.md ) 
++ ### [PDF-FILE](PDF/Cheatsheet_PDF.pdf)
 
 ---
 
