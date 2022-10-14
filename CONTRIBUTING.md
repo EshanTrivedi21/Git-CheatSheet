@@ -4,13 +4,10 @@
 
 ## Contributions Needed: 
 
-+ ### Converting .txt to a .md markdown file.
-+ ### Converting .md to a .adoc file.
 + ### Contributing to the Website.
++ ### Contributing to current open Issues.
 + ### Adding Important yet Missed out Commands.
-+ ### Creating a PDF from the Text File
-+ ### Adding a download button which download the PDF (Website)
-+ ### Other Contributions are welcomed as well.
++ ### Other Contributions, Issues, Enhancements are welcomed as well.
 
 ---
 
