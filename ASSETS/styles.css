@@ -240,49 +240,69 @@ h4 {
   display: flex;
   align-items: center;
 }
+#footer{
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 100%;
+  max-width: 900px;
+  background: var(--cheatsheet-bg);
+  /* display: flex;
+  flex-direction: column; */
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
 
-.download-button {
+.dwn-btn{
   margin: 10px;
   text-align: center;
+
+}
+.share_container{
+  margin: 10px;
+  text-align: center;
+  display: flex;
+}
+.share_container i{
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
-.download-button button {
-  background-color: black;
+
+
+.dwn-btn button {
+  /* background-color: black; */
+  border: none;
   color: white;
   padding: 12px;
-  border-radius: 10px;
-  border: solid 1px transparent;
-  font-size: medium;
-  transition: scale 1s;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1a1d21, #1f2228);
+  box-shadow:  5px 5px 10px #14161a,
+               -5px -5px 10px #262a30;
+  
 }
 
-.download-button button:hover {
-  background-color: white;
-  color: black;
-  scale: 1.2;
-  font-weight: 600;
+.dwn-btn button:hover {
   cursor: pointer;
-}
-
-.btn1 {
-  margin-left: 30px;
-}
-
-.headings li{
-  margin: 0 0 10px 0;
-}
+  border-radius: 6px;
+  background: #1d2025;
+  box-shadow: inset 5px 5px 10px #14161a,
+              inset -5px -5px 10px #262a30;}
 
 
-.share_container {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+    /* gap: 12px; */
+    /* flex-wrap: wrap; */
+    /* justify-content: end; */
+    /* align-items: center;
     margin-bottom: 24px;
-    margin-top: 24px;
-}
-.share-btn {
+    margin-top: 24px; */
+/* } 
+/* .share-btn {
   display: inline-block;
   color: #ffffff;
   border: none;
@@ -305,13 +325,13 @@ h4 {
 
 .share-btn:active {
   color: #e2e2e2;
-}
+} */ 
 
-.share-btn.twitter     { background: #55acee; }
+/* .share-btn.twitter     { background: #55acee; }
 .share-btn.google-plus { background: #dd4b39; }
 .share-btn.facebook    { background: #3B5998; }
 .share-btn.stumbleupon { background: #EB4823; }
 .share-btn.reddit      { background: #ff5700; }
 .share-btn.hackernews  { background: #ff6600; }
 .share-btn.linkedin    { background: #4875B4; }
-.share-btn.email       { background: #7c7373; }
+.share-btn.email       { background: #7c7373; } */
