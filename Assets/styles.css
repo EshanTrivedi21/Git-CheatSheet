@@ -280,6 +280,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
+    margin-top: 24px;
 }
 .share-btn {
   display: inline-block;
