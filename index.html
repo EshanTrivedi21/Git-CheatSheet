@@ -19,9 +19,14 @@
     <img src="./ASSETS/moon-icon.png" id="icon" class="moon-icon" alt="">
   </label>
   <section class="cheatsheet">
-    
+
     <div id="Top">
-      <a href="#Bottom">Go to Bottom</a>
+
+      <a href="#Bottom">
+        <button class="link_button">
+          Go to Bottom
+        </button>
+      </a>
     </div>
 
     <h1 id="welcome-to-the-git-cheat-sheet">
@@ -37,7 +42,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 <a href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors" target="_blank">
   <img class="img" src="https://contrib.rocks/image?repo=EshanTrivedi21/Git-CheatSheet" />
 </a> </span>
-</code></pre> 
+</code></pre>
     <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
     <ul class="headings">
       <li><a href="#terminal-basics">Terminal Basics</a></li>
@@ -299,64 +304,64 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
               </button>
             </code>
 
-      <h2 id="git-branching">GIT BRANCHING</h2>
-      <p><strong>LOGS all the branches of the Working Repository</strong></p>
-      <code class="language-bash">
+    <h2 id="git-branching">GIT BRANCHING</h2>
+    <p><strong>LOGS all the branches of the Working Repository</strong></p>
+    <code class="language-bash">
         <pre>$ git branch</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch</strong></p>
-      <code class="language-bash">
+    <p><strong>CREATES a new branch</strong></p>
+    <code class="language-bash">
         <pre>$ git branch &lt;new-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD</strong></p>
-      <code class="language-bash">
+    <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD</strong></p>
+    <code class="language-bash">
         <pre>$ git switch &lt;new-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
-      <code class="language-bash">
+    <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
+    <code class="language-bash">
         <pre>$ git switch -c &lt;new-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
-      <code class="language-bash">
+    <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
+    <code class="language-bash">
         <pre>$ git checkout -b &lt;new-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>DELETES newbranch</strong></p>
-      <code class="language-bash">
+    <p><strong>DELETES newbranch</strong></p>
+    <code class="language-bash">
         <pre>$ git branch -D &lt;new-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
-      <code class="language-bash">
+    <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
+    <code class="language-bash">
         <pre>$ git branch -M &lt;final-branch&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
-      <code class="language-bash">
+    <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
+    <code class="language-bash">
         <pre>$ git push --delete &lt;origin branchname&gt;</pre>
         <button class="copy-btn">
           <img src="./ASSETS/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      
+
     <h2 id="git-ignore">GIT IGNORE</h2>
     <p><strong>STEP 1: create a .gitignore file</strong></p>
     <p><strong>STEP 2: add files or folders inside the file to ignore, now the files are are untracked by github and
@@ -952,45 +957,56 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
   </section>
   <section id="footer">
-  <div class="footer-content">
-    <div class="dwn-btn">
-      <a href="./PDF/Cheatsheet_PDF.pdf" download><button>Download pdf <i class="fa-solid fa-download"></i></button></a>
+    <div class="footer-content">
+      <div class="dwn-btn">
+        <a href="./PDF/Cheatsheet_PDF.pdf" download><button>Download pdf <i
+              class="fa-solid fa-download"></i></button></a>
+      </div>
+      <div class="share_container">
+        <a href="https://twitter.com/share?url=https://eshantrivedi21.github.io/Git-CheatSheet/&text=GitcheatSheet&via=jagathish1123"
+          class="share-btn twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://eshantrivedi21.github.io/Git-CheatSheet/"
+          class="share-btn facebook">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://reddit.com/submit?url=https://eshantrivedi21.github.io/Git-CheatSheet/&title=GitcheatSheet"
+          class="share-btn reddit">
+          <i class="fa-brands fa-reddit"></i>
+        </a>
+        <a href="https://news.ycombinator.com/submitlink?u=https://eshantrivedi21.github.io/Git-CheatSheet&t=GitcheatSheet"
+          class="share-btn hackernews">
+          <i class="fa-brands fa-hacker-news"></i>
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?url=https://eshantrivedi21.github.io/Git-CheatSheet&title=GitcheatSheet&summary=GitcheatSheet"
+          class="share-btn linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:?subject=Sharing-git-cheatsheet&body=Welcome-to-gitcheatsheet" class="share-btn email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
     </div>
-    <div class="share_container">
-      <a href="https://twitter.com/share?url=https://eshantrivedi21.github.io/Git-CheatSheet/&text=GitcheatSheet&via=jagathish1123" class="share-btn twitter">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://eshantrivedi21.github.io/Git-CheatSheet/" class="share-btn facebook">
-        <i class="fa-brands fa-square-facebook"></i>
-      </a>
-      <a href="https://reddit.com/submit?url=https://eshantrivedi21.github.io/Git-CheatSheet/&title=GitcheatSheet" class="share-btn reddit">
-        <i class="fa-brands fa-reddit"></i>
-      </a>
-      <a href="https://news.ycombinator.com/submitlink?u=https://eshantrivedi21.github.io/Git-CheatSheet&t=GitcheatSheet" class="share-btn hackernews">
-        <i class="fa-brands fa-hacker-news"></i>
-      </a>
-      <a href="https://www.linkedin.com/shareArticle?url=https://eshantrivedi21.github.io/Git-CheatSheet&title=GitcheatSheet&summary=GitcheatSheet" class="share-btn linkedin">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="mailto:?subject=Sharing-git-cheatsheet&body=Welcome-to-gitcheatsheet" class="share-btn email">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-  </div>
     </div>
-  </div>
-  
-  <div id="Bottom">
-       <a href="#Top">Go back to Top</a>
-  </div>
-  
-</section>
+
+    <div id="Bottom">
+      <a href="#Top">
+        <button class="link_button">
+
+          Go back to Top
+        </button>
+      </a>
+    </div>
+
+  </section>
 </body>
 <script>
   //adding toggle button for light and dark mode 
-    const toggleButton =document.getElementById("toggle-btn");
-    toggleButton.onclick=function(){
-      document.body.classList.toggle("light-theme");
-    }
+  const toggleButton = document.getElementById("toggle-btn");
+  toggleButton.onclick = function () {
+    document.body.classList.toggle("light-theme");
+  }
 
   const copyButton = document.querySelectorAll(".copy-btn");
   copyButton.forEach((btn) => {
@@ -998,11 +1014,11 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       var code = btn.previousElementSibling.innerText;
       code = code.slice(2, code.length);
       navigator.clipboard.writeText(code);
-//    Adding Alert When text is copied and removing after 800ms
+      //    Adding Alert When text is copied and removing after 800ms
       btn.classList.add("copied")
-      setTimeout(function(){
+      setTimeout(function () {
         btn.classList.remove("copied")
-      } ,800)
+      }, 800)
     });
   });
 </script>
