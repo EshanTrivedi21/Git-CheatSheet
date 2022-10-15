@@ -79,7 +79,16 @@ git push -u origin <your_branch_name>
 ### `STEP 14` : Click on `Create Pull Request`.
 
 
-### `STEP 15` : Voila! You have made a PR to the Git-CheatSheet. Sit back patiently and relax while your PR is reviewed
+### Voila! You have made a PR to the Git-CheatSheet. Sit back patiently and relax while your PR is reviewed
+
+---
+
+## Points to remember: 
+
++ ### Anyone who is sending a Pull Request make sure that you Refactor your code. 
++ ### Properly Organize the things that you add or delete and mention them in you commits description
++ ### We will carry out this task after every Major Update has been done 
++ ### But just stating this here so that people from now on make sure to properly organize those big chunks of codes.
 
 ---
 
