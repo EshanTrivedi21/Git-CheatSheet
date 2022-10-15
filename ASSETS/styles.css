@@ -1,13 +1,13 @@
-#icon{
+#icon {
   width: 30px;
   cursor: pointer;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
 
-label{
+label {
   display: flex;
   width: fit-content;
   position: sticky;
@@ -23,10 +23,10 @@ label{
   cursor: pointer;
   transition-duration: 200ms;
   /* User select to none just because there appears a binking cursor near the icon when clicked on it. Now it doesn't allow the user to selec that icon and only click*/
-  user-select: none; 
+  user-select: none;
 }
 
-.sun-icon{
+.sun-icon {
   font-size: 20px;
   transform: translateX(25px);
   transition: 1s;
@@ -36,47 +36,50 @@ label:hover {
   box-shadow: 0px 0px 50px var(--pre-color);
 }
 
-.moon-icon{
+.moon-icon {
   font-size: 20px;
   transform: translateX(25px);
   transition: 1s;
   opacity: 0;
 }
-#toggle-btn:checked ~ label > .sun-icon{
+
+#toggle-btn:checked~label>.sun-icon {
   opacity: 0;
   transform: translateX(0px);
 }
-#toggle-btn:checked ~ label > .moon-icon{
+
+#toggle-btn:checked~label>.moon-icon {
   opacity: 1;
   transform: translateX(-25px);
 }
 
-:root{
-  --body-bg-color:#30363d;
-  --body-color:rgb(182, 182, 182);
-  --cheatsheet-bg:rgba(0, 0, 0, 0.4);
-  --pre-bg-color:rgba(0, 0, 0, 0.8);
-  --pre-color:rgb(192, 192, 192);
-  --pre-box-shadow:rgba(255, 255, 255, 0.1);
-  --copy-btn-border:#9a9a9aef;
-  --copy-bg-color:rgb(62, 62, 62);
-  --copy-btn-hover-bg:#6f6f6fef;
-  --copy-btn-active:#1b1b1b;
-  --a-color:white;
+:root {
+  --body-bg-color: #30363d;
+  --body-color: rgb(182, 182, 182);
+  --cheatsheet-bg: rgba(0, 0, 0, 0.4);
+  --pre-bg-color: rgba(0, 0, 0, 0.8);
+  --pre-color: rgb(192, 192, 192);
+  --pre-box-shadow: rgba(255, 255, 255, 0.1);
+  --copy-btn-border: #9a9a9aef;
+  --copy-bg-color: rgb(62, 62, 62);
+  --copy-btn-hover-bg: #6f6f6fef;
+  --copy-btn-active: #1b1b1b;
+  --a-color: white;
 
 }
-.light-theme{
-  --body-bg-color:#dee4e7;
-  --body-color:black;
-  --cheatsheet-bg:white;
-  --pre-bg-color:#edf4f5;
-  --pre-color:#717474;
-  --pre-box-shadow:rgba(255, 255, 255, 0.1);
-  --copy-btn-border:black;
-  --copy-bg-color:black;
-  --copy-btn-hover-bg:gray;
-  --copy-btn-active:#1b1b1b;
-  --a-color:#90a4ae;
+
+.light-theme {
+  --body-bg-color: #dee4e7;
+  --body-color: black;
+  --cheatsheet-bg: white;
+  --pre-bg-color: #edf4f5;
+  --pre-color: #717474;
+  --pre-box-shadow: rgba(255, 255, 255, 0.1);
+  --copy-btn-border: black;
+  --copy-bg-color: black;
+  --copy-btn-hover-bg: gray;
+  --copy-btn-active: #1b1b1b;
+  --a-color: #90a4ae;
 
 }
 
@@ -90,7 +93,7 @@ body {
   background-position: center center;
   background-size: contain;
   background-attachment: fixed;
-  color:var(--body-color);
+  color: var(--body-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -105,6 +108,7 @@ section {
   background-color: var(--pre-bg-color);
   margin-top: 50px;
 }
+
 #Top {
   text-align: right;
   font-size: 12.5px;
@@ -216,8 +220,7 @@ a:hover {
   }
 }
 
-.topics
-{
+.topics {
   text-align: left !important;
   margin-left: 20px !important;
 }
@@ -255,7 +258,8 @@ h4 {
   display: flex;
   align-items: center;
 }
-#footer{
+
+#footer {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -266,22 +270,41 @@ h4 {
   /* display: flex;
   flex-direction: column; */
 }
-.footer-content{
+
+.footer-content {
   display: flex;
   justify-content: space-between;
 }
 
-.dwn-btn{
+.link_button {
+  background-color: var(--copy-btn-border);
+  color: white;
+  font-size: 12px;
+  font-family: monospace, sans-serif;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+}
+
+.link_button:hover {
+
+  transition: transform .1s;
+  transform: scale(1.05);
+}
+
+.dwn-btn {
   margin: 10px;
   text-align: center;
 
 }
-.share_container{
+
+.share_container {
   margin: 10px;
   text-align: center;
   display: flex;
 }
-.share_container i{
+
+.share_container i {
   padding-left: 10px;
   margin-top: 10px;
   font-size: 1.2rem;
@@ -296,9 +319,9 @@ h4 {
   padding: 12px;
   border-radius: 6px;
   background: linear-gradient(145deg, #1a1d21, #1f2228);
-  box-shadow:  5px 5px 10px #14161a,
-               -5px -5px 10px #262a30;
-  
+  box-shadow: 5px 5px 10px #14161a,
+    -5px -5px 10px #262a30;
+
 }
 
 .dwn-btn button:hover {
@@ -306,14 +329,15 @@ h4 {
   border-radius: 6px;
   background: #1d2025;
   box-shadow: inset 5px 5px 10px #14161a,
-              inset -5px -5px 10px #262a30;}
+    inset -5px -5px 10px #262a30;
+}
 
 
 
-    /* gap: 12px; */
-    /* flex-wrap: wrap; */
-    /* justify-content: end; */
-    /* align-items: center;
+/* gap: 12px; */
+/* flex-wrap: wrap; */
+/* justify-content: end; */
+/* align-items: center;
     margin-bottom: 24px;
     margin-top: 24px; */
 /* } 
@@ -340,7 +364,7 @@ h4 {
 
 .share-btn:active {
   color: #e2e2e2;
-} */ 
+} */
 
 /* .share-btn.twitter     { background: #55acee; }
 .share-btn.google-plus { background: #dd4b39; }
