@@ -694,5 +694,14 @@ Interact with GitHub using a GUI instead of the command line or a web browser
 
 <br/>
 
+## Extensions for Github
+
+if you're a Developer and you use Github as your Version Control Tools, there's likely some functionality you wish it had. To help with these there are some best extension that you can use for Github.
+
+1. **Octotree**
+    This is a feature-rich extensions that enhance your Github experience. It facilitates you with code tree to all the github repositories, which simplifies your file search and navigation. (though now this is by default provided by Github)
+
+    It also offers you bookmarking repositories, files and PRs. It increase your productivity at work by lazy-loading and caching. Besides these there are too
+
 
 ***YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF***
