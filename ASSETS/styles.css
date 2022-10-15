@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+  width: 20px;
+  border: 5px solid ;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: rgb(32, 39, 39);
+  height:50 px;
+  width: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 217, 207);
+  height: 100px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: black;
+}
 #icon {
   width: 30px;
   cursor: pointer;
