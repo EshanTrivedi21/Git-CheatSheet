@@ -277,14 +277,19 @@ h4 {
 }
 
 .link_button {
-  background-color: var(--body-bg-color);
-  color: var(--a-color);
+  background-color: var(--copy-btn-border);
+  color: white;
   font-size: 12px;
   font-family: monospace, sans-serif;
-  background-color: var(--pre-bg-color);
   padding: 10px;
   border-radius: 6px;
   box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+}
+
+.link_button:hover {
+
+  transition: transform .1s;
+  transform: scale(1.05);
 }
 
 .dwn-btn {
