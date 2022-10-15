@@ -205,6 +205,7 @@ pre::-webkit-scrollbar-thumb {
   margin: 15px;
   overflow-x: auto;
   box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+  
 }
 
 p {
@@ -216,6 +217,7 @@ a {
   text-decoration: none;
   color: var(--a-color);
   transition: all 0.3s;
+  text-transform: capitalize;
 }
 
 a:hover {
