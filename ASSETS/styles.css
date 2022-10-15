@@ -98,6 +98,21 @@ section {
   border-radius: 10px;
 }
 
+#Bottom {
+  text-align: center;
+  font-size: 14.5px;
+  padding: 20px;
+  background-color: var(--pre-bg-color);
+  margin-top: 50px;
+}
+#Top {
+  text-align: right;
+  font-size: 12.5px;
+  padding: 15px;
+  background-color: var(--pre-bg-color);
+  margin-bottom: 60px;
+}
+
 .cheatsheet {
   margin: 0 auto;
   padding: 5px;
