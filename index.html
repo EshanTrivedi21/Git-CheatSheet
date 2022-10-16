@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+    <title>Git-CheatSheet</title>
+    <link rel="stylesheet" href="./Assets/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
-  <title>Git-CheatSheet</title>
-  <link rel="stylesheet" href="./Assets/styles.css" />
-</head>
+  <body>
+    <input type="checkbox" id="toggle-btn" />
+    <div class="top__container">
+      <label for="toggle-btn">
+        <img src="./Assets/sun-icon.png" id="icon" class="sun-icon" alt="" />
+        <img src="./Assets/moon-icon.png" id="icon" class="moon-icon" alt="" />
+      </label>
 
-<body>
-  <input type="checkbox" id="toggle-btn">
-  <label for="toggle-btn">
-    <img src="./Assets/sun-icon.png" id="icon" class="sun-icon" alt="">
-    <img src="./Assets/moon-icon.png" id="icon" class="moon-icon" alt="">
-  </label>
-  <section class="cheatsheet">
-    <h1 id="welcome-to-the-git-cheat-sheet">
-      WELCOME TO THE GIT CHEAT SHEET
-    </h1>
-    <br />
-    <pre><code>TOPIC:          GIT-GITHUB CHEATSHEET <br>
+      <div class="search__input">
+        <input id="search"  placeholder="Search" type="text" onkeyup="searchCommand()"/>
+        <img src="./Assets/search-icon.png" id="icon" class="search-icon" alt="" />
+
+      </div>
+    </div>
+
+    <section class="cheatsheet">
+      <h1 id="welcome-to-the-git-cheat-sheet">
+        WELCOME TO THE GIT CHEAT SHEET
+      </h1>
+      <br />
+      <pre><code>TOPIC:          GIT-GITHUB CHEATSHEET <br>
 DESCRIPTION:    Your very own Git and Github Cheatsheet! <br>
 REFERENCE:      Git-Github Bootcamp (Colt Steele) - Udemy <br>
 AUTHORs:        <a href="https://github.com/EshanTrivedi21" target="_blank">EshanTrivedi21</a>, <a href="https://github.com/VinayKanase" target="_blank">VinayKanase</a> and <a href="https://github.com/Aryan-Parmar" target="_blank">Aryan-Parmar</a> <br>
@@ -30,944 +38,1680 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 <a href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors" target="_blank">
   <img class="img" src="https://contrib.rocks/image?repo=EshanTrivedi21/Git-CheatSheet" />
 </a> </span>
-</code></pre> 
-    <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
-    <ul class="headings">
-      <li><a href="#terminal-basics">Terminal Basics</a></li>
-      <li><a href="#setting-git-user-name-and-email">SETTING GIT USER NAME AND EMAIL</a></li>
-      <li><a href="#getting-git-help">GETTING GIT HELP</a></li>
-      <li><a href="#creating-a-git-repository">CREATING A GIT REPOSITORY</a></li>
-      <li><a href="#staging-filefiles-of-the-repository">STAGING FILE/FILES OF THE REPOSITORY</a></li>
-      <li><a href="#commiting-a-commit">COMMITING A COMMIT</a></li>
-      <li><a href="#git-ignore">GIT IGNORE</a></li>
-      <li><a href="#merging-branches">GIT BRANCHING</a></li>
-      <li><a href="#stashing-git">STASHING IN GIT</a></li>
-      <li><a href="#time-travelling-git">TIME TRAVELLING WITH GIT</a></li>
-      <li><a href="#creating-github-repository">CREATING GITHUB RESPOSITORIES</a></li>
-      <li><a href="#origin-master-theory">THE origin/master THEORY</a></li>
-      <li><a href="#pulling-interferes">PULLING INTERFERES IN THE WORKING DIRECTORY</a></li>
-      <li><a href="#git-rebasing">GIT REBASING</a></li>
-      <li><a href="#git-tags">GIT TAGS</a></li>
-      <li><a href="#github-desktop">GITHUB DESKTOP</a></li>
-      <li><a href="#download-pdf">Download Git-Github Cheatsheet</a></li>
-    </ul>
-    <h2 id="terminal-basics">TERMINAL BASICS</h2>
-    <p><strong>It is the LIST command which LISTS all the contents of a Directory</strong></p>
-    <code class="language-bash">
-              <pre>$ ls</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
-    <code class="language-bash">
-              <pre>$ ls foldername</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>PRINT WORKING DIRECTORY</strong></p>
-    <code class="language-bash">
-              <pre>$ pwd</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p>
-      <strong>CHANGES and HOPS onto the respective Working Directory</strong>
-    </p>
-    <code class="language-bash">
-              <pre>$ cd C:\User\username\foldername</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>HOPS onto Parent Directory of the Working Directory</strong></p>
-    <code class="language-bash">
-              <pre>$ cd ..</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CLEARS the used Terminal</strong></p>
-    <code class="language-bash">
-              <pre>$ clear</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>QUITS out of a entered command</strong></p>
-    <code class="language-bash">
-              <pre>$ q</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p>
-      <strong>CREATES an Empty directory inside the Working Directory</strong>
-    </p>
-    <code class="language-bash">
-              <pre>$ mkdir foldername</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES the file</strong></p>
-    <code class="language-bash">
-              <pre>$ rm filename</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES the directory</strong></p>
-    <code class="language-bash">
-              <pre>$ rm -rf foldername</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
-    <code class="language-bash">
-              <pre>$ start .</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+</code></pre>
+      <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
+      <ul class="headings">
+        <li><a href="#terminal-basics">Terminal Basics</a></li>
+        <li>
+          <a href="#setting-git-user-name-and-email"
+            >SETTING GIT USER NAME AND EMAIL</a
+          >
+        </li>
+        <li><a href="#getting-git-help">GETTING GIT HELP</a></li>
+        <li>
+          <a href="#creating-a-git-repository">CREATING A GIT REPOSITORY</a>
+        </li>
+        <li>
+          <a href="#staging-filefiles-of-the-repository"
+            >STAGING FILE/FILES OF THE REPOSITORY</a
+          >
+        </li>
+        <li><a href="#commiting-a-commit">COMMITING A COMMIT</a></li>
+        <li><a href="#git-ignore">GIT IGNORE</a></li>
+        <li><a href="#merging-branches">GIT BRANCHING</a></li>
+        <li><a href="#stashing-git">STASHING IN GIT</a></li>
+        <li><a href="#time-travelling-git">TIME TRAVELLING WITH GIT</a></li>
+        <li>
+          <a href="#creating-github-repository"
+            >CREATING GITHUB RESPOSITORIES</a
+          >
+        </li>
+        <li><a href="#origin-master-theory">THE origin/master THEORY</a></li>
+        <li>
+          <a href="#pulling-interferes"
+            >PULLING INTERFERES IN THE WORKING DIRECTORY</a
+          >
+        </li>
+        <li><a href="#git-rebasing">GIT REBASING</a></li>
+        <li><a href="#git-tags">GIT TAGS</a></li>
+        <li><a href="#github-desktop">GITHUB DESKTOP</a></li>
+        <li><a href="#download-pdf">Download Git-Github Cheatsheet</a></li>
+      </ul>
+      <h2 id="terminal-basics" class="searchTerm">TERMINAL BASICS</h2>
+      <div class="searchTerm">
 
-    <h2 id="setting-git-user-name-and-email">SETTING GIT USER NAME AND EMAIL</h2>
-    <p><strong>To CHECK if git User-Name is set</strong></p>
-    <code class="language-bash">
-              <pre>$ git config user.name</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To CHECK if git User-Email is set</strong></p>
-    <code class="language-bash">
-              <pre>$ git config user.email</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To SET or CHANGE git User-Name</strong></p>
-    <code class="language-bash">
-              <pre>$ git config --global user.name "Name Lastname"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To SET or CHANGE git User-Email</strong></p>
-    <code class="language-bash">
-              <pre>$ git config --global user.email "email"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To SET or CHANGE default code editor as VSCode</strong></p>
-    <code class="language-bash">
-              <pre>$ git config --global core.editor "code --wait"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To CHANGE git User-Name and git User-Email directly in the config file using vim</strong></p>
-    <code class="language-bash">
-              <pre>$ git config --global --edit</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p>
-      <strong>To Store git User-Name and git User-Email in disk</strong>
-    </p>
-    <code class="language-bash">
-              <pre>$ git config credential.helper store</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To exit vim</strong></p>
-    <code class="language-bash">
-              <pre>$ escape key + :wq</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+        <p>
+          <strong
+            >It is the LIST command which LISTS all the contents of a
+            Directory</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ ls</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
 
-    <h2 id="getting-git-help">GETTING GIT HELP</h2>
-    <p><strong>Use for more details and examples on any of the below (or above) commands</strong></p>
-    <code class="language-bash">
-              <pre>$ git command --help</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      </div>
 
-    <h2 id="creating-a-git-repository">CREATING A GIT REPOSITORY</h2>
-    <p><strong>STEP 1: INITIALIZES an empty repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git init</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 2: to CHECK the status of a repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git status</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      <div class="searchTerm">
+        <p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
+      <code class="language-bash">
+        <pre>$ ls foldername</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
 
-    <h2 id="staging-filefiles-of-the-repository">STAGING FILE/FILES OF THE REPOSITORY</h2>
-    <p><strong>STAGES the file</strong></p>
-    <code class="language-bash">
-              <pre>$ git add filename.txt</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>UN-STAGES the file</strong></p>
-    <code class="language-bash">
-              <pre>$ git rm --cached filename.txt</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STAGES all files in the repository</strong></p>
-    <code class="language-bash">
-              <pre>
-      $ git add --all
-          OR
-      $ git all .
-          OR
-      $ git add .
-              </pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      </div>
+      
+     <div class="searchTerm">
 
-    <h2 id="commiting-a-commit">COMMITING A COMMIT</h2>
-    <p><strong>COMMITS the STAGED files with a commit message</strong></p>
-    <code class="language-bash">
-              <pre>$ git commit -m &quot;commit message&quot;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
-    <code class="language-bash">
-              <pre>$ git commit -a -m &quot;commit message&quot;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS all the commits done to the repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git log</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOG commits in a single line</strong></p>
-    <code class="language-bash">
-              <pre>$ git log --oneline</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>AMMENDS the previous commit</strong></p>
-    <code class="language-bash">
-              <pre>$ git commit --ammend</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS the changes</strong></p>
-    <code class="language-bash">
-              <pre>$ git diff</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      <p><strong>PRINT WORKING DIRECTORY</strong></p>
+      <code class="language-bash">
+        <pre>$ pwd</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
 
-      <h2 id="git-branching">GIT BRANCHING</h2>
-      <p><strong>LOGS all the branches of the Working Repository</strong></p>
+     </div>
+
+     <div class="searchTerm">
+
+      <p>
+        <strong>CHANGES and HOPS onto the respective Working Directory</strong>
+      </p>
+      <code class="language-bash">
+        <pre>$ cd C:\User\username\foldername</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+     </div>
+     
+       <div class="searchTerm">
+
+        <p>
+          <strong>HOPS onto Parent Directory of the Working Directory</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ cd ..</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+       </div>
+
+       <div class="searchTerm">
+
+        <p><strong>CLEARS the used Terminal</strong></p>
+        <code class="language-bash">
+          <pre>$ clear</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+       </div>
+
+       <div class="searchTerm">
+
+        <p><strong>QUITS out of a entered command</strong></p>
+        <code class="language-bash">
+          <pre>$ q</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+       </div>
+     
+     
+      <div class="searchTerm">
+
+        <p>
+          <strong>CREATES an Empty directory inside the Working Directory</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ mkdir foldername</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+     
+      <div class="searchTerm">
+
+        <p><strong>DELETES the file</strong></p>
+        <code class="language-bash">
+          <pre>$ rm filename</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+
+      <div class="searchTerm">
+
+        <p><strong>DELETES the directory</strong></p>
+      <code class="language-bash">
+        <pre>$ rm -rf foldername</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+      </div>
+
+      <div class="searchTerm">
+
+        <p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
+      <code class="language-bash">
+        <pre>$ start .</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+      </div>
+     
+      <div class="searchTerm">
+
+      </div>
+      
+
+      <h2 id="setting-git-user-name-and-email" class="searchTerm">
+        SETTING GIT USER NAME AND EMAIL
+      </h2>
+
+      <div class="searchTerm">
+
+        <p><strong>To CHECK if git User-Name is set</strong></p>
+      <code class="language-bash">
+        <pre>$ git config user.name</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+      </div>
+
+      <div class="searchTerm">
+        <p><strong>To CHECK if git User-Email is set</strong></p>
+        <code class="language-bash">
+          <pre>$ git config user.email</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+      
+      <div class="searchTerm">
+
+        <p><strong>To SET or CHANGE git User-Name</strong></p>
+        <code class="language-bash">
+          <pre>$ git config --global user.name "Name Lastname"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+      
+      <div class="searchTerm">
+        <p><strong>To SET or CHANGE git User-Email</strong></p>
+        <code class="language-bash">
+          <pre>$ git config --global user.email "email"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+      
+      <div class="searchTerm">
+        <p><strong>To SET or CHANGE default code editor as VSCode</strong></p>
+        <code class="language-bash">
+          <pre>$ git config --global core.editor "code --wait"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+     <div class="searchTerm">
+
+      <p>
+        <strong
+          >To CHANGE git User-Name and git User-Email directly in the config
+          file using vim</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git config --global --edit</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+     </div>
+      
+     <div class="searchTerm">
+      <p>
+        <strong>To Store git User-Name and git User-Email in disk</strong>
+      </p>
+      <code class="language-bash">
+        <pre>$ git config credential.helper store</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+     </div>
+      
+     <div class="searchTerm">
+
+      <p><strong>To exit vim</strong></p>
+      <code class="language-bash">
+        <pre>$ escape key + :wq</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+
+     </div>
+      
+      <h2 id="getting-git-help" class="searchTerm">GETTING GIT HELP</h2>
+
+      <div class="searchTerm">
+        <p>
+          <strong
+            >Use for more details and examples on any of the below (or above)
+            commands</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git command --help</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+     
+
+      <h2 id="creating-a-git-repository" class="searchTerm">CREATING A GIT REPOSITORY</h2>
+      <div class="searchTerm">
+        <p><strong>STEP 1: INITIALIZES an empty repository</strong></p>
+        <code class="language-bash">
+          <pre>$ git init</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>STEP 2: to CHECK the status of a repository</strong></p>
+        <code class="language-bash">
+          <pre>$ git status</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+      <h2 class="searchTerm" id="staging-filefiles-of-the-repository">
+        STAGING FILE/FILES OF THE REPOSITORY
+      </h2>
+      <div class="searchTerm">
+        <p><strong>STAGES the file</strong></p>
+        <code class="language-bash">
+          <pre>$ git add filename.txt</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>UN-STAGES the file</strong></p>
+        <code class="language-bash">
+          <pre>$ git rm --cached filename.txt</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>STAGES all files in the repository</strong></p>
+        <code class="language-bash">
+          <pre>
+        $ git add --all
+            OR
+        $ git all .
+            OR
+        $ git add .
+                </pre
+          >
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+      <h2 class="searchTerm" id="commiting-a-commit">COMMITING A COMMIT</h2>
+      <div class="searchTerm">
+        <p><strong>COMMITS the STAGED files with a commit message</strong></p>
+        <code class="language-bash">
+          <pre>$ git commit -m &quot;commit message&quot;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+
+      <div class="searchTerm">
+        <p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
+        <code class="language-bash">
+          <pre>$ git commit -a -m &quot;commit message&quot;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+       <div class="searchTerm">
+
+        <p><strong>LOGS all the commits done to the repository</strong></p>
+        <code class="language-bash">
+          <pre>$ git log</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOG commits in a single line</strong></p>
+        <code class="language-bash">
+          <pre>$ git log --oneline</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+
+        
+     
+      <p><strong>AMMENDS the previous commit</strong></p>
+      <code class="language-bash">
+        <pre>$ git commit --ammend</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS the changes</strong></p>
+        <code class="language-bash">
+          <pre>$ git diff</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+  
+        
+      </div>
+
+      <h2 class="searchTerm" id="git-branching">GIT BRANCHING</h2>
+
+
+      <div class="searchTerm">
+        <p><strong>LOGS all the branches of the Working Repository</strong></p>
       <code class="language-bash">
         <pre>$ git branch</pre>
         <button class="copy-btn">
           <img src="./Assets/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch</strong></p>
+      </div>  
+      <div class="searchTerm">
+        <p><strong>CREATES a new branch</strong></p>
+        <code class="language-bash">
+          <pre>$ git branch &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >SWITCHES the Branch from one to another or CHANGING HEAD</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git switch &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong>CREATES a new branch and then SWITCHES to the branches</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git switch -c &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong>CREATES a new branch and then SWITCHES to the branch</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git checkout -b &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>DELETES newbranch</strong></p>
+        <code class="language-bash">
+          <pre>$ git branch -D &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
+        <code class="language-bash">
+          <pre>$ git branch -M &lt;final-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
+        <code class="language-bash">
+          <pre>$ git push --delete &lt;origin branchname&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+  
+      </div>
+
+      <h2 class="searchTerm" id="git-ignore">GIT IGNORE</h2>
+      <div class="searchTerm">
+        <p><strong>STEP 1: create a .gitignore file</strong></p>
+        <p>
+          <strong
+            >STEP 2: add files or folders inside the file to ignore, now the files
+            are are untracked by github and wont be staged or commited</strong
+          >
+        </p>
+      </div>
+      <h2 class="searchTerm" id="merging-branches">MERGING BRANCHES</h2>
+      <h3 class="searchTerm">FAST FORWARD MERGE</h3>
+      <div class="searchTerm">
+        <p><strong>STEP 1: SWITCH the HEAD first to the first branch</strong></p>
+        <code class="language-bash">
+          <pre>$ git switch master</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >STEP 2: MERGES newbranch into master with HEAD on master</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git merge &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+      <h3 class="searchTerm">NOT ALL MERGES ARE FAST FORWARD MERGES</h3>
+      <h4 class="searchTerm">WITH OUT MERGE CONFLICTS</h4>
+      <div class="searchTerm">
+        <code class="language-bash">
+          <pre>$ git switch master</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>CREATES a new commit unlike fastforwarding merges</strong></p>
+        <code class="language-bash">
+          <pre>$ git merge -m "mergering message"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+      <h4 class="searchTerm">MERGE CONFLICTS</h4>
+      <div class="searchTerm">
+
+      </div>
+      <div class="searchTerm">
+        <p><strong>STEP 1: OPEN UP files having merge conflicts</strong></p>
+        <p><strong>STEP 2: REMOVE the conflicts</strong></p>
+        <p>
+          <strong>&nbsp;&nbsp;&nbsp;OPTION 1: ACCEPT INCOMING CHANGES</strong>
+        </p>
+        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 2: ACCEPT CURRENT CHANGES</strong></p>
+        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 3: ACCEPT BOTH CHANGES</strong></p>
+        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 4: COMPARE CHANGES</strong></p>
+        <p><strong>STEP 3: REMOVE the conflict markers</strong></p>
+        <p><strong>STEP 4: STAGE and COMMIT the changes</strong></p>
+        <h4>ABORT MERGE WHEN UNRESOLVABLE CONFLICTS OCCURRED</h4>
+        <code class="language-bash">
+          <pre>$ git merge --abort</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+  
+        <h2 id="stashing-git">STASHING IN GIT</h2>
+        <h3>1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH</h3>
+        <h3>2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS</h3>
+      </div>
+      <div class="searchTerm">
+        <p><strong>STASHES the changes</strong></p>
+        <code class="language-bash">
+          <pre>$ git stash</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >UN STASHES the changes, use it when you resume your work</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git stash pop</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong>APPLY stashed changes into another or the same branch</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git stash apply</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <h4>IF WORKING WITH MULTIPLE STASHES</h4>
+      <p><strong>LOGS all the stashes</strong></p>
       <code class="language-bash">
-        <pre>$ git branch &lt;new-branch&gt;</pre>
+        <pre>$ git stash list</pre>
         <button class="copy-btn">
           <img src="./Assets/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD</strong></p>
+      </div>
+      <div class="searchTerm">
+        <p><strong>STASHES the changes in the Stash index 1</strong></p>
+        <code class="language-bash">
+          <pre>$ git stash apply stash@{1}</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+
+
+      <div class="searchTerm">
+
+        <p>
+          <strong
+            >DELETES the stash, p.s. applying the stash doesnt delete it</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git stash drop stash@{1}</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+
+      <div class="searchTerm">
+
+        <p><strong>CLEARS the whole stash list</strong></p>
+        <code class="language-bash">
+          <pre>$ git stash clear</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+
+      <h2 class="searchTerm" id="time-travelling-git">TIME TRAVELLING WITH GIT</h2>
+      <div class="searchTerm">
+
+        <h3>
+          1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID
+          604a39a
+        </h3>
+        <p>
+          <strong
+            >DETACHES HEAD and attaches it to the commit with the commit id
+            604a39a, this is not normal because HEAD is meant to map a whole
+            branch and not a specific commit</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git checkout 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+
+        <p>
+          <strong>DETACHES HEAD and ATTACHES it to the previous commit</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git checkout HEAD~1</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >RE-ATTACHES HEAD and now the head properly maps onto the master
+            branch</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git switch master</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <h3>2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a</h3>
+        <code class="language-bash">
+          <pre>$ git checkout 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p><strong>now the head is perfect where it should have been</strong></p>
+        <code class="language-bash">
+          <pre>$ git switch -c &lt;new-branch&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+         
+      <h3>3. TO RESTORE ALL CHANGES TO TRACKED FILES</h3>
       <code class="language-bash">
-        <pre>$ git switch &lt;new-branch&gt;</pre>
+        <pre>$ git reset origin/main --hard</pre>
         <button class="copy-btn">
           <img src="./Assets/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
+        
+      </div>
+      <div class="searchTerm">
+        <h3>4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT</h3>
+        <code class="language-bash">
+          <pre>
+        $ git checkout HEAD filename.txt 
+            OR 
+        $ git restore filename.txt
+                </pre
+          >
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+
+        
+      <h3>
+        5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT
+      </h3>
       <code class="language-bash">
-        <pre>$ git switch -c &lt;new-branch&gt;</pre>
+        <pre>$ git restore --source HEAD~1 filename.txt</pre>
         <button class="copy-btn">
           <img src="./Assets/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
+        
+      </div>
+      <div class="searchTerm">
+
+        <h3>6. UNSTAGE A FILE</h3>
+        <code class="language-bash">
+          <pre>$ git restore --unstaged filename.txt</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+        
+
+      <div class="searchTerm">
+
+        <h3>7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
+        <p>
+          <strong
+            >NOTE: it resets the head to the commit id 604a39a, but it doesnt
+            delete the changes, it like there is no commit made after commit id
+            604a39a</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git reset 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >LOOSES the commit as well as LOOSES the contents of the
+            commit</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git reset --hard 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <h3>8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
+        <p>
+          <strong
+            >REVERTS the changes in that particular commit and CREATES a new
+            commit after reverting changes p.s. this helps while
+            collaboration</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git revert 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+
+      <h2 class="searchTerm" id="creating-github-repository">CREATING GITHUB RESPOSITORIES</h2>
+      <div class="searchTerm">
+        <h3>
+          1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)
+        </h3>
+        <p>
+          <strong
+            >STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE
+            URL</strong
+          >
+        </p>
+        <p><strong>STEP 2: CREATES an empty git repository</strong></p>
+        <code class="language-bash">
+          <pre>$ git init</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
+        
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong>STEP 4: a commit is needed to push any files to github</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git commit -a -m "first commit"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >STEP 5: CREATES a new REMOTE DESTINATION for the github
+            repository</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git remote add origin &lt;copied url&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS out the REMOTE URL if any</strong></p>
+        <code class="language-bash">
+          <pre>$ git remote -v</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >STEP 6: PUSHES the last commited code to github p.s. the -u is like a
+            setting the origin remote and master branch as a default so that we
+            can use just >> git push in future</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git push -u origin &lt;branchname&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <h3>
+          2. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)
+        </h3>
+        <p>
+          <strong
+            >STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE
+            URL</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 2: CLONES as well as automatically sets the REMOTE
+            DESTINATION</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git clone &lt;copied url&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
+        <p>
+          <strong>STEP 4: a commit is needed to push any files to github</strong>
+        </p>
+        <code class="language-bash">
+          <pre>$ git commit -a -m "first commit"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >STEP 5: PUSHES the last commited code to github p.s. the -u is like a
+            setting the origin remote and master branch as a default so that we
+            can use just >> git push in future</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git push -u origin &lt;branchname&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        <h3>
+          3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY
+        </h3>
+        <p>
+          <strong
+            >STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE
+            URL</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 2: CREATES a new REMOTE DESTINATION for the github
+            repository</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git remote add origin &lt;copied url&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        
+      </div>
+      <div class="searchTerm">
+        
+      <p><strong>LOGS out the REMOTE URL if any</strong></p>
       <code class="language-bash">
-        <pre>$ git checkout -b &lt;new-branch&gt;</pre>
+        <pre>$ git remote -v</pre>
         <button class="copy-btn">
           <img src="./Assets/copy-icon.svg" alt="copy" />
         </button>
       </code>
-      <p><strong>DELETES newbranch</strong></p>
-      <code class="language-bash">
-        <pre>$ git branch -D &lt;new-branch&gt;</pre>
-        <button class="copy-btn">
-          <img src="./Assets/copy-icon.svg" alt="copy" />
-        </button>
-      </code>
-      <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
-      <code class="language-bash">
-        <pre>$ git branch -M &lt;final-branch&gt;</pre>
-        <button class="copy-btn">
-          <img src="./Assets/copy-icon.svg" alt="copy" />
-        </button>
-      </code>
-      <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
-      <code class="language-bash">
-        <pre>$ git push --delete &lt;origin branchname&gt;</pre>
-        <button class="copy-btn">
-          <img src="./Assets/copy-icon.svg" alt="copy" />
-        </button>
-      </code>
+        
+      </div>
+      <div class="searchTerm">
+        <p>
+          <strong
+            >STEP 3: PUSHES the last commited code to github p.s. the -u is like a
+            setting the origin remote and master branch as a default so that we
+            can use just >> git push in future</strong
+          >
+        </p>
+        <code class="language-bash">
+          <pre>$ git push -u origin &lt;branchname&gt;</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+  
+        
+      </div>
+      <div class="searchTerm">
+        
+      </div>
+      <div class="searchTerm">
+        
+      </div>
       
-    <h2 id="git-ignore">GIT IGNORE</h2>
-    <p><strong>STEP 1: create a .gitignore file</strong></p>
-    <p><strong>STEP 2: add files or folders inside the file to ignore, now the files are are untracked by github and
-        wont be staged or
-        commited</strong></p>
+     
 
-    <h2 id="merging-branches">MERGING BRANCHES</h2>
-    <h3>FAST FORWARD MERGE</h3>
-    <p><strong>STEP 1: SWITCH the HEAD first to the first branch</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 2: MERGES newbranch into master with HEAD on master</strong></p>
-    <code class="language-bash">
-              <pre>$ git merge &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>NOT ALL MERGES ARE FAST FORWARD MERGES</h3>
-    <h4>WITH OUT MERGE CONFLICTS</h4>
-    <code class="language-bash">
-              <pre>$ git switch master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a new commit unlike fastforwarding merges</strong></p>
-    <code class="language-bash">
-              <pre>$ git merge -m "mergering message"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h4>MERGE CONFLICTS</h4>
-    <p><strong>STEP 1: OPEN UP files having merge conflicts</strong></p>
-    <p><strong>STEP 2: REMOVE the conflicts</strong></p>
-    <p><strong>&nbsp;&nbsp;&nbsp;OPTION 1: ACCEPT INCOMING CHANGES</strong></p>
-    <p><strong>&nbsp;&nbsp;&nbsp;OPTION 2: ACCEPT CURRENT CHANGES</strong></p>
-    <p><strong>&nbsp;&nbsp;&nbsp;OPTION 3: ACCEPT BOTH CHANGES</strong></p>
-    <p><strong>&nbsp;&nbsp;&nbsp;OPTION 4: COMPARE CHANGES</strong></p>
-    <p><strong>STEP 3: REMOVE the conflict markers</strong></p>
-    <p><strong>STEP 4: STAGE and COMMIT the changes</strong></p>
-    <h4>ABORT MERGE WHEN UNRESOLVABLE CONFLICTS OCCURRED</h4>
-    <code class="language-bash">
-              <pre>$ git merge --abort</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      
+     
+     
+    
 
-    <h2 id="stashing-git">STASHING IN GIT</h2>
-    <h3>1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH</h3>
-    <h3>2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS</h3>
-    <p><strong>STASHES the changes</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>UN STASHES the changes, use it when you resume your work</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash pop</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>APPLY stashed changes into another or the same branch</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash apply</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h4>IF WORKING WITH MULTIPLE STASHES</h4>
-    <p><strong>LOGS all the stashes</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash list</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STASHES the changes in the Stash index 1</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash apply stash@{1}</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES the stash, p.s. applying the stash doesnt delete it</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash drop stash@{1}</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CLEARS the whole stash list</strong></p>
-    <code class="language-bash">
-              <pre>$ git stash clear</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+     
+    
+     
+   
+    
+      
+      
+    
+     
+   
+      
+    
+    
+    
+      
+     
 
-    <h2 id="time-travelling-git">TIME TRAVELLING WITH GIT</h2>
-    <h3>1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a</h3>
-    <p><strong>DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because HEAD
-        is meant to map
-        a whole branch and not a specific commit</strong></p>
-    <code class="language-bash">
-              <pre>$ git checkout 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DETACHES HEAD and ATTACHES it to the previous commit</strong></p>
-    <code class="language-bash">
-              <pre>$ git checkout HEAD~1</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>RE-ATTACHES HEAD and now the head properly maps onto the master branch</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a</h3>
-    <code class="language-bash">
-              <pre>$ git checkout 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>now the head is perfect where it should have been</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch -c &lt;new-branch&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>3. TO RESTORE ALL CHANGES TO TRACKED FILES</h3>
-    <code class="language-bash">
-              <pre>$ git reset origin/main --hard</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT</h3>
-    <code class="language-bash">
-              <pre>
-      $ git checkout HEAD filename.txt 
-          OR 
-      $ git restore filename.txt
-              </pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT</h3>
-    <code class="language-bash">
-              <pre>$ git restore --source HEAD~1 filename.txt</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>6. UNSTAGE A FILE</h3>
-    <code class="language-bash">
-              <pre>$ git restore --unstaged filename.txt</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
-    <p><strong>NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is no
-        commit made
-        after commit id 604a39a</strong></p>
-    <code class="language-bash">
-              <pre>$ git reset 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOOSES the commit as well as LOOSES the contents of the commit</strong></p>
-    <code class="language-bash">
-              <pre>$ git reset --hard 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
-    <p><strong>REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this
-        helps while
-        collaboration</strong></p>
-    <code class="language-bash">
-              <pre>$ git revert 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      
+     
+     
+     
+      
+     
+      
+     
+     
+      
+     
+      
+    
+      
+     
 
-    <h2 id="creating-github-repository">CREATING GITHUB RESPOSITORIES</h2>
-    <h3>1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)</h3>
-    <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-    <p><strong>STEP 2: CREATES an empty git repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git init</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
-    <p><strong>STEP 4: a commit is needed to push any files to github</strong></p>
-    <code class="language-bash">
-              <pre>$ git commit -a -m "first commit"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 5: CREATES a new REMOTE DESTINATION for the github repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git remote add origin &lt;copied url&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS out the REMOTE URL if any</strong></p>
-    <code class="language-bash">
-              <pre>$ git remote -v</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 6: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
-        master branch as a default
-        so that we can use just >> git push in future</strong></p>
-    <code class="language-bash">
-              <pre>$ git push -u origin &lt;branchname&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>2. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)</h3>
-    <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-    <p><strong>STEP 2: CLONES as well as automatically sets the REMOTE DESTINATION</strong></p>
-    <code class="language-bash">
-              <pre>$ git clone &lt;copied url&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
-    <p><strong>STEP 4: a commit is needed to push any files to github</strong></p>
-    <code class="language-bash">
-              <pre>$ git commit -a -m "first commit"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 5: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
-        master branch as a default
-        so that we can use just >> git push in future</strong></p>
-    <code class="language-bash">
-              <pre>$ git push -u origin &lt;branchname&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY</h3>
-    <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-    <p><strong>STEP 2: CREATES a new REMOTE DESTINATION for the github repository</strong></p>
-    <code class="language-bash">
-              <pre>$ git remote add origin &lt;copied url&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS out the REMOTE URL if any</strong></p>
-    <code class="language-bash">
-              <pre>$ git remote -v</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 3: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
-        master branch as a default
-        so that we can use just >> git push in future</strong></p>
-    <code class="language-bash">
-              <pre>$ git push -u origin &lt;branchname&gt;</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+   
+    
+     
+    
+     
+    
+    
+     
+     
+     
+     
 
-    <h2 id="origin-master-theory">THE origin/master THEORY</h2>
-    <p><strong>origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL
-        BRANCH</strong></p>
-    <p><strong>LOGS the remote tracking branch</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch -r</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
-        local branch is
-        ahead of the remote branch and not up to date, push to make it up to date</strong></p>
-    <code class="language-bash">
-              <pre>$ git checkout origin/master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN
-        ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO
-        SO IS</strong></p>
-    <p><strong>To check all the branches available</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch -r</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>This automatically CONNECTS the two branches and we can freely work on them now</strong></p>
-    <code class="language-bash">
-              <pre>$ git switch branchname</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>Now this correctly LOGS all the connected branches</strong></p>
-    <code class="language-bash">
-              <pre>$ git branch</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+     
+    
+    
+   
+    
+    
+      
+     
+      
+   
+      
+      <h2 id="origin-master-theory">THE origin/master THEORY</h2>
+      <p>
+        <strong
+          >origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE
+          BRANCH THAT REPRESENTS OUR LOCAL BRANCH</strong
+        >
+      </p>
+      <p><strong>LOGS the remote tracking branch</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch -r</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >To check out the remote branch code: DETACHES HEAD onto the remote
+          tracking HEAD, in a case where the local branch is ahead of the remote
+          branch and not up to date, push to make it up to date</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git checkout origin/master</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH
+          BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE
+          SIMPLEST WAY TO DO SO IS</strong
+        >
+      </p>
+      <p><strong>To check all the branches available</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch -r</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >This automatically CONNECTS the two branches and we can freely work
+          on them now</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git switch branchname</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>Now this correctly LOGS all the connected branches</strong></p>
+      <code class="language-bash">
+        <pre>$ git branch</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
 
-    <h2 id="fetching-and-pulling">FETCHING AND PULLING</h2>
-    <p><strong>FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T
-        CHANGE INTO THE
-        WORKING DIRECTORY</strong></p>
-    <p><strong>To receive the new commits</strong></p>
-    <code class="language-bash">
-              <pre>$ git fetch</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a new branch having the changes but this doesnt interfere in the working directory, the
-        origin/master now heads
-        on to this new branch and the master branch would be one branch behind the origin/master</strong></p>
-    <code class="language-bash">
-              <pre>
+      <h2 id="fetching-and-pulling">FETCHING AND PULLING</h2>
+      <p>
+        <strong
+          >FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO
+          OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING
+          DIRECTORY</strong
+        >
+      </p>
+      <p><strong>To receive the new commits</strong></p>
+      <code class="language-bash">
+        <pre>$ git fetch</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >CREATES a new branch having the changes but this doesnt interfere in
+          the working directory, the origin/master now heads on to this new
+          branch and the master branch would be one branch behind the
+          origin/master</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>
       $ git fetch origin
           OR
       $ git fetch origin branchname
-              </pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
-        local branch is
-        ahead of the remote branch and not up to date, push to make it up to date</strong></p>
-    <code class="language-bash">
-              <pre>$ git checkout origin/master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+              </pre
+        >
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >To check out the remote branch code: DETACHES HEAD onto the remote
+          tracking HEAD, in a case where the local branch is ahead of the remote
+          branch and not up to date, push to make it up to date</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git checkout origin/master</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
 
-    <h2 id="pulling-interferes">PULLING INTERFERES IN THE WORKING DIRECTORY</h2>
-    <p><strong>PULLS the changes and merges the changes with the branch you want to OR default</strong></p>
-    <code class="language-bash">
-              <pre>
+      <h2 id="pulling-interferes">
+        PULLING INTERFERES IN THE WORKING DIRECTORY
+      </h2>
+      <p>
+        <strong
+          >PULLS the changes and merges the changes with the branch you want to
+          OR default</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>
       $ git pull origin
           OR
       $ git push origin branchname
-              </pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>SOLVE MERGE CONFLICTS IF ANY</strong></p>
+              </pre
+        >
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p><strong>SOLVE MERGE CONFLICTS IF ANY</strong></p>
 
-    <h2 id="force-push-and-pull">FORCE PUSH AND PULL</h2>
-    <p><strong>This will delete your previous commit(s) and push your current one. f signifies force</strong></p>
-    <code class="language-bash">
-              <pre>$ git push origin &lt;your-branch-name&gt; -f</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>This is nothing but fetch + rebase. This will invoke rebase in interactive mode where you can choose how
-        to apply each
-        individual commit that isn't in the history you are rebasing on</strong></p>
-    <code class="language-bash">
-              <pre>
+      <h2 id="force-push-and-pull">FORCE PUSH AND PULL</h2>
+      <p>
+        <strong
+          >This will delete your previous commit(s) and push your current one. f
+          signifies force</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git push origin &lt;your-branch-name&gt; -f</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      <p>
+        <strong
+          >This is nothing but fetch + rebase. This will invoke rebase in
+          interactive mode where you can choose how to apply each individual
+          commit that isn't in the history you are rebasing on</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>
       $ git pull --rebase=interactive
           OR
       $ git pull --rebase=i
-              </pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+              </pre
+        >
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
 
-    <h2 id="github-collaboration">GITHUB COLLABORATION</h2>
-    <p><strong>CENTRALIZED WORKFLOW: EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH
-        ONLY.</strong></p>
-    <p><strong>FEATURE BRANCH WORKFLOW: EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE
-        MESS</strong></p>
-    <p><strong>GITHUB PULL REQUEST WORKFLOW: Once a pull request is opened, you can discuss and review the potential
-        changes with
-        collaborators and add follow-up commits before your changes are merged into the base branch.</strong></p>
-    <p><strong>GITHUB FORKS AND CLONE WORKFLOW: Forking nd then opening a pull request to the owner of the main
-        repository.</strong></p>
+      <h2 class="searchTerm" id="github-collaboration">GITHUB COLLABORATION</h2>
 
-    <h2 id="git-rebasing">GIT REBASING</h2>
-    <h3>REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH</h3>
-    <code class="language-bash">
-              <pre>$ git switch newbranch</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>REBASES or MERGES master into newbranch</strong></p>
-    <code class="language-bash">
-              <pre>$ git rebase master</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>CONFLICTS WHILE REBASING</h3>
-    <p><strong>STEP 1: Resolve the CONFLICTS MANUALLY</strong></p>
-    <p><strong>STEP 2:</strong></p>
-    <code class="language-bash">
-              <pre>$ git add</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>STEP 3:</strong></p>
-    <code class="language-bash">
-              <pre>$ git rebase --continue</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <h3>INTERACTIVE REBASING</h3>
-    <p><strong>OPENS up the code editor where you can play with the nth last commits and above</strong></p>
-    <code class="language-bash">
-              <pre>$ git rebase -i HEAD~n</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CHANGES the name of a specific commit</strong></p>
-    <code class="language-bash">
-              <pre>$ reword</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>COMBINES the changes of that commit to the previous commit and then deletes it</strong></p>
-    <code class="language-bash">
-              <pre>$ fixup</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES the commit and the commit changes as if they were never written</strong></p>
-    <code class="language-bash">
-              <pre>$ drop</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+      <div class="searchTerm">
 
-    <h2 id="git-tags">GIT TAGS</h2>
-    <p><strong>TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT</strong></p>
-    <p><strong>Semanting Versioning Format is widely used for tags and releases (v1.0.1)</strong></p>
-    <p><strong>LOGS all the tags</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -l</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS tag name v17</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -l "v17"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS tag names that start with v17..</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -l "v17*"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS tags which include beta in their name</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -l "*beta*"</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT</strong></p>
-    <p><strong>LOGS the changes between both the versions</strong></p>
-    <code class="language-bash">
-              <pre>$ git diff v16.0.1 v16.1.1</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a lightweight tag</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag tagname</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES an annotated tag</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -a tagname</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>LOGS the message of the git tag "annotated"</strong></p>
-    <code class="language-bash">
-              <pre>$ git show annotation</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>CREATES a tag at commit number 604a39a</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -a tagname 604a39a</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>DELETES the tag</strong></p>
-    <code class="language-bash">
-              <pre>$ git tag -d tagname</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
-    <p><strong>TRANSFERS tags to remote servers</strong></p>
-    <code class="language-bash">
-              <pre>$ git push origin tagname</pre>
-              <button class="copy-btn">
-                <img src="./Assets/copy-icon.svg" alt="copy" />
-              </button>
-            </code>
+        <p>
+          <strong
+            >CENTRALIZED WORKFLOW: EVERY BODY WORKS ON THE SAME MAIN BRANCH AND
+            PUSH AND PULL IN THE MAIN BRANCH ONLY.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >FEATURE BRANCH WORKFLOW: EVERY FEATURE IS PUSHED UPON ANOTHER
+            INDEPENDANT BRANCH TO MINIMIZE MESS</strong
+          >
+        </p>
+        <p>
+          <strong
+            >GITHUB PULL REQUEST WORKFLOW: Once a pull request is opened, you can
+            discuss and review the potential changes with collaborators and add
+            follow-up commits before your changes are merged into the base
+            branch.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >GITHUB FORKS AND CLONE WORKFLOW: Forking nd then opening a pull
+            request to the owner of the main repository.</strong
+          >
+        </p>
 
-    <h2 id="github-desktop">GITHUB DESKTOP</h2>
-    <p><strong>Interact with GitHub using a GUI instead of the command line or a web browser</strong></p>
-    <h2>1.Installing and authenticating</h2>
-    <p><strong>STEP 1: Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).</strong></p>
-    <p><strong>STEP 2: Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get
-        authentication.</strong></p>
-    <h2>2.Contributing to projects with GitHub Desktop</h2>
-    <p><strong>STEP 1: You can create a new repository by selecting the File menu and clicking New repository.</strong>
-    </p>
-    <p><strong>STEP 2: You can add a repository from your local computer by selecting the File menu and clicking Add
-        Local Repository.</strong></p>
-    <p><strong>STEP 3: You can clone a repository from GitHub by selecting the File menu and clicking Clone
-        Repository.</strong></p>
-    <p><strong>STEP 4: You can use GitHub Desktop to create a branch of a project.</strong></p>
-    <p><strong>STEP 5: After you make changes to a branch, you can review them in GitHub Desktop and make a commit to
-        keep track of
-        your changes.</strong></p>
-    <p><strong>STEP 6: You can use GitHub Desktop to create issues or pull requests to collaborate on projects with
-        other people.</strong></p>
-    <p><strong>STEP 7: When you make changes to your local repositories or when other people make changes to the remote
-        repositories,
-        you will need to sync your local copy of the project with the remote repository.</strong></p>
+      </div>
+    
 
-    <h2><strong>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF</strong></h2>
+      <h2 class="searchTerm" id="git-rebasing">GIT REBASING</h2>
+      <h3 class="searchTerm">
+        REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH
+      </h3 >
+     
+     
+     
+    
+     
+      <div class="searchTerm">
 
-  </section>
-  <div class="download-button">
-    <a href="./Assets/Cheatsheet_MD.pdf" download><button>Download pdf</button></a>
-  </div>
-</body>
-<script>
-  //adding toggle button for light and dark mode 
-    const toggleButton =document.getElementById("toggle-btn");
-    toggleButton.onclick=function(){
+        <code class="language-bash">
+          <pre>$ git switch newbranch</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+
+      </div>
+     
+     
+
+      <div class="searchTerm">
+        <p><strong>REBASES or MERGES master into newbranch</strong></p>
+        <code class="language-bash">
+          <pre>$ git rebase master</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <h3 class="searchTerm">CONFLICTS WHILE REBASING</h3>
+     <div class="searchTerm">
+      <p><strong>STEP 1: Resolve the CONFLICTS MANUALLY</strong></p>
+
+     </div>
+     <div class="searchTerm">
+      <p><strong>STEP 2:</strong></p>
+      <code class="language-bash">
+        <pre>$ git add</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+     
+     </div>
+     <div class="searchTerm">
+      <p><strong>STEP 3:</strong></p>
+      <code class="language-bash">
+        <pre>$ git rebase --continue</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+     </div>
+
+     
+     <h3 class="searchTerm">INTERACTIVE REBASING</h3>
+
+     <div class="searchTerm">
+      <p>
+        <strong
+          >OPENS up the code editor where you can play with the nth last commits
+          and above</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ git rebase -i HEAD~n</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+     
+     </div>
+     <div class="searchTerm">
+      <p><strong>CHANGES the name of a specific commit</strong></p>
+      <code class="language-bash">
+        <pre>$ reword</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+     </div>
+     <div class="searchTerm">
+      <p>
+        <strong
+          >COMBINES the changes of that commit to the previous commit and then
+          deletes it</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ fixup</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+     </div>
+     <div class="searchTerm">
+      <p>
+        <strong
+          >DELETES the commit and the commit changes as if they were never
+          written</strong
+        >
+      </p>
+      <code class="language-bash">
+        <pre>$ drop</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+
+     </div>
+
+      <h2 id="git-tags" class="searchTerm">GIT TAGS</h2>
+      
+     
+     
+     
+     <div class="searchTerm">
+      <p>
+        <strong
+          >TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A
+          COMMIT</strong
+        >
+      </p>
+      <p>
+        <strong
+          >Semanting Versioning Format is widely used for tags and releases
+          (v1.0.1)</strong
+        >
+      </p>
+     </div>
+    
+    
+     
+     
+     
+      
+
+
+      <div class="searchTerm">
+        <p><strong>LOGS all the tags</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -l</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS tag name v17</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -l "v17"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS tag names that start with v17..</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -l "v17*"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS tags which include beta in their name</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -l "*beta*"</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+        <p><strong>TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT</strong></p>
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS the changes between both the versions</strong></p>
+        <code class="language-bash">
+          <pre>$ git diff v16.0.1 v16.1.1</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+       
+      </div>
+      <div class="searchTerm">
+        <p><strong>CREATES a lightweight tag</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag tagname</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>CREATES an annotated tag</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -a tagname</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>LOGS the message of the git tag "annotated"</strong></p>
+        <code class="language-bash">
+          <pre>$ git show annotation</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+       
+      </div>
+      <div class="searchTerm">
+        <p><strong>CREATES a tag at commit number 604a39a</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -a tagname 604a39a</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>DELETES the tag</strong></p>
+        <code class="language-bash">
+          <pre>$ git tag -d tagname</pre>
+          <button class="copy-btn">
+            <img src="./Assets/copy-icon.svg" alt="copy" />
+          </button>
+        </code>
+      </div>
+      <div class="searchTerm">
+        <p><strong>TRANSFERS tags to remote servers</strong></p>
+      <code class="language-bash">
+        <pre>$ git push origin tagname</pre>
+        <button class="copy-btn">
+          <img src="./Assets/copy-icon.svg" alt="copy" />
+        </button>
+      </code>
+      </div>
+
+      <h2 id="github-desktop" class="searchTerm">GITHUB DESKTOP</h2>
+
+      <div class="searchTerm">
+        <p>
+          <strong
+            >Interact with GitHub using a GUI instead of the command line or a web
+            browser</strong
+          >
+        </p>
+        <h2>1.Installing and authenticating</h2>
+        <p>
+          <strong
+            >STEP 1: Download GitHub Desktop for Windows using this
+            [URL](https://desktop.github.com/).</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 2: Click on “File” on the navbar, go down to “Options,” choose
+            “Accounts,” and get authentication.</strong
+          >
+        </p>
+        <h2>2.Contributing to projects with GitHub Desktop</h2>
+        <p>
+          <strong
+            >STEP 1: You can create a new repository by selecting the File menu
+            and clicking New repository.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 2: You can add a repository from your local computer by
+            selecting the File menu and clicking Add Local Repository.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 3: You can clone a repository from GitHub by selecting the File
+            menu and clicking Clone Repository.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 4: You can use GitHub Desktop to create a branch of a
+            project.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 5: After you make changes to a branch, you can review them in
+            GitHub Desktop and make a commit to keep track of your
+            changes.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 6: You can use GitHub Desktop to create issues or pull requests
+            to collaborate on projects with other people.</strong
+          >
+        </p>
+        <p>
+          <strong
+            >STEP 7: When you make changes to your local repositories or when
+            other people make changes to the remote repositories, you will need to
+            sync your local copy of the project with the remote
+            repository.</strong
+          >
+        </p>
+
+      </div>
+     
+
+      <h2 class="searchTerm"><strong>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF</strong></h2>
+    </section>
+    <div class="download-button">
+      <a href="./Assets/Cheatsheet_MD.pdf" download
+        ><button>Download pdf</button></a
+      >
+    </div>
+  </body>
+  <script>
+    //adding toggle button for light and dark mode
+    const toggleButton = document.getElementById("toggle-btn");
+    toggleButton.onclick = function () {
       document.body.classList.toggle("light-theme");
-    }
+    };
 
-  const copyButton = document.querySelectorAll(".copy-btn");
-  copyButton.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      var code = btn.previousElementSibling.innerText;
-      code = code.slice(2, code.length);
-      navigator.clipboard.writeText(code);
-//    Adding Alert When text is copied and removing after 800ms
-      btn.classList.add("copied")
-      setTimeout(function(){
-        btn.classList.remove("copied")
-      } ,800)
+    const copyButton = document.querySelectorAll(".copy-btn");
+    copyButton.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        var code = btn.previousElementSibling.innerText;
+        code = code.slice(2, code.length);
+        navigator.clipboard.writeText(code);
+        //    Adding Alert When text is copied and removing after 800ms
+        btn.classList.add("copied");
+        setTimeout(function () {
+          btn.classList.remove("copied");
+        }, 800);
+      });
     });
-  });
-</script>
 
+  window.addEventListener("keydown", (e) => {
+  if (e.code === 'F3' || ((e.ctrlKey || e.metaKey) && e.code === 'KeyF')) { 
+    e.preventDefault();
+    const search = document.querySelector('#search')
+    search.focus()
+  }
+})
+
+const searchCommand = () => {
+
+
+    let searchInput = document.getElementById('search').value
+    searchInput = searchInput.toLowerCase();
+    let x = document.getElementsById('searchTerm');
+
+    for (x = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(searchInput)) {
+        x[i].style.display = "none";
+      }
+      else {
+        x[i].style.display = "block";
+      }
+    }
+  
+
+
+}
+  </script>
 </html>

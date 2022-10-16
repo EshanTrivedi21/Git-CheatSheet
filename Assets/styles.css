@@ -7,10 +7,49 @@ input[type="checkbox"]{
   display: none;
 }
 
+.top__container {
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.search__input {
+
+  box-shadow: 0px 0px 20px var(--pre-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+    
+}
+
+
+#search {
+
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      padding: 1em;
+      
+
+
+}
+
+.search-icon {
+
+  /* font-size: 20px; */
+  /* right: 2%; */
+  border-radius: 30px;
+  margin-right: 0.25em;
+}
+
 label{
   display: flex;
   width: fit-content;
   position: sticky;
+  justify-content: space-between;
   top: 20px;
   right: 20px;
   z-index: 2;
