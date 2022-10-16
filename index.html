@@ -20,13 +20,6 @@
   </label>
   <section class="cheatsheet">
 
-    <div id="Top">
-
-      <a href="#Bottom">
-                  Go to Bottom
-      </a>
-    </div>
-
     <h1 id="welcome-to-the-git-cheat-sheet">
       WELCOME TO THE GIT CHEAT SHEET
     </h1>
@@ -1213,9 +1206,8 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
   </section>
   <section id="footer">
     <div class="footer-content">
-      <div>
-        <a href="./PDF/Cheatsheet_PDF.pdf" download><button class="link_button">Download pdf <i
-              class="fa-solid fa-download"></i></button></a>
+      <div class="dwn-btn">
+        <a href="./PDF/Cheatsheet_PDF.pdf" download><button>Download pdf <i class="fa-solid fa-download"></i></button></a>
       </div>
       <div class="share_container">
         <a href="https://twitter.com/share?url=https://eshantrivedi21.github.io/Git-CheatSheet/&text=GitcheatSheet&via=jagathish1123"
@@ -1245,14 +1237,6 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
     </div>
     </div>
 
-    <div id="Bottom">
-      <a href="#Top">
-
-          Go back to Top
-     
-      </a>
-    </div>
-
   </section>
 </body>
 <script>
@@ -1268,15 +1252,13 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       var code = btn.previousElementSibling.innerText;
       code = code.slice(2, code.length);
       navigator.clipboard.writeText(code);
-      //    Adding Alert When text is copied and removing after 800ms
+      // Adding Alert When text is copied and removing after 800ms
       btn.classList.add("copied")
       setTimeout(function () {
         btn.classList.remove("copied")
       }, 800)
     });
   });
-
-  // ====================================
 
   function search() {
     let input = document.getElementById('searchbar').value
@@ -1292,8 +1274,6 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       }
     }
   }
-
-
 
 </script>
 

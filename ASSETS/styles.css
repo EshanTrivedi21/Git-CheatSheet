@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
   border: 5px solid ;
 }
 
@@ -21,7 +21,7 @@
   width: 30px;
   cursor: pointer;
 }
-/* ==================Search Style======================== */
+
 .searchbar{
   display: flex;
   justify-content: center;
@@ -39,13 +39,9 @@ input[type=text] {
    transition: width 0.15s ease-in-out;
 }
 
-/* When the input field gets focus,
-     change its width to 100% */
 input[type=text]:focus {
   width: 70%;
 }
-
-/* ================================== */
 
 input[type="checkbox"] {
   display: none;
@@ -54,19 +50,17 @@ input[type="checkbox"] {
 label {
   display: flex;
   width: fit-content;
-  position: sticky;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 2;
-  box-shadow: 0px 0px 20px var(--pre-color);
-  border: 2px solid var(--body-color);
+  box-shadow: 0px 0px 8px var(--pre-color);
   border-radius: 30px;
   margin: 10px;
   padding: 10px;
   background: var(--a-color);
   cursor: pointer;
   transition-duration: 200ms;
-  /* User select to none just because there appears a binking cursor near the icon when clicked on it. Now it doesn't allow the user to selec that icon and only click*/
   user-select: none;
 }
 
@@ -77,7 +71,7 @@ label {
 }
 
 label:hover {
-  box-shadow: 0px 0px 50px var(--pre-color);
+  box-shadow: 0px 0px 10px var(--pre-color);
 }
 
 .moon-icon {
@@ -108,7 +102,7 @@ label:hover {
   --copy-bg-color: rgb(62, 62, 62);
   --copy-btn-hover-bg: #6f6f6fef;
   --copy-btn-active: #1b1b1b;
-  --a-color: white;
+  --a-color: #efefef;
 
 }
 
@@ -128,7 +122,7 @@ label:hover {
 }
 
 body {
-  margin: 1%;
+  margin: 0.25%;
   padding: 0;
   overflow-x: hidden;
   animation: fadeIn 1s 1 ease-in forwards;
@@ -164,7 +158,6 @@ section {
 .cheatsheet {
   margin: 0 auto;
   padding: 5px;
-  width: 100%;
   max-width: 900px;
   background: var(--cheatsheet-bg);
 }
@@ -325,8 +318,6 @@ h4 {
   width: 100%;
   max-width: 900px;
   background: var(--cheatsheet-bg);
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .footer-content {
@@ -334,23 +325,7 @@ h4 {
   justify-content: space-between;
 }
 
-.link_button {
-  background-color: var(--copy-btn-border);
-  color: white;
-  font-size: 12px;
-  font-family: monospace, sans-serif;
-  padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
-}
-
-.link_button:hover {
-
-  transition: transform .1s;
-  transform: scale(1.05);
-}
-
-.dwn-btn {
+.dwn-btn{
   margin: 10px;
   text-align: center;
 
@@ -378,9 +353,8 @@ h4 {
   padding: 12px;
   border-radius: 6px;
   background: linear-gradient(145deg, #1a1d21, #1f2228);
-  box-shadow: 5px 5px 10px #14161a,
-    -5px -5px 10px #262a30;
-
+  box-shadow:  5px 5px 10px #14161a,-5px -5px 10px #262a30;
+  
 }
 
 .dwn-btn button:hover {
@@ -388,48 +362,5 @@ h4 {
   border-radius: 6px;
   background: #1d2025;
   box-shadow: inset 5px 5px 10px #14161a,
-    inset -5px -5px 10px #262a30;
+              inset -5px -5px 10px #262a30;
 }
-
-
-
-/* gap: 12px; */
-/* flex-wrap: wrap; */
-/* justify-content: end; */
-/* align-items: center;
-    margin-bottom: 24px;
-    margin-top: 24px; */
-/* } 
-/* .share-btn {
-  display: inline-block;
-  color: #ffffff;
-  border: none;
-  padding: 8px;
-  outline: none;
-  text-align: center;
-  font-size: 0.9em;
-  margin: 0 0.2em;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-.share-btn:focus,
-.share-btn:hover {
-  text-decoration: none;
-  opacity: 0.8;
-  color: black;
-  font-weight: bolder;
-}
-
-.share-btn:active {
-  color: #e2e2e2;
-} */
-
-/* .share-btn.twitter     { background: #55acee; }
-.share-btn.google-plus { background: #dd4b39; }
-.share-btn.facebook    { background: #3B5998; }
-.share-btn.stumbleupon { background: #EB4823; }
-.share-btn.reddit      { background: #ff5700; }
-.share-btn.hackernews  { background: #ff6600; }
-.share-btn.linkedin    { background: #4875B4; }
-.share-btn.email       { background: #7c7373; } */
