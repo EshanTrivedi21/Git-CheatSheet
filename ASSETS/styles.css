@@ -334,7 +334,15 @@ h4 {
   justify-content: space-between;
 }
 
-
+.link_button {
+  background-color: var(--copy-btn-border);
+  color: white;
+  font-size: 12px;
+  font-family: monospace, sans-serif;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+}
 
 .link_button:hover {
 
