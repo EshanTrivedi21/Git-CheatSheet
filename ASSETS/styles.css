@@ -357,7 +357,8 @@ h4 {
 }
 
 .share_container {
-  margin: 10px;
+  margin: 10px 40px;
+
   text-align: center;
   display: flex;
 }
