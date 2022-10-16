@@ -13,6 +13,7 @@
 
 ### To Contribute read [CONTRIBUTING.md](CONTRIBUTING.md), Please leave a review!
 ### Thank You :
-<a href="https://github.com/EshanTrivedi21/Git-CheatSheet/graphs/contributors">
-  <img width="450px" src="https://contrib.rocks/image?repo=EshanTrivedi21/Git-CheatSheet" />
+
+<a href="https://github.com/eshantrivedi21/git-cheatsheet/graphs/contributors">
+  <img width="1000px" src="https://contrib.rocks/image?repo=eshantrivedi21/git-cheatsheet&columns=30" />
 </a>
