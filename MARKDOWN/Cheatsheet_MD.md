@@ -694,5 +694,42 @@ Interact with GitHub using a GUI instead of the command line or a web browser
 
 <br/>
 
+## Extensions for Github
+
+if you're a Developer and you use Github as your Version Control Tools, there's likely some functionality you wish it had. To help with these there are some best extension that you can use for Github.
+
+<br/>
+
+1. **Octotree**
+	This is a feature-rich extensions that enhance your Github experience. It facilitates you with code tree to all the github repositories, which simplifies your file search and navigation. (though now this is by default provided by Github)
+	It also offers you bookmarking repositories, files and PRs. It increase your productivity at work by lazy-loading and caching. Besides these, it offers several other features in it's Paid Version.
+
+	`Download:` Octotree for [Google Chrome](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)| [Edge](https://microsoftedge.microsoft.com/addons/detail/octotree-github-code-tr/joagmknfcgpikbadjkaikmnhpjadihjg)| [Firefox](https://addons.mozilla.org/en-US/firefox/addon/octotree/) | [Safari](https://apps.apple.com/us/app/octotree-pro/id1457450145?mt=12) (Free, Paid)
+
+<br/>
+
+2. **GitZip for GitHub**
+	Every day and night we are facing situation to download the files from Github. GitZip for GitHub provides you the simpleast way for downloading files or subfolders individually from any repository. You can select items by double-clicking the empty space after the file name and clicking the download arrow that appears in the bottom-right corner.
+
+	Alternatively, right-click anywhere, hover the cursor over GitZip Download and decide whether to download the entire folder or selected files. 
+	
+	It also offers the dark theme and is completely free to use.
+
+	`Download:` Gitzip for Github for [Google Chrome](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
+
+<br/>
+
+3. **Refined Github**
+	Refined GitHub is another Chrome extension that adds more than 200 features to your GitHub. Most of these features are focused on improving the interface and experience.
+
+	It highlights the most useful comments and shows reaction avatars for comments. It adds gray dots and arrows to the whitespace in code, making them visible. Similarly, it makes the pull request references and URLs in code clickable.
+
+	With hundreds of features available. The best part is that You can turn off any of these features individually by going to `Extensions` > `Refined GitHub` > `Extension Options`. 
+	This free extension has over 50,000 downloads on Chrome. It’s available on Firefox and Safari too.
+
+	`Download:` Refined GitHub for [Google Chrome](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf) | [Safari](https://apps.apple.com/us/app/refined-github/id1519867270) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/) (Free)
+		
+
+<br/>
 
 ***YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF***
