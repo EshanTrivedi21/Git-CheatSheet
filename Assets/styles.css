@@ -26,6 +26,31 @@ label{
   user-select: none; 
 }
 
+.searchbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #fff;
+  width: 30%;
+  margin: 0 auto;
+
+
+}
+#searchbar{
+  padding:1em;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 30%;
+  
+}
+
+
+.search-icon {
+
+  margin-right: 0.5em;
+}
 .sun-icon{
   font-size: 20px;
   transform: translateX(25px);
@@ -270,4 +295,16 @@ h4 {
 
 .headings li{
   margin: 0 0 10px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+
+  .searchbar {
+
+       width: 50%;
+  }
+
+ 
 }
