@@ -183,6 +183,21 @@ LOGS the changes
 
 <br/>
 
+## GITIGNORE PATTERNS
+
+*Preventing unintentional staging or commiting of files*
+
+`
+logs/           // ignoring all files inside logs folder
+*.notes         // ignoring all files with .notes file extension
+pattern*/       // ignoring all pattern* files or folders
+`
+
+Save a file with desired patterns as `.gitignore` with either direct string
+matches or wildcard globs.
+
+<br/>
+
 ## GIT BRANCHING:
 
 *(if you  are trying something out but do on want to play with the main branch)*
