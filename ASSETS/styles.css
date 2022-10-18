@@ -302,12 +302,13 @@ h4 {
 }
 
 .img {
-  width: 250px;
+  width: 450px;
 }
 
 .contributors {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 #footer {
