@@ -1,11 +1,11 @@
 ::-webkit-scrollbar {
   width: 10px;
-  border: 5px solid ;
+  border: 5px solid;
 }
 
 ::-webkit-scrollbar-button:single-button {
   background-color: rgb(32, 39, 39);
-  height:50 px;
+  height: 50 px;
   width: 50px;
 }
 
@@ -22,24 +22,24 @@
   cursor: pointer;
 }
 
-.searchbar{
+.searchbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#searchbar{
+#searchbar {
   margin-left: 1%;
-  padding:15px;
+  padding: 15px;
   border-radius: 10px;
 }
 
-input[type=text] {
-   width: 30%;
-   -webkit-transition: width 0.15s ease-in-out;
-   transition: width 0.15s ease-in-out;
+input[type="text"] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   width: 70%;
 }
 
@@ -81,12 +81,12 @@ label:hover {
   opacity: 0;
 }
 
-#toggle-btn:checked~label>.sun-icon {
+#toggle-btn:checked ~ label > .sun-icon {
   opacity: 0;
   transform: translateX(0px);
 }
 
-#toggle-btn:checked~label>.moon-icon {
+#toggle-btn:checked ~ label > .moon-icon {
   opacity: 1;
   transform: translateX(-25px);
 }
@@ -103,7 +103,6 @@ label:hover {
   --copy-btn-hover-bg: #6f6f6fef;
   --copy-btn-active: #1b1b1b;
   --a-color: #efefef;
-
 }
 
 .light-theme {
@@ -118,7 +117,6 @@ label:hover {
   --copy-btn-hover-bg: gray;
   --copy-btn-active: #1b1b1b;
   --a-color: #90a4ae;
-
 }
 
 body {
@@ -166,7 +164,7 @@ code {
   position: relative;
 }
 
-code:hover>.copy-btn {
+code:hover > .copy-btn {
   opacity: 1;
 }
 
@@ -232,7 +230,7 @@ pre::-webkit-scrollbar-thumb {
   border: 1px solid white;
 }
 
-.headings{
+.headings {
   font-size: 17.5px;
   font-family: monospace, sans-serif;
   background-color: var(--pre-bg-color);
@@ -242,7 +240,6 @@ pre::-webkit-scrollbar-thumb {
   margin: 15px;
   overflow-x: auto;
   box-shadow: 0 0 5px 5px var(--pre-box-shadow);
-  
 }
 
 p {
@@ -276,7 +273,6 @@ a:hover {
   margin-left: 20px !important;
 }
 
-
 h1 {
   text-align: center;
   font-size: 30px;
@@ -302,13 +298,12 @@ h4 {
 }
 
 .img {
-  width: 450px;
+  width: 250px;
 }
 
 .contributors {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 #footer {
@@ -326,10 +321,9 @@ h4 {
   justify-content: space-between;
 }
 
-.dwn-btn{
+.dwn-btn {
   margin: 10px;
   text-align: center;
-
 }
 
 .share_container {
@@ -345,8 +339,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-
-
 .dwn-btn button {
   /* background-color: black; */
   border: none;
@@ -354,14 +346,89 @@ h4 {
   padding: 12px;
   border-radius: 6px;
   background: linear-gradient(145deg, #1a1d21, #1f2228);
-  box-shadow:  5px 5px 10px #14161a,-5px -5px 10px #262a30;
-  
+  box-shadow: 5px 5px 10px #14161a, -5px -5px 10px #262a30;
 }
 
 .dwn-btn button:hover {
   cursor: pointer;
   border-radius: 6px;
   background: #1d2025;
-  box-shadow: inset 5px 5px 10px #14161a,
-              inset -5px -5px 10px #262a30;
+  box-shadow: inset 5px 5px 10px #14161a, inset -5px -5px 10px #262a30;
+}
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+#cssmenu ul,
+#cssmenu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#cssmenu {
+  width: 250px;
+  background: #f7f7f7;
+  font-family: sans-serif;
+  font-weight: bold;
+  zoom: 1;
+  font-size: 14px;
+}
+#cssmenu:before {
+  content: "";
+  display: block;
+}
+
+#cssmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#cssmenu a {
+  display: block;
+  padding: 15px 20px;
+  color: #f26724;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
+}
+
+#cssmenu > ul {
+  width: 250px;
+}
+#cssmenu > ul > li > a {
+  border-left: 4px solid #095586;
+  color: #095586;
+}
+
+#cssmenu > ul > li a:hover {
+  background: #095586;
+  color: #f1f1f1;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.item1 {
+  grid-row-start: 1;
+}
+
+.item2 {
+  grid-row-start: 1;
+}
+
+.sticky-div {
+  position: fixed;
+  top: 0px;
 }
