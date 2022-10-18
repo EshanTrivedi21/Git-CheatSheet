@@ -26,11 +26,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 #searchbar{
   margin-left: 1%;
   padding:15px;
   border-radius: 10px;
+  
 }
 
 input[type=text] {
@@ -61,7 +63,8 @@ label {
   background: var(--a-color);
   cursor: pointer;
   transition-duration: 200ms;
-  user-select: none; 
+  user-select: none;
+  
 }
 
 .sun-icon {
@@ -92,10 +95,14 @@ label:hover {
 }
 
 :root {
+  
   --box-shadow:-10px -10px 20px #17181a,
              10px 10px 20px #35383c;
-  --hover-bt-shad:inset -13px -13px 33px #0f1011,
-            inset 13px 13px 33px #3d4045;
+  --button-bg: linear-gradient(145deg, #1a1d21, #1f2228);
+  --button-h-dn-shadow:inset 5px 5px 10px #14161a,
+              inset -5px -5px 10px #262a30;
+  --button-dn-shadow:5px 5px 10px #14161a,-5px -5px 10px #262a30;
+  --bt-color:white;
   --box-pre-shadow:inset -13px -13px 33px #0f1011,
             inset 13px 13px 33px #3d4045;
   --body-bg-color: #26282B;
@@ -113,10 +120,13 @@ label:hover {
 }
 
 .light-theme {
+  --bt-color:black;
   --box-shadow:inset 2px 2px 5px #BABECC, 
                inset -5px -5px 10px #FFF;
-  --button-dn-shadow:inset 50px -50px 61px #662225,
-                     inset -50px 50px 61px #ff8895;
+  --button-bg: #EAEAEA;
+  --button-dn-shadow:inset 2px 2px 5px #BABECC, 
+               inset -5px -5px 10px #FFF;
+  --button-h-dn-shadow:-2px -2px 5px #FFF, 2px 2px 5px #BABECC;
   --box-pre-shadow:inset 2px 2px 5px #BABECC, 
                    inset -5px -5px 10px #FFF;
   --hover-bt-shad: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
@@ -146,11 +156,14 @@ body {
   background-attachment: fixed;
   color: var(--body-color);
   font-family: "Roboto", sans-serif;
+  
 }
 
 section {
   border-radius: 10px;
-  box-shadow:var(--box-shadow);
+   box-shadow:  var(--box-shadow);
+  
+  
 }
 
 #Bottom {
@@ -318,12 +331,14 @@ h4 {
 
 .img {
   width: 450px;
+  
 }
 
 .contributors {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
 
 #footer {
@@ -365,16 +380,16 @@ h4 {
 .dwn-btn button {
   /* background-color: black; */
   border: none;
-  color: #26282B;
+  color: var(--bt-color);
   padding: 12px;
   border-radius: 6px;
-  background: #EAEAEA;
-  box-shadow:var(--box-shadow); 
+  background: var(--button-bg);
+  box-shadow:var(--button-dn-shadow); 
 }
 
 .dwn-btn button:hover {
   cursor: pointer;
   border-radius: 6px;
-  background: #EAEAEA;
- box-shadow: var(--hover-bt-shad)
+  background: var(--button-bg);
+  box-shadow: var(--button-h-dn-shadow);
 }
