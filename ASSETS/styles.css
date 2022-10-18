@@ -54,14 +54,14 @@ label {
   top: 20px;
   right: 20px;
   z-index: 2;
-  box-shadow: 0px 0px 8px var(--pre-color);
+  box-shadow:  var(--box-shadow);
   border-radius: 30px;
   margin: 10px;
   padding: 10px;
   background: var(--a-color);
   cursor: pointer;
   transition-duration: 200ms;
-  user-select: none;
+  user-select: none; 
 }
 
 .sun-icon {
@@ -92,14 +92,20 @@ label:hover {
 }
 
 :root {
-  --body-bg-color: #30363d;
+  --box-shadow:-10px -10px 20px #17181a,
+             10px 10px 20px #35383c;
+  --hover-bt-shad:inset -13px -13px 33px #0f1011,
+            inset 13px 13px 33px #3d4045;
+  --box-pre-shadow:inset -13px -13px 33px #0f1011,
+            inset 13px 13px 33px #3d4045;
+  --body-bg-color: #26282B;
   --body-color: rgb(182, 182, 182);
   --cheatsheet-bg: rgba(0, 0, 0, 0.4);
   --pre-bg-color: rgba(0, 0, 0, 0.8);
   --pre-color: rgb(192, 192, 192);
   --pre-box-shadow: rgba(255, 255, 255, 0.1);
   --copy-btn-border: #9a9a9aef;
-  --copy-bg-color: rgb(62, 62, 62);
+  --copy-bg-color:  #26282B;
   --copy-btn-hover-bg: #6f6f6fef;
   --copy-btn-active: #1b1b1b;
   --a-color: #efefef;
@@ -107,14 +113,21 @@ label:hover {
 }
 
 .light-theme {
-  --body-bg-color: #dee4e7;
+  --box-shadow:inset 2px 2px 5px #BABECC, 
+               inset -5px -5px 10px #FFF;
+  --button-dn-shadow:inset 50px -50px 61px #662225,
+                     inset -50px 50px 61px #ff8895;
+  --box-pre-shadow:inset 2px 2px 5px #BABECC, 
+                   inset -5px -5px 10px #FFF;
+  --hover-bt-shad: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+  --body-bg-color: #EAEAEA;
   --body-color: black;
   --cheatsheet-bg: white;
-  --pre-bg-color: #edf4f5;
+  --pre-bg-color: #EAEAEA;
   --pre-color: #717474;
   --pre-box-shadow: rgba(255, 255, 255, 0.1);
   --copy-btn-border: black;
-  --copy-bg-color: black;
+  --copy-bg-color: #EAEAEA;
   --copy-btn-hover-bg: gray;
   --copy-btn-active: #1b1b1b;
   --a-color: #90a4ae;
@@ -137,6 +150,7 @@ body {
 
 section {
   border-radius: 10px;
+  box-shadow:var(--box-shadow);
 }
 
 #Bottom {
@@ -192,6 +206,7 @@ pre {
   margin: 15px;
   overflow-x: auto;
   box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+  box-shadow:  var(--box-pre-shadow);
 }
 
 .copy-btn {
@@ -241,7 +256,7 @@ pre::-webkit-scrollbar-thumb {
   color: var(--pre-color);
   margin: 15px;
   overflow-x: auto;
-  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+  box-shadow: var(--box-shadow);
   
 }
 
@@ -258,7 +273,7 @@ a {
 }
 
 a:hover {
-  color: cornflowerblue;
+  color: #FF555D;
 }
 
 @keyframes fadeIn {
@@ -350,18 +365,16 @@ h4 {
 .dwn-btn button {
   /* background-color: black; */
   border: none;
-  color: white;
+  color: #26282B;
   padding: 12px;
   border-radius: 6px;
-  background: linear-gradient(145deg, #1a1d21, #1f2228);
-  box-shadow:  5px 5px 10px #14161a,-5px -5px 10px #262a30;
-  
+  background: #EAEAEA;
+  box-shadow:var(--box-shadow); 
 }
 
 .dwn-btn button:hover {
   cursor: pointer;
   border-radius: 6px;
-  background: #1d2025;
-  box-shadow: inset 5px 5px 10px #14161a,
-              inset -5px -5px 10px #262a30;
+  background: #EAEAEA;
+ box-shadow: var(--hover-bt-shad)
 }
