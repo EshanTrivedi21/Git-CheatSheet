@@ -13,11 +13,16 @@
 </head>
 
 <body>
-  <input type="checkbox" id="toggle-btn">
+
+   <div class="container_app">
+    <input type="checkbox" id="toggle-btn">
   <label for="toggle-btn">
     <img src="./ASSETS/sun-icon.png" id="icon" class="sun-icon" alt="">
     <img src="./ASSETS/moon-icon.png" id="icon" class="moon-icon" alt="">
   </label>
+   </div>
+
+
   <section class="cheatsheet">
 
     <h1 id="welcome-to-the-git-cheat-sheet">
@@ -35,6 +40,11 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
   </a>
 </span>
 </code></pre>
+
+<div class="searchbar">
+  <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search...">
+ 
+</div>
     <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
     <ul class="headings">
       <li><a href="#terminal-basics">terminal basics</a></li>
@@ -57,10 +67,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       <li><a href="#download-pdf">download git-github cheatsheet</a></li>
     </ul>
     <!-- input tag -->
-    <div class="searchbar">
-      <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search...">
-    </div>
-
+  
     <div id="list_search">
       <h2 id="terminal-basics" class="searchItem">TERMINAL BASICS</h2>
       <div class="searchItem">
@@ -68,7 +75,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
         <code class="language-bash">
               <pre>$ ls</pre>
               <button class="copy-btn">
-                <img src="./ASSETS/copy-icon.svg" alt="copy" />
+                <img id="icon" src="./ASSETS/copy-icon.svg" alt="copy" />
               </button>
             </code>
       </div>
