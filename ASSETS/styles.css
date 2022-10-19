@@ -27,8 +27,9 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  width: 30%;
+  width: 35%;
   border-radius: 30px;
+  margin: 0 auto;
 }
 #searchbar{
  
@@ -381,8 +382,8 @@ h4 {
 
     .searchbar {
 
-          width: 40%;
-          margin: 0 0.5em 0 0.5em;
+          width: 90%;
+        
     }
 
     
@@ -393,8 +394,8 @@ h4 {
 
     .searchbar {
 
-          width: 40%;
-          margin: 0 0.5em 0 0.5em;
+          width: 90%;
+      
     }
 
     
@@ -404,6 +405,6 @@ h4 {
 
     .searchbar {
 
-        width: 40%;
+        width: 50%;
     }
 }
