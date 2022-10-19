@@ -13,11 +13,28 @@
 </head>
 
 <body>
-  <input type="checkbox" id="toggle-btn">
+
+   <div class="container_app">
+    <input type="checkbox" id="toggle-btn">
   <label for="toggle-btn">
     <img src="./ASSETS/sun-icon.png" id="icon" class="sun-icon" alt="">
     <img src="./ASSETS/moon-icon.png" id="icon" class="moon-icon" alt="">
   </label>
+
+  
+  <div class="searchbar">
+    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search...">
+   
+  </div>
+
+
+
+   </div>
+
+
+  
+
+
   <section class="cheatsheet">
 
     <h1 id="welcome-to-the-git-cheat-sheet">
@@ -57,11 +74,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       <li><a href="#download-pdf">download git-github cheatsheet</a></li>
     </ul>
     <!-- input tag -->
-    <div class="searchbar">
-      <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search...">
-      <img src="./ASSETS/search-icon.png" id="icon" class="search-icon"  alt='search'/>
-    </div>
-
+  
     <div id="list_search">
       <h2 id="terminal-basics" class="searchItem">TERMINAL BASICS</h2>
       <div class="searchItem">
