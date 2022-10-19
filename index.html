@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./ASSETS/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/d4705f63a2.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -1254,15 +1255,18 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
         </a>
       </div>
     </div>
-    </div>
+    <img src="ASSETS/n.jpg" onclick="topFunction()" id="myBtn" title="Go to top"></img>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 
   </section>
+</div>
 </body>
 <script>
   //adding toggle button for light and dark mode 
   const toggleButton = document.getElementById("toggle-btn");
   toggleButton.onclick = function () {
     document.body.classList.toggle("light-theme");
+    
   }
 
   const copyButton = document.querySelectorAll(".copy-btn");
@@ -1293,6 +1297,26 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       }
     }
   }
+
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 </script>
 
