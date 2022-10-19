@@ -24,16 +24,24 @@
 
 .searchbar{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  background: #fff;
+  width: 30%;
+  border-radius: 30px;
 }
 #searchbar{
-  margin-left: 1%;
+  /* margin-left: 1%;
   padding:15px;
-  border-radius: 10px;
+  border-radius: 10px; */
+  padding: 1em;
+  border-radius: 30px;
+  border: none;
+  outline: none;
 }
 
-input[type=text] {
+/* input[type=text] {
    width: 30%;
    -webkit-transition: width 0.15s ease-in-out;
    transition: width 0.15s ease-in-out;
@@ -41,7 +49,7 @@ input[type=text] {
 
 input[type=text]:focus {
   width: 70%;
-}
+} */
 
 input[type="checkbox"] {
   display: none;
@@ -62,6 +70,14 @@ label {
   cursor: pointer;
   transition-duration: 200ms;
   user-select: none;
+}
+
+.search-icon {
+
+  font-size: 20px;
+  margin-right: 0.5em;
+
+  
 }
 
 .sun-icon {
@@ -364,4 +380,37 @@ h4 {
   background: #1d2025;
   box-shadow: inset 5px 5px 10px #14161a,
               inset -5px -5px 10px #262a30;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+
+    .searchbar {
+
+          width: 90%;
+          margin: 0 0.5em 0 0.5em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+    .searchbar {
+
+          width: 90%;
+          margin: 0 0.5em 0 0.5em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 780px) and (min-width: 600px)  {
+
+    .searchbar {
+
+        width: 40%;
+    }
 }
