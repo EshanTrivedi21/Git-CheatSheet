@@ -55,30 +55,17 @@
   box-shadow: 0 0 5px 5px var(--pre-box-shadow);
 }
 
-
 #myBtn {
   display: none;
   position: fixed;
   bottom: 2%;
-  right: 3%;
+  right: 2%;
   z-index: 99;
-  font-size: 18px;
+  font-size: 45px;
   border: none;
   outline: none;
-  background-color:white;
-  color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
 }
-
-#myBtn:hover {
-  background-color: #555;
-}
-
 
 input[type=text] {
    width: 30%;
