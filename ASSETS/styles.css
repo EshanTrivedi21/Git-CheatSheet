@@ -106,8 +106,13 @@ label {
   
 }
 
+.toggle-darkmode {
+  background-color: var(--pre-bg-color);
+}
+
 .sun-icon {
-  font-size: 20px;
+  color: var(--a-color);
+  font-size: 35px;
   transform: translateX(25px);
   transition: 1s;
 }
@@ -117,7 +122,8 @@ label:hover {
 }
 
 .moon-icon {
-  font-size: 20px;
+  color: var(--a-color);
+  font-size: 35px;
   transform: translateX(25px);
   transition: 1s;
   opacity: 0;
