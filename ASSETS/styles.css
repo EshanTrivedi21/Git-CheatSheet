@@ -1,3 +1,7 @@
+*, html{
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   border: 5px solid ;
@@ -26,18 +30,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  /* background: #fff; */
   width: 35%;
   border-radius: 30px;
   margin: 0 auto;
 }
+
+#searchElement{
+  display: flex;
+  justify-content: center;
+}
+
 #searchbar{
- 
+  margin-top: 2rem;
   padding: 1em;
+  background-color: var(--pre-bg-color);
+  color: var(--pre-color);
   border-radius: 30px;
   border: none;
-  outline: none;
+  outline: none
 }
+
+#searchbar:focus{
+  box-shadow: 0 0 5px 5px var(--pre-box-shadow);
+}
+
 
 #myBtn {
   display: none;
@@ -324,7 +341,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 27.5px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 h3 {
