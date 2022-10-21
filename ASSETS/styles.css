@@ -212,10 +212,9 @@ section {
 }
 
 .cheatsheet {
-  margin: 0 auto;
   margin-left: 250px;
+  margin-right: 20px;
   padding: 5px;
-  max-width: 900px;
   background: var(--cheatsheet-bg);
 }
 
@@ -372,10 +371,9 @@ h4 {
   margin: auto;
   margin-top: 30px;
   margin-left: 250px;
+  margin-right: 120px;
   margin-bottom: 30px;
   padding: 5px;
-  width: 100%;
-  max-width: 900px;
   background: var(--cheatsheet-bg);
 }
 
