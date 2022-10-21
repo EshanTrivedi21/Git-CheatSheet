@@ -418,9 +418,9 @@ h4 {
 .navbar{
   
   position:fixed;
-  top:50px;
+  top:65px;
   width:250px;
-  height: 90%;
+  height: 87%;
   overflow-y: scroll;
   scrollbar-color: hidden;
   bottom:50px;
@@ -435,11 +435,12 @@ h4 {
 }
 
 li{
-  margin-bottom: 20px;
   margin-left: -20px;
 }
-
-
+.sidebar_pre{
+  white-space: pre-wrap;
+  
+}
 
 @media only screen and (max-width: 600px) {
     
