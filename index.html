@@ -9,11 +9,43 @@
   <title>Git-CheatSheet</title>
   <link rel="stylesheet" href="./ASSETS/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS only
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
   <script src="https://kit.fontawesome.com/d4705f63a2.js" crossorigin="anonymous"></script>
   
 </head>
 
 <body>
+ 
+  <div class="row">
+    <button class="toggler" onclick="showSidebar()"><img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></button>
+    <button class="close" onclick="closeSidebar()"><img src="https://img.icons8.com/nolan/64/delete-sign.png"/></button>
+    <div class="col-3">     
+      <div class="side-navbar">
+      <a href="#"><img src="./ASSETS/favicon.png" alt="" class="logo-img"></a> 
+      <ul class="side-ul">
+        <li class="li-1"><a href="#terminal-basics">terminal basics</a></li>
+      <li class="li-2"><a href="#setting-git-user-name-and-email">setting git user name and email</a></li>
+      <li class="li-3"><a href="#getting-git-help">getting git help</a></li>
+      <li class="li-4"><a href="#creating-a-git-repository">creating a git repository</a></li>
+      <li class="li-5"><a href="#staging-filefiles-of-the-repository">staging file/files of the repository</a></li>
+      <li class="li-6"><a href="#commiting-a-commit">commiting a commit</a></li>
+      <li class="li-7"><a href="#git-ignore">git ignore</a></li>
+      <li class="li-8"><a href="#merging-branches">git branching</a></li>
+      <li class="li-9"><a href="#stashing-git">stashing in git</a></li>
+      <li class="li-10"><a href="#time-travelling-git">time travelling with git</a></li>
+      <li class="li-11"><a href="#creating-github-repository">creating github respositories</a></li>
+      <li class="li-12"><a href="#origin-master-theory">the origin/master theory</a></li>
+      <li class="li-13"><a href="#pulling-interferes">pulling interferes in the working directory</a></li>
+      <li class="li-14"><a href="#git-rebasing">git rebasing</a></li>
+      <li class="li-15"><a href="#git-tags">git tags</a></li>
+      <li class="li-16"><a href="#github-desktop">github desktop</a></li>
+      <li class="li-17"><a href="github-extensions">extensions for Github</a></li>
+      <li class="li-18"><a href="#download-pdf">download git-github cheatsheet</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="col-9">
   <input type="checkbox" id="toggle-btn">
   <label for="toggle-btn">
     <img src="./ASSETS/sun-icon.png" id="icon" class="sun-icon" alt="">
@@ -1253,6 +1285,8 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
   </section>
 </div>
+</div>
+</div>
 </body>
 <script>
   //adding toggle button for light and dark mode 
@@ -1261,6 +1295,18 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
     document.body.classList.toggle("light-theme");
     
   }
+  console.log(window.innerWidth)
+ 
+    function showSidebar(){
+  document.getElementsByClassName("col-3")[0].style.display="block";
+  document.getElementsByClassName("toggler")[0].style.visibility="hidden";
+  document.getElementsByClassName("close")[0].style.visibility="visible";
+}
+function closeSidebar(){
+  document.getElementsByClassName("col-3")[0].style.display="none";
+  document.getElementsByClassName("toggler")[0].style.visibility="visible";
+  document.getElementsByClassName("close")[0].style.visibility="hidden";
+}
 
   const copyButton = document.querySelectorAll(".copy-btn");
   copyButton.forEach((btn) => {

@@ -179,11 +179,69 @@ section {
   background-color: var(--pre-bg-color);
   margin-bottom: 60px;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.col-3{
+  width: 18%;
+  overflow-y: auto;
+  height: 100vh;
+ position: fixed;
+ z-index: 2;
+ min-width: 200px;
+ background-color:var(--body-bg-color);
+  
+}
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.col-9{
+  width: 82%;
+  margin-left: 20%;
+}
+.logo-img{
+  height: 40%;
+  width: 40%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.side-ul{
+ list-style: none;
+
+}
+.side-ul> li{
+  padding: 15px;
+  cursor: pointer;
+}
+.li-1:hover,.li-2:hover,.li-3:hover,.li-4:hover,.li-5:hover,.li-6:hover,.li-7:hover,.li-8:hover,.li-9:hover,.li-10:hover,.li-11:hover,.li-12:hover,.li-13:hover,.li-14:hover,.li-15:hover,.li-16:hover,.li-17:hover,.li-18:hover{
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+  /* color: black; */
+  font-weight: 700;
+  box-shadow:0 8px 8px -4px coral;
+
+}
+.side-navbar{
+text-align: center;
+}
+.side-ul>li>a{
+  color: coral;
+}
 .cheatsheet {
-  margin: 0 auto;
+  margin: 0 20px 0 20px;
   padding: 5px;
-  max-width: 900px;
+  max-width: 1000px;
   background: var(--cheatsheet-bg);
 }
 
@@ -389,4 +447,54 @@ h4 {
   background: #1d2025;
   box-shadow: inset 5px 5px 10px #14161a,
               inset -5px -5px 10px #262a30;
+}
+
+.toggler{
+  margin-top: 10px;
+  position: absolute;
+  visibility: hidden;
+  height: 50px;
+  width: 60px;
+  cursor: pointer;
+  background-color:transparent;
+  border: none;
+  
+}
+
+.close >img{
+  height: 50px;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+.close{
+  background-color: transparent;
+  border: none;
+  visibility: hidden;
+  z-index: 3;
+  height: 60px;
+  position: fixed;
+  
+}
+@media screen and (max-width:950px){
+ .col-3{
+  display: none;
+ }
+ .col-9{
+  margin: auto;
+ }
+ .toggler{
+  visibility: visible;
+ }
+}
+@media screen and (min-width:950px){
+ .col-3{
+  display: block;
+ }
+ .toggler{
+  visibility: hidden;
+ }
+ .close{
+  visibility: hidden;
+ }
 }
