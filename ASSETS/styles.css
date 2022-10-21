@@ -213,6 +213,7 @@ section {
 
 .cheatsheet {
   margin: 0 auto;
+  margin-left: 250px;
   padding: 5px;
   max-width: 900px;
   background: var(--cheatsheet-bg);
@@ -370,6 +371,7 @@ h4 {
 #footer {
   margin: auto;
   margin-top: 30px;
+  margin-left: 250px;
   margin-bottom: 30px;
   padding: 5px;
   width: 100%;
@@ -412,6 +414,32 @@ h4 {
   margin: 10px;
   border-radius: 6px;
 }
+
+.navbar{
+  
+  position:fixed;
+  top:50px;
+  width:250px;
+  height: 90%;
+  overflow-y: scroll;
+  scrollbar-color: hidden;
+  bottom:50px;
+  font-family: "Roboto", sans-serif;
+}
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-items{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     

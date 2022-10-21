@@ -15,6 +15,35 @@
 
 <body>
 
+  <div class="navbar">
+  
+    <nav id="sidebar">
+      <h3>Git-GITHUB Cheatsheet Topics</h3>
+  
+      <ul class="navbar-items">
+        <li><a href="#terminal-basics">terminal basics</a></li>
+        <li><a href="#setting-git-user-name-and-email">setting git user name and email</a></li>
+        <li><a href="#getting-git-help">getting git help</a></li>
+        <li><a href="#creating-a-git-repository">creating a git repository</a></li>
+        <li><a href="#staging-filefiles-of-the-repository">staging file/files of the repository</a></li>
+        <li><a href="#commiting-a-commit">commiting a commit</a></li>
+        <li><a href="#git-ignore">git ignore</a></li>
+        <li><a href="#merging-branches">git branching</a></li>
+        <li><a href="#stashing-git">stashing in git</a></li>
+        <li><a href="#time-travelling-git">time travelling with git</a></li>
+        <li><a href="#creating-github-repository">creating github respositories</a></li>
+        <li><a href="#origin-master-theory">the origin/master theory</a></li>
+        <li><a href="#pulling-interferes">pulling interferes in the working directory</a></li>
+        <li><a href="#git-rebasing">git rebasing</a></li>
+        <li><a href="#git-tags">git tags</a></li>
+        <li><a href="#github-desktop">github desktop</a></li>
+        <li><a href="github-extensions">extensions for Github</a></li>
+        <li><a href="#download-pdf">download git-github cheatsheet</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  
    <div class="container_app">
     <input type="checkbox" id="toggle-btn">
     <label for="toggle-btn" class="toggle-darkmode">
@@ -44,27 +73,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
 <div class="searchbar">
 </div>
-    <h1 class="topics">Git-GITHUB Cheatsheet Topics</h1>
-    <ul class="headings">
-      <li><a href="#terminal-basics">terminal basics</a></li>
-      <li><a href="#setting-git-user-name-and-email">setting git user name and email</a></li>
-      <li><a href="#getting-git-help">getting git help</a></li>
-      <li><a href="#creating-a-git-repository">creating a git repository</a></li>
-      <li><a href="#staging-filefiles-of-the-repository">staging file/files of the repository</a></li>
-      <li><a href="#commiting-a-commit">commiting a commit</a></li>
-      <li><a href="#git-ignore">git ignore</a></li>
-      <li><a href="#merging-branches">git branching</a></li>
-      <li><a href="#stashing-git">stashing in git</a></li>
-      <li><a href="#time-travelling-git">time travelling with git</a></li>
-      <li><a href="#creating-github-repository">creating github respositories</a></li>
-      <li><a href="#origin-master-theory">the origin/master theory</a></li>
-      <li><a href="#pulling-interferes">pulling interferes in the working directory</a></li>
-      <li><a href="#git-rebasing">git rebasing</a></li>
-      <li><a href="#git-tags">git tags</a></li>
-      <li><a href="#github-desktop">github desktop</a></li>
-      <li><a href="github-extensions">extensions for Github</a></li>
-      <li><a href="#download-pdf">download git-github cheatsheet</a></li>
-    </ul>
+    
     <div id="searchElement">
       <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search Commands ...">
     </div>
@@ -1320,6 +1329,13 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+  $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+    });
+
+  });
 </script>
 
 </html>
