@@ -104,6 +104,7 @@ label {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     position: fixed;
   
 }
 .search-icon {
@@ -416,7 +417,7 @@ h4 {
 .navbar{
   
   position:fixed;
-  top:65px;
+  top:80px;
   width:250px;
   height: 87%;
   overflow-y: scroll;
