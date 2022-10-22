@@ -439,7 +439,10 @@ li{
   white-space: pre-wrap;
   
 }
-
+.topnav{
+  visibility: hidden;
+  position: absolute;
+}
 @media only screen and (max-width: 600px) {
     
 
@@ -464,10 +467,47 @@ li{
     
 }
 
-@media only screen and (max-width: 780px) and (min-width: 600px)  {
+@media only screen and (max-width: 780px)   {
 
     .searchbar {
 
         width: 50%;
     }
+}
+
+@media only screen and (max-width: 480px){
+
+  .navbar{
+    visibility: hidden;
+  }
+
+  .cheatsheet{
+    margin-left:4%;
+    margin-right:4%;
+  }
+
+  #footer{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .topnav{
+    position: relative;
+    visibility: visible;
+  }
+  .non_coll{
+    display: flex;
+    align-items: center;
+  }
+
+  #myLinks{
+    display: none;
+  }
+  .hamburger{
+    white-space: pre-wrap;
+  }
+  .img{
+    width:150px;
+  }
+ 
 }
