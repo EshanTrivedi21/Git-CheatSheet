@@ -432,7 +432,17 @@ h4 {
 .navbar-items{
   list-style: none;
 }
-
+.navbar-items li{
+  /* border: 1px solid blue; */
+  padding: 2%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.navbar-items li:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(255, 253, 253, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(132, 132, 132, 0.09) 0px -3px 5px;
+  transition: 0.3s;
+}
 li{
   margin-left: -20px;
 }
