@@ -234,6 +234,10 @@ TO DELETE A REMOTE BRANCH IN GIT
 
     $ git push --delete origin branchname 
 
+TO LIST all remote branches
+
+    $ git branch -a    
+
 <br/>
 
 ## MERGING BRANCHES:
