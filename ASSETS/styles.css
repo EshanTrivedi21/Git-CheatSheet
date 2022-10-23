@@ -21,16 +21,18 @@ html {
   background: var(--cheatsheet-bg);
 }
 
-.searchbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #searchElement {
   display: flex;
   justify-content: center;
   margin: 0%;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #searchbar {
@@ -50,6 +52,7 @@ html {
 #searchbar:focus {
   width: 80%;
 }
+
 
 
 #myBtn {
@@ -138,7 +141,6 @@ label:hover {
 
 body {
   margin-top: 1%;
-  padding: 0;
   overflow-x: hidden;
   animation: fadeIn 1s 1 ease-in forwards;
   background: #131313;
@@ -188,17 +190,7 @@ code:hover>.copy-btn {
   opacity: 1;
 }
 
-.copy-btn.copied::after {
-  content: "Copied!";
-  background: var(--copy-bg-color);
-  color: var(--a-color);
-  position: absolute;
-  left: -13px;
-  top: -39px;
-  padding: 7px;
-  border-radius: 4px;
-  border: 1px solid var(--copy-btn-border);
-}
+
 
 pre {
   font-size: 17.5px;
@@ -235,6 +227,18 @@ pre {
 
 .copy-btn:active {
   background-color: var(--copy-btn-active);
+}
+
+.copy-btn.copied::after {
+  content: "Copied!";
+  background: var(--copy-bg-color);
+  color: var(--a-color);
+  position: absolute;
+  left: -13px;
+  top: -39px;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid var(--copy-btn-border);
 }
 
 pre::-webkit-scrollbar {
@@ -392,13 +396,9 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
-.navbar::-webkit-scrollbar {
-  display: none;
-}
 
 .navbar-items {
   list-style: none;
-  margin: 0%;
 }
 
 .navbar-items li {
@@ -454,7 +454,6 @@ li {
   }
 
   #footer {
-    margin: 0%;
     width: 87.5%;
   }
 
@@ -466,7 +465,6 @@ li {
   .topnav {
     position: relative;
     visibility: visible;
-    margin: 0%;
     width: 95%;
   }
 
