@@ -14,11 +14,12 @@
 </head>
 
 <body>
+
   <div class="navbar">
     <div class="sidebar_pre">
       <nav id="sidebar">
         <div id="searchElement">
-          <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search Commands ...">
+          <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search Commands..">
         </div>
         <ul class="navbar-items">
           <li><a href="#terminal-basics">terminal basics</a></li>
@@ -44,63 +45,31 @@
     </div>
   </div>
 
-
-  <div class="topnav">
-  <pre class="hamburger ">
-      <h4>
-        <div id="searchElement">
-          <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search Commands ...">
-        </div>
-      </h4>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">    <i class="fa fa-bars fa-lg"></i></a>
-  <div id="myLinks" class = ""><ul class="navbar-items">
-  <li><a href="#terminal-basics">terminal basics</a></li>
-  <li><a href="#setting-git-user-name-and-email">git user name and email</a></li>
-  <li><a href="#getting-git-help">getting git help</a></li>
-  <li><a href="#creating-a-git-repository">creating a git repository</a></li>
-  <li><a href="#staging-filefiles-of-the-repository">staging files</a></li>
-  <li><a href="#commiting-a-commit">commiting a commit</a></li>
-  <li><a href="#git-ignore">git ignore</a></li>
-  <li><a href="#merging-branches">git branching</a></li>
-  <li><a href="#stashing-git">stashing in git</a></li>
-  <li><a href="#time-travelling-git">time travelling with git</a></li>
-  <li><a href="#creating-github-repository">creating github respositories</a></li>
-  <li><a href="#origin-master-theory">the origin/master theory</a></li>
-  <li><a href="#pulling-interferes">pull interference</a></li>
-  <li><a href="#git-rebasing">git rebasing</a></li>
-  <li><a href="#git-tags">git tags</a></li>
-  <li><a href="#github-desktop">github desktop</a></li>
-  <li><a href="#github-extensions">extensions for Github</a></li>
-  <li><a href="#download-pdf">git-github cheatsheet</a></li></ul></div></pre>
-  </div>
-
   <section class="cheatsheet">
     <h1 id="welcome-to-the-git-cheat-sheet">
-      THE GIT-GITHUB CHEATSHEET.
+      THE GIT-GITHUB CHEATSHEET
     </h1>
-    <br>
     <pre>
-        <code>
-TOPIC:          THE GIT-GITHUB CHEATSHEET.<br>
-DESCRIPTION:    Your very own Git and Github Cheatsheet! <br>
-REFERENCE:      Git-Github Bootcamp (Colt Steele) - Udemy <br>
-AUTHORs:        <a href="https://github.com/EshanTrivedi21" target="_blank">EshanTrivedi21</a>, <a href="https://github.com/VinayKanase" target="_blank">VinayKanase</a> and <a href="https://github.com/Aryan-Parmar" target="_blank">Aryan-Parmar</a> <br>
-REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" target="_blank">https://github.com/EshanTrivedi21/Git-CheatSheet</a>
-          <span class="contributors">CONTRIBUTORS: 
-            <span href="https://github.com/eshantrivedi21/git-cheatsheet/graphs/contributors">
-              <img class="img"src="https://contrib.rocks/image?repo=eshantrivedi21/git-cheatsheet&columns=15" />
-            </span>
-          </span>
-        </code>
-      </pre>
+    <code>
+TOPIC:                THE GIT-GITHUB CHEATSHEET<br>
+DESCRIPTION:          Your very own Git and Github Cheatsheet! <br>
+REFERENCE:            Git-Github Bootcamp (Colt Steele) - Udemy <br>
+AUTHORs:              <a href="https://github.com/EshanTrivedi21" target="_blank">EshanTrivedi21</a>, <a href="https://github.com/KCmean" target="_blank">KCmean</a>, <a href="https://github.com/VinayKanase" target="_blank">VinayKanase</a> and <a href="https://github.com/Aryan-Parmar" target="_blank">Aryan-Parmar</a> <br>
+REPOSITORY:           <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" target="_blank">https://github.com/EshanTrivedi21/Git-CheatSheet</a>
+                      <span class="contributors">CONTRIBUTORS: 
+                          <img class="img" href="https://github.com/eshantrivedi21/git-cheatsheet/graphs/contributors" src="https://contrib.rocks/image?repo=eshantrivedi21/git-cheatsheet&columns=15" />
+                      </span>
+    </code>
+    </pre>
 
-    <div class="searchbar">
+    <div>
+      <input  class="header" onkeyup="search()" type="text" name="search" placeholder="Search Commands..">
     </div>
 
     <div id="list_search">
       <h2 id="terminal-basics" class="searchItem">TERMINAL BASICS</h2>
       <div class="searchItem">
-        <p><strong>It is the LIST command which LISTS all the contents of a Directory</strong></p>
+        <p>It is the LIST command which LISTS all the contents of a Directory</p>
         <code class="language-bash">
               <pre>$ ls</pre>
               <button class="copy-btn">
@@ -109,7 +78,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOCATES to a directory and then LISTS the contents</strong></p>
+        <p>LOCATES to a directory and then LISTS the contents</p>
         <code class="language-bash">
               <pre>$ ls foldername</pre>
               <button class="copy-btn">
@@ -118,7 +87,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>PRINT WORKING DIRECTORY</strong></p>
+        <p>PRINT WORKING DIRECTORY</p>
         <code class="language-bash">
                     <pre>$ pwd</pre>
                     <button class="copy-btn">
@@ -128,7 +97,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       </div>
       <div class="searchItem">
         <p>
-          <strong>CHANGES and HOPS onto the respective Working Directory</strong>
+          CHANGES and HOPS onto the respective Working Directory
         </p>
         <code class="language-bash">
                     <pre>$ cd C:\User\username\foldername</pre>
@@ -138,7 +107,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>HOPS onto Parent Directory of the Working Directory</strong></p>
+        <p>HOPS onto Parent Directory of the Working Directory</p>
         <code class="language-bash">
                     <pre>$ cd ..</pre>
                     <button class="copy-btn">
@@ -147,7 +116,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>CLEARS the used Terminal</strong></p>
+        <p>CLEARS the used Terminal</p>
         <code class="language-bash">
                     <pre>$ clear</pre>
                     <button class="copy-btn">
@@ -156,7 +125,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>QUITS out of a entered command</strong></p>
+        <p>QUITS out of a entered command</p>
         <code class="language-bash">
                     <pre>$ q</pre>
                     <button class="copy-btn">
@@ -166,7 +135,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       </div>
       <div class="searchItem">
         <p>
-          <strong>CREATES an Empty directory inside the Working Directory</strong>
+          CREATES an Empty directory inside the Working Directory
         </p>
         <code class="language-bash">
                     <pre>$ mkdir foldername</pre>
@@ -176,7 +145,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>DELETES the file</strong></p>
+        <p>DELETES the file</p>
         <code class="language-bash">
                     <pre>$ rm filename</pre>
                     <button class="copy-btn">
@@ -185,7 +154,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>DELETES the directory</strong></p>
+        <p>DELETES the directory</p>
         <code class="language-bash">
                     <pre>$ rm -rf foldername</pre>
                     <button class="copy-btn">
@@ -194,7 +163,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>OPENS the File Explorer to the ROOT Directory</strong></p>
+        <p>OPENS the File Explorer to the ROOT Directory</p>
         <code class="language-bash">
                     <pre>$ start .</pre>
                     <button class="copy-btn">
@@ -205,7 +174,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
       <h2 id="setting-git-user-name-and-email" class="searchItem">SETTING GIT USER NAME AND EMAIL</h2>
       <div class="searchItem">
-        <p><strong>To CHECK if git User-Name is set</strong></p>
+        <p>To CHECK if git User-Name is set</p>
         <code class="language-bash">
                     <pre>$ git config user.name</pre>
                     <button class="copy-btn">
@@ -214,7 +183,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To CHECK if git User-Email is set</strong></p>
+        <p>To CHECK if git User-Email is set</p>
         <code class="language-bash">
                     <pre>$ git config user.email</pre>
                     <button class="copy-btn">
@@ -223,7 +192,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To SET or CHANGE git User-Name</strong></p>
+        <p>To SET or CHANGE git User-Name</p>
         <code class="language-bash">
                     <pre>$ git config --global user.name "Name Lastname"</pre>
                     <button class="copy-btn">
@@ -232,7 +201,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To SET or CHANGE git User-Email</strong></p>
+        <p>To SET or CHANGE git User-Email</p>
         <code class="language-bash">
                     <pre>$ git config --global user.email "email"</pre>
                     <button class="copy-btn">
@@ -241,7 +210,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To SET or CHANGE default code editor as VSCode</strong></p>
+        <p>To SET or CHANGE default code editor as VSCode</p>
         <code class="language-bash">
                     <pre>$ git config --global core.editor "code --wait"</pre>
                     <button class="copy-btn">
@@ -250,7 +219,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To CHANGE git User-Name and git User-Email directly in the config file using vim</strong></p>
+        <p>To CHANGE git User-Name and git User-Email directly in the config file using vim</p>
         <code class="language-bash">
                     <pre>$ git config --global --edit</pre>
                     <button class="copy-btn">
@@ -260,7 +229,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
       </div>
       <div class="searchItem">
         <p>
-          <strong>To Store git User-Name and git User-Email in disk</strong>
+          To STORE git User-Name and git User-Email in disk
         </p>
         <code class="language-bash">
                     <pre>$ git config credential.helper store</pre>
@@ -270,7 +239,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To exit vim</strong></p>
+        <p>To EXIT vim</p>
         <code class="language-bash">
                     <pre>$ escape key + :wq</pre>
                     <button class="copy-btn">
@@ -281,7 +250,6 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
       <h2 id="getting-git-help" class="searchItem">GETTING GIT HELP</h2>
       <div class="searchItem">
-        <p><strong>Use for more details and examples on any of the below (or above) commands</strong></p>
         <code class="language-bash">
                     <pre>$ git command --help</pre>
                     <button class="copy-btn">
@@ -292,7 +260,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
       <h2 id="creating-a-git-repository" class="searchItem">CREATING A GIT REPOSITORY</h2>
       <div class="searchItem">
-        <p><strong>STEP 1: INITIALIZES an empty repository</strong></p>
+        <p>STEP 1: INITIALIZES an empty repository</p>
         <code class="language-bash">
                     <pre>$ git init</pre>
                     <button class="copy-btn">
@@ -301,7 +269,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>STEP 2: to CHECK the status of a repository</strong></p>
+        <p>STEP 2: CHECKS the status of a repository</p>
         <code class="language-bash">
                     <pre>$ git status</pre>
                     <button class="copy-btn">
@@ -312,7 +280,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
 
       <h2 id="staging-filefiles-of-the-repository" class="searchItem">STAGING FILES</h2>
       <div class="searchItem">
-        <p><strong>STAGES the file</strong></p>
+        <p>STAGES the file</p>
         <code class="language-bash">
                     <pre>$ git add filename.txt</pre>
                     <button class="copy-btn">
@@ -321,7 +289,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>UN-STAGES the file</strong></p>
+        <p>UN-STAGES the file</p>
         <code class="language-bash">
                     <pre>$ git rm --cached filename.txt</pre>
                     <button class="copy-btn">
@@ -330,7 +298,7 @@ REPOSITORY:     <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" targe
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>STAGES all files in the repository</strong></p>
+        <p>STAGES all files in the repository</p>
         <code class="language-bash">
                     <pre>
 $ git add --all
@@ -347,7 +315,7 @@ $ git add .
 
       <h2 id="commiting-a-commit" class="searchItem">COMMITTING A COMMIT</h2>
       <div class="searchItem">
-        <p><strong>COMMITS the STAGED files with a commit message</strong></p>
+        <p>COMMITS the STAGED files with a commit message</p>
         <code class="language-bash">
                     <pre>$ git commit -m &quot;commit message&quot;</pre>
                     <button class="copy-btn">
@@ -356,7 +324,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>SKIPS the Staging part and directly COMMITS</strong></p>
+        <p>SKIPS the Staging part and directly COMMITS</p>
         <code class="language-bash">
                     <pre>$ git commit -a -m &quot;commit message&quot;</pre>
                     <button class="copy-btn">
@@ -365,7 +333,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS all the commits done to the repository</strong></p>
+        <p>LOGS all the commits done to the repository</p>
         <code class="language-bash">
                     <pre>$ git log</pre>
                     <button class="copy-btn">
@@ -374,7 +342,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOG commits in a single line</strong></p>
+        <p>LOGS commits in a single line</p>
         <code class="language-bash">
                     <pre>$ git log --oneline</pre>
                     <button class="copy-btn">
@@ -383,7 +351,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>AMMENDS the previous commit</strong></p>
+        <p>AMMENDS the previous commit</p>
         <code class="language-bash">
                     <pre>$ git commit --ammend</pre>
                     <button class="copy-btn">
@@ -392,7 +360,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS the changes</strong></p>
+        <p>LOGS the changes</p>
         <code class="language-bash">
                     <pre>$ git diff</pre>
                     <button class="copy-btn">
@@ -403,7 +371,7 @@ $ git add .
 
       <h2 id="git-branching" class="searchItem">GIT BRANCHING</h2>
       <div class="searchItem">
-        <p><strong>LOGS all the branches of the Working Repository</strong></p>
+        <p>LOGS all the branches of the Working Repository</p>
         <code class="language-bash">
               <pre>$ git branch</pre>
               <button class="copy-btn">
@@ -412,7 +380,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a new branch</strong></p>
+        <p>CREATES a new branch</p>
         <code class="language-bash">
               <pre>$ git branch &lt;new-branch&gt;</pre>
               <button class="copy-btn">
@@ -421,7 +389,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>SWITCHES the Branch from one to another or CHANGING HEAD</strong></p>
+        <p>SWITCHES the Branch from one to another or CHANGING HEAD</p>
         <code class="language-bash">
               <pre>$ git switch &lt;new-branch&gt;</pre>
               <button class="copy-btn">
@@ -430,7 +398,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a new branch and then SWITCHES to the branches</strong></p>
+        <p>CREATES a new branch and then SWITCHES to the branches</p>
         <code class="language-bash">
               <pre>$ git switch -c &lt;new-branch&gt;</pre>
               <button class="copy-btn">
@@ -439,7 +407,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a new branch and then SWITCHES to the branch</strong></p>
+        <p>CREATES a new branch and then SWITCHES to the branch</p>
         <code class="language-bash">
               <pre>$ git checkout -b &lt;new-branch&gt;</pre>
               <button class="copy-btn">
@@ -448,7 +416,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>DELETES newbranch</strong></p>
+        <p>DELETES newbranch</p>
         <code class="language-bash">
               <pre>$ git branch -D &lt;new-branch&gt;</pre>
               <button class="copy-btn">
@@ -457,7 +425,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>CHANGES the name of the Branch you are Headed on</strong></p>
+        <p>CHANGES the name of the Branch you are Headed on</p>
         <code class="language-bash">
               <pre>$ git branch -M &lt;final-branch&gt;</pre>
               <button class="copy-btn">
@@ -466,7 +434,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>TO DELETE A REMOTE BRANCH IN GIT</strong></p>
+        <p>TO DELETE A REMOTE BRANCH IN GIT</p>
         <code class="language-bash">
               <pre>$ git push --delete &lt;origin branchname&gt;</pre>
               <button class="copy-btn">
@@ -475,7 +443,7 @@ $ git add .
             </code>
       </div>
       <div class="searchItem">
-        <p><strong>To LIST all remote branches</strong></p>
+        <p>To LIST all remote branches</p>
         <code class="language-bash">
             <pre>$ git branch -a</pre>
             <button class="copy-btn">
@@ -486,36 +454,23 @@ $ git add .
 
       <h2 id="git-ignore" class="searchItem">GIT IGNORE</h2>
       <div class="searchItem">
-        <p><strong>STEP 1: create a .gitignore file</strong></p>
+        <p>STEP 1: create a .gitignore file</p>
       </div>
       <div class="searchItem">
-        <p><strong>STEP 2: add files or folders inside the file to ignore, now the files are are untracked by github and
-            wont be staged or
-            commited</strong></p>
-      </div>
-
-      <h2 id="git-ignore" class="searchItem">GIT IGNORE PATTERNS</h2>
-      <div class="searchItem">
-        <p><strong>Preventing unintentional staging or commiting of files</strong></p>
-        <code class="language-bash">
-                <pre>logs/           // ignoring all files inside logs folder<br/>*.notes         // ignoring all files with .notes file extension<br/>pattern*/       // ignoring all pattern* files or folders</pre>
-                <button class="copy-btn">
-                  <img src="./ASSETS/copy-icon.svg" alt="copy" />
-                </button>
-              </code>
+        <p>STEP 2: <span>add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited</span></p>
       </div>
 
       <h2 id="merging-branches" class="searchItem">MERGING BRANCHES</h2>
       <div class="searchItem">
         <h3>FAST FORWARD MERGE</h3>
-        <p><strong>STEP 1: SWITCH the HEAD first to the first branch</strong></p>
+        <p>STEP 1: SWITCH the HEAD first to the first branch</p>
         <code class="language-bash">
                     <pre>$ git switch master</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 2: MERGES newbranch into master with HEAD on master</strong></p>
+        <p>STEP 2: MERGES newbranch into master with HEAD on master</p>
         <code class="language-bash">
                     <pre>$ git merge &lt;new-branch&gt;</pre>
                     <button class="copy-btn">
@@ -523,32 +478,33 @@ $ git add .
                     </button>
                   </code>
       </div>
-      <div class="searchItem">
+      <div class="searchItem"><br>
         <h3>NOT ALL MERGES ARE FAST FORWARD MERGES</h3>
-        <h4>WITH OUT MERGE CONFLICTS</h4>
+        <h3>WITH OUT MERGE CONFLICTS</h3>
         <code class="language-bash">
                     <pre>$ git switch master</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>CREATES a new commit unlike fastforwarding merges</strong></p>
+        <p>CREATES a new commit unlike fastforwarding merges</p>
         <code class="language-bash">
                     <pre>$ git merge -m "mergering message"</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
-                  </code>
-        <h4>MERGE CONFLICTS</h4>
-        <p><strong>STEP 1: OPEN UP files having merge conflicts</strong></p>
-        <p><strong>STEP 2: REMOVE the conflicts</strong></p>
-        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 1: ACCEPT INCOMING CHANGES</strong></p>
-        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 2: ACCEPT CURRENT CHANGES</strong></p>
-        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 3: ACCEPT BOTH CHANGES</strong></p>
-        <p><strong>&nbsp;&nbsp;&nbsp;OPTION 4: COMPARE CHANGES</strong></p>
-        <p><strong>STEP 3: REMOVE the conflict markers</strong></p>
-        <p><strong>STEP 4: STAGE and COMMIT the changes</strong></p>
-        <h4>ABORT MERGE WHEN UNRESOLVABLE CONFLICTS OCCURRED</h4>
+                  </code><br>
+        <h3>MERGE CONFLICTS</h3>
+        <p>STEP 1: OPEN UP files having merge conflicts</p>
+        <p>STEP 2: REMOVE the conflicts</p>
+        <p>&nbsp;&nbsp;&nbsp;OPTION 1: ACCEPT INCOMING CHANGES</p>
+        <p>&nbsp;&nbsp;&nbsp;OPTION 2: ACCEPT CURRENT CHANGES</p>
+        <p>&nbsp;&nbsp;&nbsp;OPTION 3: ACCEPT BOTH CHANGES</p>
+        <p>&nbsp;&nbsp;&nbsp;OPTION 4: COMPARE CHANGES</p>
+        <p>STEP 3: REMOVE the conflict markers</p>
+        <p>STEP 4: STAGE and COMMIT the changes</p>
+        <br>
+        <h3>ABORT MERGE WHEN UNRESOLVABLE CONFLICTS OCCURRED</h3>
         <code class="language-bash">
                     <pre>$ git merge --abort</pre>
                     <button class="copy-btn">
@@ -563,50 +519,50 @@ $ git add .
       </div>
       <div class="searchItem">
         <h3>2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS</h3>
-        <p><strong>STASHES the changes</strong></p>
+        <p>STASHES the changes</p>
         <code class="language-bash">
                     <pre>$ git stash</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>UN STASHES the changes, use it when you resume your work</strong></p>
+        <p>UN STASHES the changes, use it when you resume your work</p>
         <code class="language-bash">
                     <pre>$ git stash pop</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>APPLY stashed changes into another or the same branch</strong></p>
+        <p>APPLY stashed changes into another or the same branch</p>
         <code class="language-bash">
                     <pre>$ git stash apply</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <h4>IF WORKING WITH MULTIPLE STASHES</h4>
-        <p><strong>LOGS all the stashes</strong></p>
+        <h3>IF WORKING WITH MULTIPLE STASHES</h3>
+        <p>LOGS all the stashes</p>
         <code class="language-bash">
                     <pre>$ git stash list</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STASHES the changes in the Stash index 1</strong></p>
+        <p>STASHES the changes in the Stash index 1</p>
         <code class="language-bash">
                     <pre>$ git stash apply stash@{1}</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>DELETES the stash, p.s. applying the stash doesnt delete it</strong></p>
+        <p>DELETES the stash, p.s. applying the stash doesnt delete it</p>
         <code class="language-bash">
                     <pre>$ git stash drop stash@{1}</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>CLEARS the whole stash list</strong></p>
+        <p>CLEARS the whole stash list</p>
         <code class="language-bash">
                     <pre>$ git stash clear</pre>
                     <button class="copy-btn">
@@ -617,25 +573,25 @@ $ git add .
 
       <h2 id="time-travelling-git" class="searchItem">TIME TRAVELLING WITH GIT</h2>
       <div class="searchItem">
-        <h3>1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a</h3>
-        <p><strong>DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because
+        <h3>TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a</h3>
+        <p>DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because
             HEAD
             is meant to map
-            a whole branch and not a specific commit</strong></p>
+            a whole branch and not a specific commit</p>
         <code class="language-bash">
                     <pre>$ git checkout 604a39a</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>DETACHES HEAD and ATTACHES it to the previous commit</strong></p>
+        <p>DETACHES HEAD and ATTACHES it to the previous commit</p>
         <code class="language-bash">
                     <pre>$ git checkout HEAD~1</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>RE-ATTACHES HEAD and now the head properly maps onto the master branch</strong></p>
+        <p>RE-ATTACHES HEAD and now the head properly maps onto the master branch</p>
         <code class="language-bash">
                     <pre>$ git switch master</pre>
                     <button class="copy-btn">
@@ -644,14 +600,14 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <h3>2. TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a</h3>
+        <h3>TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a</h3>
         <code class="language-bash">
                     <pre>$ git checkout 604a39a</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>now the head is perfect where it should have been</strong></p>
+        <p>now the head is perfect where it should have been</p>
         <code class="language-bash">
                     <pre>$ git switch -c &lt;new-branch&gt;</pre>
                     <button class="copy-btn">
@@ -660,7 +616,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <h3>3. TO RESTORE ALL CHANGES TO TRACKED FILES</h3>
+        <h3>TO RESTORE ALL CHANGES TO TRACKED FILES</h3>
         <code class="language-bash">
                     <pre>$ git reset origin/main --hard</pre>
                     <button class="copy-btn">
@@ -669,7 +625,7 @@ $ git add .
                   </code>
       </div>
       <div class="searchItem">
-        <h3>4. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT</h3>
+        <h3>TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT</h3>
         <code class="language-bash">
                     <pre>
 $ git checkout HEAD filename.txt 
@@ -680,7 +636,7 @@ $ git restore filename.txt
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <h3>5. TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT</h3>
+        <h3>TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT</h3>
         <code class="language-bash">
                     <pre>$ git restore --source HEAD~1 filename.txt</pre>
                     <button class="copy-btn">
@@ -689,7 +645,7 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <h3>6. UNSTAGE A FILE</h3>
+        <h3>UNSTAGE A FILE</h3>
         <code class="language-bash">
                     <pre>$ git restore --unstaged filename.txt</pre>
                     <button class="copy-btn">
@@ -698,18 +654,18 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <h3>7. RESETING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
-        <p><strong>NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is
+        <h3>RESETING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
+        <p>NOTE: it resets the head to the commit id 604a39a, but it doesnt delete the changes, it like there is
             no
             commit made
-            after commit id 604a39a</strong></p>
+            after commit id 604a39a</p>
         <code class="language-bash">
                     <pre>$ git reset 604a39a</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>LOOSES the commit as well as LOOSES the contents of the commit</strong></p>
+        <p>LOOSES the commit as well as LOOSES the contents of the commit</p>
         <code class="language-bash">
                     <pre>$ git reset --hard 604a39a</pre>
                     <button class="copy-btn">
@@ -718,11 +674,11 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <h3>8. REVERTING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
-        <p><strong>REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s.
+        <h3>REVERTING THE REPOSITORY TO A PARTICULAR COMMIT</h3>
+        <p>REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s.
             this
             helps while
-            collaboration</strong></p>
+            collaboration</p>
         <code class="language-bash">
                     <pre>$ git revert 604a39a</pre>
                     <button class="copy-btn">
@@ -733,40 +689,40 @@ $ git restore filename.txt
 
       <h2 id="creating-github-repository" class="searchItem">CREATING GITHUB RESPOSITORIES</h2>
       <div class="searchItem">
-        <h3>1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)</h3>
-        <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-        <p><strong>STEP 2: CREATES an empty git repository</strong></p>
+        <h3>BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)</h3>
+        <p><strong>STEP 1:</strong> CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</p>
+        <p><strong>STEP 2:</strong> CREATES an empty git repository</p>
         <code class="language-bash">
                     <pre>$ git init</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
-        <p><strong>STEP 4: a commit is needed to push any files to github</strong></p>
+        <p><strong>STEP 3:</strong> WRITE YOUR PIECE OF CODE</p>
+        <p><strong>STEP 4:</strong> a commit is needed to push any files to github</p>
         <code class="language-bash">
                     <pre>$ git commit -a -m "first commit"</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 5: CREATES a new REMOTE DESTINATION for the github repository</strong></p>
+        <p><strong>STEP 5:</strong> CREATES a new REMOTE DESTINATION for the github repository</p>
         <code class="language-bash">
                     <pre>$ git remote add origin &lt;copied url&gt;</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>LOGS out the REMOTE URL if any</strong></p>
+        <p>LOGS out the REMOTE URL if any</p>
         <code class="language-bash">
                     <pre>$ git remote -v</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 6: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
+        <p><strong>STEP 6:</strong> PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
             master branch as a default
-            so that we can use just >> git push in future</strong></p>
+            so that we can use just >> git push in future</p>
         <code class="language-bash">
                     <pre>$ git push -u origin &lt;branchname&gt;</pre>
                     <button class="copy-btn">
@@ -775,26 +731,26 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <h3>2. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)</h3>
-        <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-        <p><strong>STEP 2: CLONES as well as automatically sets the REMOTE DESTINATION</strong></p>
+        <h3>BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)</h3>
+        <p><strong>STEP 1:</strong> CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</p>
+        <p><strong>STEP 2:</strong> CLONES as well as automatically sets the REMOTE DESTINATION</p>
         <code class="language-bash">
                     <pre>$ git clone &lt;copied url&gt;</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 3: WRITE YOUR PIECE OF CODE</strong></p>
-        <p><strong>STEP 4: a commit is needed to push any files to github</strong></p>
+        <p><strong>STEP 3:</strong> WRITE YOUR PIECE OF CODE</p>
+        <p><strong>STEP 4:</strong> a commit is needed to push any files to github</p>
         <code class="language-bash">
                     <pre>$ git commit -a -m "first commit"</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 5: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
+        <p><strong>STEP 5:</strong> PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
             master branch as a default
-            so that we can use just >> git push in future</strong></p>
+            so that we can use just >> git push in future</p>
         <code class="language-bash">
                     <pre>$ git push -u origin &lt;branchname&gt;</pre>
                     <button class="copy-btn">
@@ -803,25 +759,25 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <h3>3. CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY</h3>
-        <p><strong>STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</strong></p>
-        <p><strong>STEP 2: CREATES a new REMOTE DESTINATION for the github repository</strong></p>
+        <h3>CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY</h3>
+        <p><strong>STEP 1:</strong> CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL</p>
+        <p><strong>STEP 2:</strong> CREATES a new REMOTE DESTINATION for the github repository</p>
         <code class="language-bash">
                     <pre>$ git remote add origin &lt;copied url&gt;</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>LOGS out the REMOTE URL if any</strong></p>
+        <p>LOGS out the REMOTE URL if any</p>
         <code class="language-bash">
                     <pre>$ git remote -v</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 3: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
+        <p><strong>STEP 3:</strong> PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and
             master branch as a default
-            so that we can use just >> git push in future</strong></p>
+            so that we can use just >> git push in future</p>
         <code class="language-bash">
                     <pre>$ git push -u origin &lt;branchname&gt;</pre>
                     <button class="copy-btn">
@@ -830,11 +786,11 @@ $ git restore filename.txt
                   </code>
       </div>
 
-      <h2 id="origin-master-theory" class="searchItem">THE origin/master THEORY</h2>
+      <h2 id="origin-master-theory" class="searchItem">THE ORIGIN/MASTER THEORY</h2>
       <div class="searchItem">
-        <p><strong>origin/master IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL
-            BRANCH</strong></p>
-        <p><strong>LOGS the remote tracking branch</strong></p>
+        <p>ORIGIN/MASTER IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL
+            BRANCH</p>
+        <p>LOGS the remote tracking branch</p>
         <code class="language-bash">
                     <pre>$ git branch -r</pre>
                     <button class="copy-btn">
@@ -843,9 +799,9 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
+        <p>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
             local branch is
-            ahead of the remote branch and not up to date, push to make it up to date</strong></p>
+            ahead of the remote branch and not up to date, push to make it up to date</p>
         <code class="language-bash">
                     <pre>$ git checkout origin/master</pre>
                     <button class="copy-btn">
@@ -854,11 +810,11 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED
+        <p>BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED
             IN
             ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO
-            SO IS</strong></p>
-        <p><strong>To check all the branches available</strong></p>
+            SO IS</p>
+        <p>To check all the branches available</p>
         <code class="language-bash">
                     <pre>$ git branch -r</pre>
                     <button class="copy-btn">
@@ -867,7 +823,7 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>This automatically CONNECTS the two branches and we can freely work on them now</strong></p>
+        <p>This automatically CONNECTS the two branches and we can freely work on them now</p>
         <code class="language-bash">
                     <pre>$ git switch branchname</pre>
                     <button class="copy-btn">
@@ -876,7 +832,7 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>Now this correctly LOGS all the connected branches</strong></p>
+        <p>Now this correctly LOGS all the connected branches</p>
         <code class="language-bash">
                     <pre>$ git branch</pre>
                     <button class="copy-btn">
@@ -885,13 +841,13 @@ $ git restore filename.txt
                   </code>
       </div>
 
-      <h2 id="fetching-and-pulling" class="searchItem">FETCHING AND PULLING</h2>
+      <h2 id="fetching-and-pulling" class="searchItem">GIT FETCHING</h2>
       <div class="searchItem">
-        <p><strong>FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT
+        <p>FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT
             DOESN'T
             CHANGE INTO THE
-            WORKING DIRECTORY</strong></p>
-        <p><strong>To receive the new commits</strong></p>
+            WORKING DIRECTORY</p>
+        <p>To receive the new commits</p>
         <code class="language-bash">
                     <pre>$ git fetch</pre>
                     <button class="copy-btn">
@@ -900,9 +856,9 @@ $ git restore filename.txt
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a new branch having the changes but this doesnt interfere in the working directory, the
+        <p>CREATES a new branch having the changes but this doesnt interfere in the working directory, the
             origin/master now heads
-            on to this new branch and the master branch would be one branch behind the origin/master</strong></p>
+            on to this new branch and the master branch would be one branch behind the origin/master</p>
         <code class="language-bash">
                     <pre>
 $ git fetch origin
@@ -915,9 +871,9 @@ $ git fetch origin branchname
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
+        <p>To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the
             local branch is
-            ahead of the remote branch and not up to date, push to make it up to date</strong></p>
+            ahead of the remote branch and not up to date, push to make it up to date</p>
         <code class="language-bash">
                     <pre>$ git checkout origin/master</pre>
                     <button class="copy-btn">
@@ -926,9 +882,10 @@ $ git fetch origin branchname
                   </code>
       </div>
 
-      <h2 id="pulling-interferes" class="searchItem">PULL INTERFERENCE</h2>
+      <h2 id="pulling-interferes" class="searchItem">GIT PULLING</h2>
       <div class="searchItem">
-        <p><strong>PULLS the changes and merges the changes with the branch you want to OR default</strong></p>
+        <p>PULLING = FETCHING + MERGING</p>
+        <p>PULLS the changes and merges the changes with the branch you want to OR default</p>
         <code class="language-bash">
                     <pre>
 $ git pull origin
@@ -941,12 +898,12 @@ $ git push origin branchname
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>SOLVE MERGE CONFLICTS IF ANY</strong></p>
+        <p>SOLVE MERGE CONFLICTS IF ANY</p>
       </div>
 
       <h2 id="force-push-and-pull" class="searchItem">FORCE PUSH AND PULL</h2>
       <div class="searchItem">
-        <p><strong>This will delete your previous commit(s) and push your current one. f signifies force</strong></p>
+        <p>This will delete your previous commit(s) and push your current one. f signifies force</p>
         <code class="language-bash">
                     <pre>$ git push origin &lt;your-branch-name&gt; -f</pre>
                     <button class="copy-btn">
@@ -955,10 +912,10 @@ $ git push origin branchname
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>This is nothing but fetch + rebase. This will invoke rebase in interactive mode where you can choose
+        <p>This is nothing but fetch + rebase. This will invoke rebase in interactive mode where you can choose
             how
             to apply each
-            individual commit that isn't in the history you are rebasing on</strong></p>
+            individual commit that isn't in the history you are rebasing on</p>
         <code class="language-bash">
                     <pre>
 $ git pull --rebase=interactive
@@ -973,33 +930,33 @@ $ git pull --rebase=i
 
       <h2 id="github-collaboration" class="searchItem">GITHUB COLLABORATION</h2>
       <div class="searchItem">
-        <p><strong>CENTRALIZED WORKFLOW: EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH
-            ONLY.</strong></p>
-      </div>
+        <p><strong>CENTRALIZED WORKFLOW:</strong><br>EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH
+            ONLY.</p>
+      </div><br>
       <div class="searchItem">
-        <p><strong>FEATURE BRANCH WORKFLOW: EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE
-            MESS</strong></p>
-      </div>
+        <p><strong>FEATURE BRANCH WORKFLOW:</strong><br>EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE
+            MESS</p>
+      </div><br>
       <div class="searchItem">
-        <p><strong>GITHUB PULL REQUEST WORKFLOW: Once a pull request is opened, you can discuss and review the potential
+        <p><strong>GITHUB PULL REQUEST WORKFLOW:</strong><br>Once a pull request is opened, you can discuss and review the potential
             changes with
-            collaborators and add follow-up commits before your changes are merged into the base branch.</strong></p>
-      </div>
+            collaborators and add follow-up commits before your changes are merged into the base branch.</p>
+      </div><br>
       <div class="searchItem">
-        <p><strong>GITHUB FORKS AND CLONE WORKFLOW: Forking nd then opening a pull request to the owner of the main
-            repository.</strong></p>
-      </div>
+        <p><strong>GITHUB FORKS AND CLONE WORKFLOW:</strong><br>Forking nd then opening a pull request to the owner of the main
+            repository.</p>
+      </div><br>
 
       <h2 id="git-rebasing" class="searchItem">GIT REBASING</h2>
       <div class="searchItem">
-        <h3>REBASES OR SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH</h3>
+        <h3>SEPARATES THE HISTORY OF THE NEWBRANCH FROM THE MASTER BRANCH</h3>
         <code class="language-bash">
                     <pre>$ git switch newbranch</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>REBASES or MERGES master into newbranch</strong></p>
+        <p>REBASES or MERGES master into newbranch</p>
         <code class="language-bash">
                     <pre>$ git rebase master</pre>
                     <button class="copy-btn">
@@ -1007,17 +964,17 @@ $ git pull --rebase=i
                     </button>
                   </code>
       </div>
-      <div class="searchItem">
+      <div class="searchItem"><br>
         <h3>CONFLICTS WHILE REBASING</h3>
-        <p><strong>STEP 1: Resolve the CONFLICTS MANUALLY</strong></p>
-        <p><strong>STEP 2:</strong></p>
+        <p>STEP 1: Resolve the CONFLICTS MANUALLY</p>
+        <p>STEP 2:</p>
         <code class="language-bash">
                     <pre>$ git add</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>STEP 3:</strong></p>
+        <p>STEP 3:</p>
         <code class="language-bash">
                     <pre>$ git rebase --continue</pre>
                     <button class="copy-btn">
@@ -1025,30 +982,30 @@ $ git pull --rebase=i
                     </button>
                   </code>
       </div>
-      <div class="searchItem">
+      <div class="searchItem"><br>
         <h3>INTERACTIVE REBASING</h3>
-        <p><strong>OPENS up the code editor where you can play with the nth last commits and above</strong></p>
+        <p>OPENS up the code editor where you can play with the nth last commits and above</p>
         <code class="language-bash">
                     <pre>$ git rebase -i HEAD~n</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>CHANGES the name of a specific commit</strong></p>
+        <p>CHANGES the name of a specific commit</p>
         <code class="language-bash">
                     <pre>$ reword</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>COMBINES the changes of that commit to the previous commit and then deletes it</strong></p>
+        <p>COMBINES the changes of that commit to the previous commit and then deletes it</p>
         <code class="language-bash">
                     <pre>$ fixup</pre>
                     <button class="copy-btn">
                       <img src="./ASSETS/copy-icon.svg" alt="copy" />
                     </button>
                   </code>
-        <p><strong>DELETES the commit and the commit changes as if they were never written</strong></p>
+        <p>DELETES the commit and the commit changes as if they were never written</p>
         <code class="language-bash">
                     <pre>$ drop</pre>
                     <button class="copy-btn">
@@ -1058,10 +1015,13 @@ $ git pull --rebase=i
       </div>
 
       <h2 id="git-tags" class="searchItem">GIT TAGS</h2>
+      <br>
       <div class="searchItem">
-        <p><strong>TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT</strong></p>
-        <p><strong>Semanting Versioning Format is widely used for tags and releases (v1.0.1)</strong></p>
-        <p><strong>LOGS all the tags</strong></p>
+        <p>TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT</p>
+        <p>Semanting Versioning Format is widely used for tags and releases (v1.0.1)</p>
+        <p>TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT</p>
+        <br>
+        <p>LOGS all the tags</p>
         <code class="language-bash">
                     <pre>$ git tag -l</pre>
                     <button class="copy-btn">
@@ -1070,7 +1030,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS tag name v17</strong></p>
+        <p>LOGS tag name v17</p>
         <code class="language-bash">
                     <pre>$ git tag -l "v17"</pre>
                     <button class="copy-btn">
@@ -1079,7 +1039,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS tag names that start with v17..</strong></p>
+        <p>LOGS tag names that start with v17..</p>
         <code class="language-bash">
                     <pre>$ git tag -l "v17*"</pre>
                     <button class="copy-btn">
@@ -1088,7 +1048,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS tags which include beta in their name</strong></p>
+        <p>LOGS tags which include beta in their name</p>
         <code class="language-bash">
                     <pre>$ git tag -l "*beta*"</pre>
                     <button class="copy-btn">
@@ -1097,8 +1057,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT</strong></p>
-        <p><strong>LOGS the changes between both the versions</strong></p>
+        <p>LOGS the changes between both the versions</p>
         <code class="language-bash">
                     <pre>$ git diff v16.0.1 v16.1.1</pre>
                     <button class="copy-btn">
@@ -1107,7 +1066,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a lightweight tag</strong></p>
+        <p>CREATES a lightweight tag</p>
         <code class="language-bash">
                     <pre>$ git tag tagname</pre>
                     <button class="copy-btn">
@@ -1116,7 +1075,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES an annotated tag</strong></p>
+        <p>CREATES an annotated tag</p>
         <code class="language-bash">
                     <pre>$ git tag -a tagname</pre>
                     <button class="copy-btn">
@@ -1125,7 +1084,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>LOGS the message of the git tag "annotated"</strong></p>
+        <p>LOGS the message of the git tag "annotated"</p>
         <code class="language-bash">
                     <pre>$ git show annotation</pre>
                     <button class="copy-btn">
@@ -1134,7 +1093,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>CREATES a tag at commit number 604a39a</strong></p>
+        <p>CREATES a tag at commit number 604a39a</p>
         <code class="language-bash">
                     <pre>$ git tag -a tagname 604a39a</pre>
                     <button class="copy-btn">
@@ -1143,7 +1102,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>DELETES the tag</strong></p>
+        <p>DELETES the tag</p>
         <code class="language-bash">
                     <pre>$ git tag -d tagname</pre>
                     <button class="copy-btn">
@@ -1152,7 +1111,7 @@ $ git pull --rebase=i
                   </code>
       </div>
       <div class="searchItem">
-        <p><strong>TRANSFERS tags to remote servers</strong></p>
+        <p>TRANSFERS tags to remote servers</p>
         <code class="language-bash">
                     <pre>$ git push origin tagname</pre>
                     <button class="copy-btn">
@@ -1163,55 +1122,51 @@ $ git pull --rebase=i
 
       <h2 id="github-desktop" class="searchItem">GITHUB DESKTOP</h2>
       <div class="searchItem">
-        <p><strong>Interact with GitHub using a GUI instead of the command line or a web browser</strong></p>
-      </div>
-      <div class="searchItem">
-        <h2>1.Installing and authenticating</h2>
-        <p><strong>STEP 1: Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).</strong>
+        <h3>INSTALLING AND AUTHENTICATING</h3>
+        <p><strong>STEP 1:</strong> Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).
         </p>
-        <p><strong>STEP 2: Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get
-            authentication.</strong></p>
-      </div>
+        <p><strong>STEP 2:</strong> Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get
+            authentication.</p>
+      </div><br>
       <div class="searchItem">
-        <h2>2.Contributing to projects with GitHub Desktop</h2>
-        <p><strong>STEP 1: You can create a new repository by selecting the File menu and clicking New
-            repository.</strong>
+        <h3>CONTRIBUTING TO PROJECTS WITH GITHUB DESKTOP</h3>
+        <p><strong>STEP 1:</strong> You can create a new repository by selecting the File menu and clicking New
+            repository.
         </p>
-        <p><strong>STEP 2: You can add a repository from your local computer by selecting the File menu and clicking Add
-            Local Repository.</strong></p>
-        <p><strong>STEP 3: You can clone a repository from GitHub by selecting the File menu and clicking Clone
-            Repository.</strong></p>
-        <p><strong>STEP 4: You can use GitHub Desktop to create a branch of a project.</strong></p>
-        <p><strong>STEP 5: After you make changes to a branch, you can review them in GitHub Desktop and make a commit
+        <p><strong>STEP 2:</strong> You can add a repository from your local computer by selecting the File menu and clicking Add
+            Local Repository.</p>
+        <p><strong>STEP 3:</strong> You can clone a repository from GitHub by selecting the File menu and clicking Clone
+            Repository.</p>
+        <p><strong>STEP 4:</strong> You can use GitHub Desktop to create a branch of a project.</p>
+        <p><strong>STEP 5:</strong> After you make changes to a branch, you can review them in GitHub Desktop and make a commit
             to
             keep track of
-            your changes.</strong></p>
-        <p><strong>STEP 6: You can use GitHub Desktop to create issues or pull requests to collaborate on projects with
-            other people.</strong></p>
-        <p><strong>STEP 7: When you make changes to your local repositories or when other people make changes to the
+            your changes.</p>
+        <p><strong>STEP 6:</strong> You can use GitHub Desktop to create issues or pull requests to collaborate on projects with
+            other people.</p>
+        <p><strong>STEP 7:</strong> When you make changes to your local repositories or when other people make changes to the
             remote
             repositories,
-            you will need to sync your local copy of the project with the remote repository.</strong></p>
+            you will need to sync your local copy of the project with the remote repository.</p>
       </div>
 
-      <h2 id="github-extensions" class="searchItem">Extensions for Github</h2>
+      <h2 id="github-extensions" class="searchItem">GITHUB EXTENSIONS</h2>
       <div class="searchItem">
         <p>
-          <strong>
+          
             if you're a Developer and you use Github as your Version Control Tools, there's likely some functionality
             you wish it had. To help with these there are some best extension that you can use for Github.
-          </strong>
-        <ol type="A">
+          
+        <ol type="1">
           <li>
-            <strong>Octotree: </strong>This is a feature-rich extensions that enhance your Github experience. It
+            <p>Octotree: This is a feature-rich extensions that enhance your Github experience. It
             facilitates you with code tree to all the github repositories, which simplifies your file search and
             navigation. (though now
             this is by default provided by Github) It also offers you bookmarking repositories, files and PRs. It
             increase your productivity at work by lazy-loading and caching. Besides these, it offers several other
             features in it's Paid
-            Version.
-            <br>
-            <br>
+            Version. </p>
+            <p>
             <b><i>Download:</i></b> Octotree for
             <a href="https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn">Google
               Chrome</a> |
@@ -1220,11 +1175,12 @@ $ git pull --rebase=i
             |
             <a href="https://addons.mozilla.org/en-US/firefox/addon/octotree/">Firefox</a> |
             <a href="https://apps.apple.com/us/app/octotree-pro/id1457450145?mt=12">Safari</a> (Free, Paid)
+            </p>
             <br />
           </li>
           <br>
-          <li>
-            <strong>GitZip for GitHub: </strong>Every day and night we are facing situation to download the files from
+          <li><p>
+            GitZip for GitHub: Every day and night we are facing situation to download the files from
             Github. GitZip for GitHub provides you the simpleast way for downloading files or subfolders individually
             from any repository.
             You can select items by double-clicking the empty space after the file name and clicking the download arrow
@@ -1237,11 +1193,11 @@ $ git pull --rebase=i
             <b><i>Download:</i></b> Gitzip for Github for <a
               href="https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn">Google
               Chrome</a>
-            <br />
+            <br /></p>
           </li>
           <br>
-          <li>
-            <strong>Refined Github: </strong>Refined GitHub is another Chrome extension that adds more than 200 features
+          <li><p>
+            Refined Github: Refined GitHub is another Chrome extension that adds more than 200 features
             to your GitHub. Most of these features are focused on improving the interface and experience. It highlights
             the most
             useful comments and shows reaction avatars for comments. It adds gray dots and arrows to the whitespace in
@@ -1249,7 +1205,7 @@ $ git pull --rebase=i
             hundreds
             of features available. The best part is that You can turn off any of these features individually by going to
             Extensions > Refined GitHub > Extension Options. This free extension has over 50,000 downloads on Chrome.
-            It\’s available
+            It’s available
             on Firefox and Safari too.
             <br>
             <br>
@@ -1258,18 +1214,16 @@ $ git pull --rebase=i
               Chrome</a> |
             <a href="https://apps.apple.com/us/app/refined-github/id1519867270">Safari</a>
             <a href="https://addons.mozilla.org/en-US/firefox/addon/refined-github-/">Firefox</a> | (Free)
-            <br />
+            <br /></p>
           </li>
         </ol>
         </p>
       </div>
-    </div>
-
-    <h2><strong>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF!</strong></h2>
-
+    </div><br>
+    <h2>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF!</h2><br>
   </section>
+
   <section id="footer">
-    <div class="footer-content">
       <div class="download-btn">
         <a href="./PDF/Cheatsheet_PDF.pdf" download><button>Download</button></a>
       </div>
@@ -1293,14 +1247,10 @@ $ git pull --rebase=i
         <a href="mailto:?subject=Sharing-git-cheatsheet&body=GIT-CHEATSHEET" class="share-btn email">
           <i class="fa-regular fa-envelope"></i>
         </a>
-      </div>
-    </div>
     <i class="fa-solid fa-angles-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
-
   </section>
-  <br><br>
+
   </div>
 </body>
-<script src="ASSETS/external.js"></script>
-
+<script src="./ASSETS/external.js"></script>
 </html>
