@@ -629,5 +629,28 @@
                 "com":"git push origin tagname"
             }
         ]
+    },
+    {
+        "heading": "GITHUB DESKTOP",
+        "subHead": [
+            {
+                "head": "INSTALLING AND AUTHENTICATING",
+                "data":[
+                    {
+                        "des": "STEP 1: Download GitHub Desktop for Windows using this <a href=\"https://desktop.github.com/\" class=\"readme-link\">desktop.github.com</a>.\n\nSTEP 2: Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get authentication",
+                        "com": ""
+                    }
+                ]
+            },
+            {
+                "head": "CONTRIBUTING TO PROJECTS WITH GITHUB DESKTOP",
+                "data":[
+                    {
+                        "des": "STEP 1: You can create a new repository by selecting the File menu and clicking New repository.\n\nSTEP 2: You can add a repository from your local computer by selecting the File menu and clicking Add Local Repository.\n\nSTEP 3: You can clone a repository from GitHub by selecting the File menu and clicking Clone Repository.\n\nSTEP 4: You can use GitHub Desktop to create a branch of a project.\n\nSTEP 5: After you make changes to a branch, you can review them in GitHub Desktop and make a commit to keep track of your changes.\n\nSTEP 6: You can use GitHub Desktop to create issues or pull requests to collaborate on projects with other people.\n\nSTEP 7: When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository.",
+                        "com": ""
+                    }
+                ]
+            }
+        ]
     }
 ]

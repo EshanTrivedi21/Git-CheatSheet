@@ -12,6 +12,7 @@ function addNormal(data) {
         </button>
       </code>`
   })
+  a += "</div>"
   return a
 }
 function addDes(data) {
@@ -55,41 +56,7 @@ fetch('./ASSETS/code.json')
         container.insertAdjacentHTML('beforeend', addNormal(element))
       }
     });
-    container.insertAdjacentHTML('beforeend', `<h2 id="github-desktop" class="searchItem">GITHUB DESKTOP</h2>
-            <div class="searchItem">
-              <h3>INSTALLING AND AUTHENTICATING</h3>
-              <p><strong>STEP 1:</strong> Download GitHub Desktop for Windows using this [URL](https://desktop.github.com/).
-              </p>
-              <p><strong>STEP 2:</strong> Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get
-                authentication.</p>
-            </div><br>
-            <div class="searchItem">
-              <h3>CONTRIBUTING TO PROJECTS WITH GITHUB DESKTOP</h3>
-              <p><strong>STEP 1:</strong> You can create a new repository by selecting the File menu and clicking New
-                repository.
-              </p>
-              <p><strong>STEP 2:</strong> You can add a repository from your local computer by selecting the File menu and
-                clicking Add
-                Local Repository.</p>
-              <p><strong>STEP 3:</strong> You can clone a repository from GitHub by selecting the File menu and clicking Clone
-                Repository.</p>
-              <p><strong>STEP 4:</strong> You can use GitHub Desktop to create a branch of a project.</p>
-              <p><strong>STEP 5:</strong> After you make changes to a branch, you can review them in GitHub Desktop and make a
-                commit
-                to
-                keep track of
-                your changes.</p>
-              <p><strong>STEP 6:</strong> You can use GitHub Desktop to create issues or pull requests to collaborate on
-                projects with
-                other people.</p>
-              <p><strong>STEP 7:</strong> When you make changes to your local repositories or when other people make changes
-                to the
-                remote
-                repositories,
-                you will need to sync your local copy of the project with the remote repository.</p>
-            </div>
-      
-            <h2 id="github-extensions" class="searchItem">GITHUB EXTENSIONS</h2>
+    container.insertAdjacentHTML('beforeend', `<h2 id="github-extensions" class="searchItem">GITHUB EXTENSIONS</h2>
             <div class="searchItem">
               <p>
       
@@ -165,4 +132,16 @@ fetch('./ASSETS/code.json')
                 </li>
               </ol>
               </p>`)
+    var copyButton = document.querySelectorAll(".copy-btn");
+    copyButton.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        var code = btn.previousElementSibling.innerText;
+        code = code.slice(2, code.length);
+        navigator.clipboard.writeText(code);
+        btn.classList.add("copied")
+        setTimeout(function () {
+          btn.classList.remove("copied")
+        }, 800)
+      });
+    });
   });
