@@ -1,19 +1,8 @@
-var copyButton = document.querySelectorAll(".copy-btn");
-copyButton.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    var code = btn.previousElementSibling.innerText;
-    code = code.slice(2, code.length);
-    navigator.clipboard.writeText(code);
-    btn.classList.add("copied")
-    setTimeout(function () {
-      btn.classList.remove("copied")
-    }, 800)
-  });
-});
-document.getElementById('searchbar').addEventListener("keyup",(e)=>{
+document.getElementById('searchbar').addEventListener("keyup", (e) => {
   search(e.target.value)
 })
-document.getElementById('searchbar2').addEventListener("keyup",(e)=>{
+document.getElementById('searchbar2').addEventListener("keyup", (e) => {
+  alert("a")
   search(e.target.value)
 })
 function search(inp) {

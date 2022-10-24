@@ -177,6 +177,10 @@ pre {
   box-shadow: inset 6px 6px 12px #070707,
     inset -6px -6px 12px #1b1b1b;
 }
+.readme-link{
+  text-decoration: underline;
+  color: rgb(25, 146, 194);
+}
 
 /* COPY BUTTON */
 
