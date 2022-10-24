@@ -40,7 +40,7 @@ function addSubHead(data) {
   })
   return a
 }
-fetch('./Assets/code.json')
+fetch('./ASSETS/code.json')
   .then((response) => response.json())
   .then((json) => {
     var container = document.querySelector("#list_search");
