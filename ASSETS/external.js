@@ -2,7 +2,6 @@ document.getElementById('searchbar').addEventListener("keyup", (e) => {
   search(e.target.value)
 })
 document.getElementById('searchbar2').addEventListener("keyup", (e) => {
-  alert("a")
   search(e.target.value)
 })
 function search(inp) {
