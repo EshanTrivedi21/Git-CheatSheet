@@ -1,24 +1,25 @@
-document.getElementById('searchbar').addEventListener("keyup", (e) => {
-  search(e.target.value)
-})
-document.getElementById('searchbar2').addEventListener("keyup", (e) => {
-  search(e.target.value)
-})
+document.getElementById("searchbar").addEventListener("keyup", (e) => {
+  search(e.target.value);
+});
+document.getElementById("searchbar2").addEventListener("keyup", (e) => {
+  search(e.target.value);
+});
 function search(inp) {
-  var input = inp
+  var input = inp;
   input = input.toLowerCase();
-  var x = document.getElementsByClassName('searchItem');
+  var x = document.getElementsByClassName("searchItem");
   for (i = 0; i < x.length; i++) {
     if (!x[i].innerHTML.toLowerCase().includes(input)) {
       x[i].style.display = "none";
-    }
-    else {
+    } else {
       x[i].style.display = "block";
     }
   }
 }
 var mybutton = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

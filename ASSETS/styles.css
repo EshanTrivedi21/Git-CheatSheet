@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-*, html {
+*,
+html {
   scroll-behavior: smooth;
 }
 
@@ -24,25 +25,23 @@ body {
   padding: 5px;
   border-radius: 5px;
   background: #131313;
-  box-shadow: 5px 5px 10px #090909,
-    -5px -5px 10px #1d1d1d;
+  box-shadow: 5px 5px 10px #090909, -5px -5px 10px #1d1d1d;
 }
-
 
 /* TYPOGRAPHY */
 
 p {
   margin: 15px;
   font-size: 17.5px;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 2px;  
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
 }
 
 h1 {
   text-align: center;
   font-size: 35px;
   margin-top: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -52,7 +51,7 @@ h2 {
   margin: 15px;
   margin-top: 60px;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -61,7 +60,7 @@ h3 {
   margin-top: 40px;
   margin-bottom: 20px;
   margin-left: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -106,8 +105,7 @@ pre::-webkit-scrollbar-thumb {
   border: none;
   border-radius: 5px;
   background: #111111;
-  box-shadow: inset 6px 6px 12px #070707,
-    inset -6px -6px 12px #1b1b1b;
+  box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
 }
 
 #searchbar:focus {
@@ -138,8 +136,7 @@ pre::-webkit-scrollbar-thumb {
   overflow-x: auto;
   border-radius: 150px;
   background: #111111;
-  box-shadow: inset 6px 6px 12px #070707,
-              inset -6px -6px 12px #1b1b1b;
+  box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
 }
 
 /* INFO BAR */
@@ -154,7 +151,7 @@ pre::-webkit-scrollbar-thumb {
 .img {
   width: 400px;
   position: absolute;
-  left: 200px;
+  left: 205px;
 }
 
 /* CODE SNIPPET */
@@ -165,7 +162,7 @@ code {
 
 pre {
   font-size: 17.5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   letter-spacing: 2px;
   padding: 12.5px 40px;
   color: rgba(255, 255, 255, 0.852);
@@ -174,10 +171,9 @@ pre {
   overflow-x: auto;
   border-radius: 5px;
   background: #111111;
-  box-shadow: inset 6px 6px 12px #070707,
-    inset -6px -6px 12px #1b1b1b;
+  box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
 }
-.readme-link{
+.readme-link {
   text-decoration: underline;
   color: rgb(25, 146, 194);
 }
@@ -208,7 +204,7 @@ pre {
   background-color: gray;
 }
 
-code:hover>.copy-btn {
+code:hover > .copy-btn {
   opacity: 1;
 }
 
@@ -235,8 +231,7 @@ code:hover>.copy-btn {
   padding: 5px;
   border-radius: 5px;
   background: #111111;
-  box-shadow:  6px 6px 12px #070707,
-              -6px -6px 12px #1b1b1b;
+  box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1b1b1b;
   display: flex;
   justify-content: space-between;
 }
@@ -260,9 +255,8 @@ code:hover>.copy-btn {
   margin: 17.5px;
   border-radius: 5px;
   background: #111111;
-  box-shadow: inset 6px 6px 12px #070707,
-              inset -6px -6px 12px #1b1b1b;
-  font-family: 'Poppins', sans-serif;
+  box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -321,8 +315,7 @@ a:hover {
   overflow-x: auto;
   border-radius: 5px;
   background: #131313;
-  box-shadow: 5px 5px 10px #090909,
-    -5px -5px 10px #1d1d1d;
+  box-shadow: 5px 5px 10px #090909, -5px -5px 10px #1d1d1d;
 }
 
 /* MEDIA QUERY */
@@ -339,7 +332,7 @@ a:hover {
   pre {
     font-size: 14px;
     padding: 10px 15px;
-    margin: 10px 5px; 
+    margin: 10px 5px;
     margin-bottom: 25px;
   }
 
@@ -393,11 +386,10 @@ a:hover {
     border: none;
     border-radius: 5px;
     background: #111111;
-    box-shadow: inset 6px 6px 12px #070707,
-      inset -6px -6px 12px #1b1b1b;
-    }
+    box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
+  }
 
-    .header:focus {
-      width: 75%;
-    }
+  .header:focus {
+    width: 75%;
+  }
 }

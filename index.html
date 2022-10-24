@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./ASSETS/favicon.png" type="image/x-icon" />
+    <title>Git-CheatSheet</title>
+    <link rel="stylesheet" href="./ASSETS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d4705f63a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./ASSETS/command.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./ASSETS/favicon.png" type="image/x-icon" />
-  <title>Git-CheatSheet</title>
-  <link rel="stylesheet" href="./ASSETS/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/d4705f63a2.js" crossorigin="anonymous"></script>
-  <script src="./ASSETS/command.js"></script>
-</head>
-
-<body>
-
-  <div class="navbar">
-    <div class="sidebar_pre">
-      <nav id="sidebar">
-        <div id="searchElement">
-          <input id="searchbar" type="text" name="search" placeholder="Search Commands..">
-        </div>
-        <ul class="navbar-items">
-          <li><a href="#terminal-basics">terminal basics</a></li>
-          <li><a href="#setting-git-user-name-and-email">git user name and email</a></li>
-          <li><a href="#getting-git-help">getting git help</a></li>
-          <li><a href="#creating-a-git-repository">creating a git repository</a></li>
-          <li><a href="#staging-filefiles-of-the-repository">staging files</a></li>
-          <li><a href="#commiting-a-commit">commiting a commit</a></li>
-          <li><a href="#git-ignore">git ignore</a></li>
-          <li><a href="#git-branching">git branching</a></li>
-          <li><a href="#stashing-git">stashing in git</a></li>
-          <li><a href="#time-travelling-git">time travelling with git</a></li>
-          <li><a href="#creating-github-repository">creating github respositories</a></li>
-          <li><a href="#origin-master-theory">the origin/master theory</a></li>
-          <li><a href="#pulling-interferes">pull interference</a></li>
-          <li><a href="#git-rebasing">git rebasing</a></li>
-          <li><a href="#git-tags">git tags</a></li>
-          <li><a href="#github-desktop">github desktop</a></li>
-          <li><a href="#github-extensions">extensions for Github</a></li>
-          <li><a href="#download-pdf">git-github cheatsheet</a></li>
-        </ul>
-      </nav>
+  <body>
+    <div class="navbar">
+      <div class="sidebar_pre">
+        <nav id="sidebar">
+          <div id="searchElement">
+            <input
+              id="searchbar"
+              type="text"
+              name="search"
+              placeholder="Search Commands.."
+            />
+          </div>
+          <ul class="navbar-items">
+            <li><a href="#terminal-basics">terminal basics</a></li>
+            <li>
+              <a href="#setting-git-user-name-and-email"
+                >git user name and email</a
+              >
+            </li>
+            <li><a href="#getting-git-help">getting git help</a></li>
+            <li>
+              <a href="#creating-a-git-repository">creating a git repository</a>
+            </li>
+            <li>
+              <a href="#staging-filefiles-of-the-repository">staging files</a>
+            </li>
+            <li><a href="#commiting-a-commit">commiting a commit</a></li>
+            <li><a href="#git-ignore">git ignore</a></li>
+            <li><a href="#git-branching">git branching</a></li>
+            <li><a href="#stashing-git">stashing in git</a></li>
+            <li><a href="#time-travelling-git">time travelling with git</a></li>
+            <li>
+              <a href="#creating-github-repository"
+                >creating github respositories</a
+              >
+            </li>
+            <li>
+              <a href="#origin-master-theory">the origin/master theory</a>
+            </li>
+            <li><a href="#pulling-interferes">pull interference</a></li>
+            <li><a href="#git-rebasing">git rebasing</a></li>
+            <li><a href="#git-tags">git tags</a></li>
+            <li><a href="#github-desktop">github desktop</a></li>
+            <li><a href="#github-extensions">extensions for Github</a></li>
+            <li><a href="#download-pdf">git-github cheatsheet</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
 
-  <section class="cheatsheet">
-    <h1 id="welcome-to-the-git-cheat-sheet">
-      THE GIT-GITHUB CHEATSHEET
-    </h1>
-    <pre>
+    <section class="cheatsheet">
+      <h1 id="welcome-to-the-git-cheat-sheet">THE GIT-GITHUB CHEATSHEET</h1>
+      <pre>
     <code>
 TOPIC:                THE GIT-GITHUB CHEATSHEET<br>
 DESCRIPTION:          Your very own Git and Github Cheatsheet! <br>
@@ -57,48 +78,74 @@ REFERENCE:            Git-Github Bootcamp (Colt Steele) - Udemy <br>
 AUTHORs:              <a href="https://github.com/EshanTrivedi21" target="_blank">EshanTrivedi21</a>, <a href="https://github.com/KCmean" target="_blank">KCmean</a>, <a href="https://github.com/VinayKanase" target="_blank">VinayKanase</a> and <a href="https://github.com/Aryan-Parmar" target="_blank">Aryan-Parmar</a> <br>
 REPOSITORY:           <a href="https://github.com/EshanTrivedi21/Git-CheatSheet" target="_blank">https://github.com/EshanTrivedi21/Git-CheatSheet</a>
                       <span class="contributors">CONTRIBUTORS: 
-                          <img class="img" href="https://github.com/eshantrivedi21/git-cheatsheet/graphs/contributors" src="https://contrib.rocks/image?repo=eshantrivedi21/git-cheatsheet&columns=15" />
+                          <img class="img" href="https://github.com/eshantrivedi21/git-cheatsheet/graphs/contributors" src="https://contrib.rocks/image?repo=eshantrivedi21/git-cheatsheet&columns=18" />
                       </span>
     </code>
     </pre>
 
-    <div>
-      <input id="searchbar2" class="header" type="text" name="search" placeholder="Search Commands..">
-    </div>
+      <div>
+        <input
+          id="searchbar2"
+          class="header"
+          type="text"
+          name="search"
+          placeholder="Search Commands.."
+        />
+      </div>
 
-    <div id="list_search">
-      <div class="searchItem"></div>
-    </div><br>
-    <h2>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF!</h2><br>
-  </section>
+      <div id="list_search">
+        <div class="searchItem"></div>
+      </div>
+      <br />
+      <h2>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF!</h2>
+      <br />
+    </section>
 
-  <section id="footer">
-    <div class="download-btn">
-      <a href="./PDF/Cheatsheet_PDF.pdf" download><button>Download</button></a>
-    </div>
-    <div class="share_container">
-      <a href="https://twitter.com/share?url=https://eshantrivedi21.github.io/Git-CheatSheet/&text=Git-CheatSheet"
-        class="share-btn twitter">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://eshantrivedi21.github.io/Git-CheatSheet/"
-        class="share-btn facebook">
-        <i class="fa-brands fa-square-facebook"></i>
-      </a>
-      <a href="https://reddit.com/submit?url=https://eshantrivedi21.github.io/Git-CheatSheet/&title=Git-CheatSheet"
-        class="share-btn reddit">
-        <i class="fa-brands fa-reddit"></i>
-      </a>
-      <a href="https://www.linkedin.com/shareArticle?url=https://eshantrivedi21.github.io/Git-CheatSheet&title=Git-CheatSheet&summary=Git-CheatSheet"
-        class="share-btn linkedin">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="mailto:?subject=Sharing-git-cheatsheet&body=GIT-CHEATSHEET" class="share-btn email">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-      <i class="fa-solid fa-angles-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
-  </section>
-  </div>
-</body>
-<script src="./ASSETS/external.js"></script>
+    <section id="footer">
+      <div class="download-btn">
+        <a href="./PDF/Cheatsheet_PDF.pdf" download
+          ><button>Download</button></a
+        >
+      </div>
+      <div class="share_container">
+        <a
+          href="https://twitter.com/share?url=https://eshantrivedi21.github.io/Git-CheatSheet/&text=Git-CheatSheet"
+          class="share-btn twitter"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://eshantrivedi21.github.io/Git-CheatSheet/"
+          class="share-btn facebook"
+        >
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a
+          href="https://reddit.com/submit?url=https://eshantrivedi21.github.io/Git-CheatSheet/&title=Git-CheatSheet"
+          class="share-btn reddit"
+        >
+          <i class="fa-brands fa-reddit"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/shareArticle?url=https://eshantrivedi21.github.io/Git-CheatSheet&title=Git-CheatSheet&summary=Git-CheatSheet"
+          class="share-btn linkedin"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="mailto:?subject=Sharing-git-cheatsheet&body=GIT-CHEATSHEET"
+          class="share-btn email"
+        >
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <i
+          class="fa-solid fa-angles-up"
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+        ></i>
+      </div>
+    </section>
+  </body>
+  <script src="./ASSETS/external.js"></script>
 </html>
