@@ -367,6 +367,9 @@ a:hover {
   #footer {
     margin: 1%;
     padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .share_container i {
