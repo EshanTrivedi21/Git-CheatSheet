@@ -275,6 +275,10 @@ a:hover {
   color: cornflowerblue;
 }
 
+.share-btn:hover {
+  color: gray;
+}
+
 .navbar {
   height: 100%;
   position: fixed;
