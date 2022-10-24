@@ -1,0 +1,633 @@
+[
+    {
+        "heading": "TERMINAL BASICS",
+        "data": [
+            {
+                "des": "It is the LIST command which LISTS all the contents of a Directory",
+                "com": "ls"
+            },
+            {
+                "des": "LOCATES to a directory and then LISTS the contents",
+                "com": "ls foldername"
+            },
+            {
+                "des": "PRINT WORKING DIRECTORY",
+                "com": "pwd"
+            },
+            {
+                "des": "CHANGES and HOPS onto the respective Working Directory",
+                "com": "cd foldername\\subfoldername"
+            },
+            {
+                "des": "HOPS onto Parent Directory of the Working Directory",
+                "com": "cd .."
+            },
+            {
+                "des": "CLEARS the used Terminal",
+                "com": "clear"
+            },
+            {
+                "des": "QUITS out of a entered command",
+                "com": "q"
+            },
+            {
+                "des": "CREATES an Empty directory inside the Working Directory",
+                "com": "mkdir foldername"
+            },
+            {
+                "des": "DELETES the file",
+                "com": "rm filename"
+            },
+            {
+                "des": "DELETES the directory",
+                "com": "rm -rf foldername"
+            },
+            {
+                "des": "OPENS the File Explorer to the ROOT Directory",
+                "com": "start ."
+            }
+        ]
+    },
+    {
+        "heading": "SETTING GIT USER NAME AND EMAIL",
+        "data": [
+            {
+                "des": "To CHECK if git User-Name is set",
+                "com": "git config user.name"
+            },
+            {
+                "des": "To CHECK if git User-Email is set",
+                "com": "git config user.email"
+            },
+            {
+                "des": "To SET or change git User-Name",
+                "com": "git config --global user.name \"Your Name\""
+            },
+            {
+                "des": "To SET or change git User-Email",
+                "com": "git config --global user.email \"Your Email\""
+            },
+            {
+                "des": "To SET or CHANGE default code editor as VSCode",
+                "com": "git config --global core.editor \"code --wait\""
+            },
+            {
+                "des": "To CHANGE git User-Name and git User-Email directly in the config file using vim",
+                "com": "git config --global --edit"
+            },
+            {
+                "des": "To STORE git User-Name and git User-Email in disk",
+                "com": "git config --global credential.helper store"
+            },
+            {
+                "des": "To Exit vim",
+                "com": "ESC + : + wq"
+            }
+        ]
+    },
+    {
+        "heading": "GETTING GIT HELP",
+        "data": [
+            {
+                "des": "To GET GIT HELP",
+                "com": "git command --help"
+            }
+        ]
+    },
+    {
+        "heading": "CREATING A GIT REPOSITORY",
+        "data": [
+            {
+                "des": "To INITIALIZE a GIT REPOSITORY",
+                "com": "git init"
+            },
+            {
+                "des": "To CHECK the STATUS of the GIT REPOSITORY",
+                "com": "git status"
+            }
+        ]
+    },
+    {
+        "heading": "STAGING AND COMMITTING",
+        "data": [
+            {
+                "des": "To ADD a FILE to the STAGING AREA",
+                "com": "git add filename"
+            },
+            {
+                "des": "To ADD all the FILES to the STAGING AREA",
+                "com": "git add ."
+            },
+            {
+                "des": "To ADD all the FILES to the STAGING AREA",
+                "com": "git add -A"
+            },
+            {
+                "des": "To ADD all the FILES to the STAGING AREA",
+                "com": "git add --all"
+            },
+            {
+                "des": "To COMMIT the CHANGES to the REPOSITORY",
+                "com": "git commit -m \"message\""
+            },
+            {
+                "des": "To COMMIT the CHANGES to the REPOSITORY",
+                "com": "git commit -a -m \"message\""
+            },
+            {
+                "des": "To COMMIT the CHANGES to the REPOSITORY",
+                "com": "git commit --all -m \"message\""
+            },
+            {
+                "des": "To COMMIT the CHANGES to the REPOSITORY",
+                "com": "git commit -am \"message\""
+            },
+            {
+                "des": "To CHECK the LOGS of the REPOSITORY",
+                "com": "git log"
+            },
+            {
+                "des": "To CHECK the LOGS of the REPOSITORY",
+                "com": "git log --oneline"
+            },
+            {
+                "des": "To CHECK the LOGS of the REPOSITORY",
+                "com": "git log --oneline --graph"
+            },
+            {
+                "des": "LOGS the changes",
+                "com": "git diff"
+            }
+        ]
+    },
+    {
+        "heading": "GIT BRANCHING",
+        "data": [
+            {
+                "des": "LOGS all the branches of the Working Repository",
+                "com": "git branch"
+            },
+            {
+                "des": "CREATES a new branch",
+                "com": "git branch branchname"
+            },
+            {
+                "des": "SWITCHES the Branch from one to another or CHANGING HEAD",
+                "com": "git checkout branchname"
+            },
+            {
+                "des": "CREATES a new branch and then SWITCHES to the branches",
+                "com": "git switch -c branchname"
+            },
+            {
+                "des": "CREATES a new branch and then SWITCHES to the branch",
+                "com": "git checkout -b branchname"
+            },
+            {
+                "des": "DELETES newbranch",
+                "com": "git branch -d branchname"
+            },
+            {
+                "des": "CHANGES the name of the Branch you are Headed on",
+                "com": "git branch -M newbranchname"
+            },
+            {
+                "des": "TO DELETE A REMOTE BRANCH IN GIT",
+                "com": "git push origin --delete branchname"
+            },
+            {
+                "des": "To LIST all remote branches",
+                "com": "git branch -a"
+            }
+        ]
+    },
+    {
+        "heading": "GIT IGNORE",
+        "des": "STEP 1: create a .gitignore file \n \n STEP 2: add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited"
+    },
+    {
+        "heading": "MERGING BRANCHES",
+        "subHead": [
+            {
+                "head": "MERGING BRANCHES USING FAST-FORWARD",
+                "data": [
+                    {
+                        "des": "To MERGE the BRANCHES",
+                        "com": "git merge branchname"
+                    },
+                    {
+                        "des": "To MERGE the BRANCHES",
+                        "com": "git merge branchname --no-ff"
+                    },
+                    {
+                        "des": "To MERGE the BRANCHES",
+                        "com": "git merge branchname --no-ff -m \"message\""
+                    }
+                ]
+            },
+            {
+                "head": "WITH OUT MERGE CONFLICTS",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git switch branch"
+                    },
+                    {
+                        "des": "CREATES a new commit unlike fastforwarding merges",
+                        "com": "git merge -m \"mergering message\""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "MERGE CONFLICTS",
+        "des": "STEP 1: OPEN UP files having merge conflicts\nSTEP 2: REMOVE the conflicts\nOPTION 1: ACCEPT INCOMING CHANGES\nOPTION 2: ACCEPT CURRENT CHANGES\nOPTION 3: ACCEPT BOTH CHANGES\nOPTION 4: COMPARE CHANGES\nSTEP 3: REMOVE the conflict markers\nSTEP 4: STAGE and COMMIT the changes"
+    },
+    {
+        "heading": "ABORT MERGE WHEN UNRESOLVABLE CONFLICTS OCCURRED",
+        "data": [
+            {
+                "des": "To ABORT the MERGE",
+                "com": "git merge --abort"
+            }
+        ]
+    },
+    {
+        "heading": "STASHING IN GIT",
+        "subHead": [
+            {
+                "head": "1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH",
+                "data": []
+            },
+            {
+                "head": "2. GIT WONT ALLOW SWITCHING IF THERE ARE CONFLICTS",
+                "data": [
+                    {
+                        "des": "STASHES the changes",
+                        "com": "git stash"
+                    },
+                    {
+                        "des": "UN STASHES the changes, use it when you resume your work",
+                        "com": "git stash pop"
+                    },
+                    {
+                        "des": "APPLY stashed changes into another or the same branch",
+                        "com": "git stash apply"
+                    }
+                ]
+            },
+            {
+                "head": "IF WORKING WITH MULTIPLE STASHES",
+                "data": [
+                    {
+                        "des": "LOGS all the stashes",
+                        "com": "git stash list"
+                    },
+                    {
+                        "des": "STASHES the changes in the Stash index 1",
+                        "com": "git stash apply stash@{1}"
+                    },
+                    {
+                        "des": "DELETES the stash, p.s. applying the stash doesnt delete it",
+                        "com": "git stash drop stash@{1}"
+                    },
+                    {
+                        "des": "DELETES all the stashes",
+                        "com": "git stash clear"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "TIME TRAVELLING WITH GIT",
+        "subHead": [
+            {
+                "head": "TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a",
+                "data": [
+                    {
+                        "des": "DETACHES HEAD and attaches it to the commit with the commit id 604a39a, this is not normal because HEAD is meant to map a whole branch and not a specific commit",
+                        "com": "git checkout 604a39a"
+                    },
+                    {
+                        "des": "DETACHES HEAD and ATTACHES it to the previous commit",
+                        "com": "git checkout HEAD~1"
+                    },
+                    {
+                        "des": "RE-ATTACHES HEAD and now the head properly maps onto the master branch",
+                        "com": "git switch master"
+                    }
+                ]
+            },
+            {
+                "head": "TO CREATE AND WORK WITH A NEW BRANCH AT COMMIT ID 604a39a",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git checkout 604a39a"
+                    },
+                    {
+                        "des": "now the head is perfect where it should have been",
+                        "com": "git switch -c <new-branch>"
+                    }
+                ]
+            },
+            {
+                "head": "TO RESTORE ALL CHANGES TO TRACKED FILES",
+                "data": [
+                    {
+                        "des": "TO RESTORE ALL CHANGES TO TRACKED FILES",
+                        "com": "git reset origin/main --hard"
+                    }
+                ]
+            },
+            {
+                "head": "TO RESTORE CHANGES OF A PARTICULAR FILE TO THE LAST COMMIT",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git checkout HEAD <file>"
+                    },
+                    {
+                        "des": "",
+                        "com": "git restore filename.txt"
+                    }
+                ]
+            },
+            {
+                "head": "TO RESTORE CHANGES OF A PARTICULAR FILE TO THE SECOND-LAST COMMIT",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git restore --source HEAD~1 filename.txt"
+                    }
+                ]
+            },
+            {
+                "head": "UNSTAGE A FILE",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git restore --unstaged filename.txt"
+                    }
+                ]
+            },
+            {
+                "head": "RESETING THE REPOSITORY TO A PARTICULAR COMMIT",
+                "data": [
+                    {
+                        "des": "RESETING THE REPOSITORY TO A PARTICULAR COMMIT",
+                        "com": "git reset <commit-id>"
+                    },
+                    {
+                        "des": "LOOSES the commit as well as LOOSES the contents of the commit",
+                        "com": "git reset --hard 604a39a"
+                    }
+                ]
+            },
+            {
+                "head": "REVERTING THE REPOSITORY TO A PARTICULAR COMMIT",
+                "data": [
+                    {
+                        "des": "REVERTS the changes in that particular commit and CREATES a new commit after reverting changes p.s. this helps while collaboration",
+                        "com": "git revert <commit-id>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "CREATING GITHUB RESPOSITORIES",
+        "subHead": [
+            {
+                "head": "BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)",
+                "data": [
+                    {
+                        "des": "STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL\nSTEP 2: CREATES an empty git repository",
+                        "com": "git init"
+                    },
+                    {
+                        "des": "STEP 3: WRITE YOUR PIECE OF CODE\nSTEP 4: a commit is needed to push any files to github",
+                        "com": "git commit -a -m \"first commit\""
+                    },
+                    {
+                        "des": "STEP 5: CREATES a new REMOTE DESTINATION for the github repository",
+                        "com": "git remote add origin <copied url>"
+                    },
+                    {
+                        "des": "LOGS out the REMOTE URL if any",
+                        "com": "git remote -v"
+                    },
+                    {
+                        "des": "STEP 6: PUSHES the last commited code to github p.s. the -u is like a setting the origin remote and master branch as a default so that we can use just >> git push in future",
+                        "com": "git push -u origin master"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY CLONING)",
+        "data": [
+            {
+                "des": "STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL\n\nSTEP 2: CLONES as well as automatically sets the REMOTE DESTINATION",
+                "com": "git clone <copied url>"
+            },
+            {
+                "des": "STEP 3: WRITE YOUR PIECE OF CODE\n\nSTEP 4: a commit is needed to push any files to github",
+                "com": "git commit -a -m \"first commit\""
+            },
+            {
+                "des": "STEP 5: PUSHES the last commited code to github",
+                "com": "git push -u origin <branchname>"
+            }
+        ]
+    },
+    {
+        "heading": "CONNECT YOUR PREEXISTING GIT REPOSITORY TO A NEW GITHUB REPOSITORY",
+        "data": [
+            {
+                "des": "STEP 1: CREATE A NEW REPOSITORY ON YOUR GITHUB WEBSITE AND COPY THE URL\n\nSTEP 2: CREATES a new REMOTE DESTINATION for the github repository",
+                "com": "git remote add origin <copied url>"
+            },
+            {
+                "des": "LOGS out the REMOTE URL if any",
+                "com": "git remote -v"
+            },
+            {
+                "des": "STEP 3: PUSHES the last commited code to github",
+                "com": "git push -u origin <branchname>"
+            }
+        ]
+    },
+    {
+        "heading": "THE ORIGIN/MASTER THEORY",
+        "data": [
+            {
+                "des": "ORIGIN/MASTER IS CALLED AS A REMOTE TRACKING BRANCH, IT IS A REMOTE BRANCH THAT REPRESENTS OUR LOCAL BRANCH\n\nLOGS the remote tracking branch",
+                "com": "git branch -r"
+            },
+            {
+                "des": "To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date",
+                "com": "git checkout origin/master"
+            },
+            {
+                "des": "BY DEFAULT ONLY LOCAL MASTER BRANCH IS CONNECTED TO THE REMOTE BRANCH BUT OTHERS NEED TO BE CONNECTED IN ORDER TO WORK WITH THEM AND THE SIMPLEST WAY TO DO SO IS\n\nTo check all the branches available",
+                "com": "git branch -r"
+            },
+            {
+                "des": "This automatically CONNECTS the two branches and we can freely work on them now",
+                "com": "git switch branchname"
+            },
+            {
+                "des": "Now this correctly LOGS all the connected branches",
+                "com": "git branch"
+            }
+        ]
+    },
+    {
+        "heading": "GIT FETCHING",
+        "data": [
+            {
+                "des": "FETCHING ALLOWS TO GET CHANGES FROM THE GITHUB REMOTE REPOSITORY TO OUR LOCAL GIT REPOSITORY BUT DOESN'T CHANGE INTO THE WORKING DIRECTORY\n\nTo receive the new commits",
+                "com": "git fetch"
+            },
+            {
+                "des": "CREATES a new branch having the changes but this doesnt interfere in the working directory, the origin/master now heads on to this new branch and the master branch would be one branch behind the origin/master",
+                "com": "git fetch origin branchname"
+            },
+            {
+                "des": "To check out the remote branch code: DETACHES HEAD onto the remote tracking HEAD, in a case where the local branch is ahead of the remote branch and not up to date, push to make it up to date",
+                "com": "git checkout origin/master"
+            }
+        ]
+    },
+    {
+        "heading": "GIT PULLING",
+        "data": [
+            {
+                "des": " PULLS the changes and merges the changes with the branch you want to OR default",
+                "com": "git pull origin branchname"
+            }
+        ]
+    },
+    {
+        "heading": "FORCE PUSH AND PULL",
+        "data": [
+            {
+                "des": "This will delete your previous commit(s) and push your current one. f signifies force",
+                "com": "git push origin <your-branch-name> -f"
+            },
+            {
+                "des": "This is nothing but fetch + rebase. This will invoke rebase in interactive mode where you can choose how to apply each individual commit that isn't in the history you are rebasing on",
+                "com": "git pull --rebase=interactive"
+            }
+        ]
+    },
+    {
+        "heading": "GITHUB COLLABORATION",
+        "des": "CENTRALIZED WORKFLOW:\nEVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY.\n\nFEATURE BRANCH WORKFLOW:\nEVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS\n\nGITHUB PULL REQUEST WORKFLOW:\nOnce a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.\n\nGITHUB FORKS AND CLONE WORKFLOW:\nForking nd then opening a pull request to the owner of the main repository."
+    },
+    {
+        "heading": "GIT REBASING",
+        "subHead": [
+            {
+                "head": "REBASING ALLOWS TO REBASE CHANGES FROM OUR LOCAL GIT REPOSITORY TO THE GITHUB REMOTE REPOSITORY\n\nTo rebase the new commits",
+                "data": [
+                    {
+                        "des": "",
+                        "com": "git switch newbranch"
+                    },
+                    {
+                        "des": "REBASES or MERGES master into newbranch",
+                        "com": "git rebase master"
+                    }
+                ]
+            },
+            {
+                "head": "CONFLICTS WHILE REBASING",
+                "data": [
+                    {
+                        "des": "STEP 1: Resolve the CONFLICTS MANUALLY\n\nSTEP 2:",
+                        "com": "git add"
+                    },
+                    {
+                        "des": "STEP 3:",
+                        "com": "git rebase --continue"
+                    }
+                ]
+            },
+            {
+                "head": "INTERACTIVE REBASING",
+                "data": [
+                    {
+                        "des": "OPENS up the code editor where you can play with the nth last commits and above",
+                        "com": "git rebase -i HEAD~n"
+                    },
+                    {
+                        "des": "CHANGES the name of a specific commit",
+                        "com": "reword"
+                    },
+                    {
+                        "des": "COMBINES the changes of that commit to the previous commit and then deletes it",
+                        "com": "fixup"
+                    },
+                    {
+                        "des": "DELETES the commit and the commit changes as if they were never written",
+                        "com": "drop"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "GIT TAGS",
+        "data": [
+            {
+                "des":"TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT\n\nSemanting Versioning Format is widely used for tags and releases (v1.0.1)\n\nTO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT",
+                "com":"git tag -1"
+            },
+            {
+                "des":"LOGS tag name v17",
+                "com":"git tag -l v17"
+            },
+            {
+                "des": "LOGS tag names that start with v17",
+                "com": "git tag -l \"v17*\""
+            },
+            {
+                "des": "LOGS tags which include beta in their name",
+                "com": "git tag -l \"*beta*\""
+            },
+            {
+                "des":"LOGS the changes between both the versions",
+                "com":"git diff v1.0.0 v1.0.1"
+            },
+            {
+                "des": "CREATES a lightweight tag",
+                "com": "git tag tagname"
+            },
+            {
+                "des":"CREATES an annotated tag",
+                "com":"git tag -a tagname"
+            },
+            {
+                "des": "LOGS the message of the git tag \"annotated\"",
+                "com": "git show tagname"
+            },
+            {
+                "des": "CREATES a tag at commit number 604a39a",
+                "com": "git tag -a tagname 604a39a"
+            },
+            {
+                "des": "DELETES the tag",
+                "com": "git tag -d tagname"
+            },
+            {
+                "des":"TRANSFERS tags to remote servers",
+                "com":"git push origin tagname"
+            }
+        ]
+    }
+]
