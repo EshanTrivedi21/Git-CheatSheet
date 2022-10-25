@@ -63,16 +63,16 @@ fetch("./ASSETS/code.json")
     });
     container.insertAdjacentHTML(
       "beforeend",
-      `<h2 id="github-extensions" class="searchItem">GITHUB EXTENSIONS</h2>
+      `<h2 id="github-extensions" class="searchItem"><br>GITHUB EXTENSIONS<br><br></h2>
             <div class="searchItem">
               <p>
       
-                if you're a Developer and you use Github as your Version Control Tools, there's likely some functionality
+                If you're a Developer and you use Github as your Version Control Tools, there's likely some functionality
                 you wish it had. To help with these there are some best extension that you can use for Github.
       
               <ol type="1">
                 <li>
-                  <p>Octotree: This is a feature-rich extensions that enhance your Github experience. It
+                  <p><strong>Octotree:</strong> This is a feature-rich extensions that enhance your Github experience. It
                     facilitates you with code tree to all the github repositories, which simplifies your file search and
                     navigation. (though now
                     this is by default provided by Github) It also offers you bookmarking repositories, files and PRs. It
@@ -94,7 +94,7 @@ fetch("./ASSETS/code.json")
                 <br>
                 <li>
                   <p>
-                    GitZip for GitHub: Every day and night we are facing situation to download the files from
+                    <strong>GitZip for GitHub:</strong> Every day and night we are facing situation to download the files from
                     Github. GitZip for GitHub provides you the simpleast way for downloading files or subfolders individually
                     from any repository.
                     You can select items by double-clicking the empty space after the file name and clicking the download
@@ -114,7 +114,7 @@ fetch("./ASSETS/code.json")
                 <br>
                 <li>
                   <p>
-                    Refined Github: Refined GitHub is another Chrome extension that adds more than 200 features
+                    <strong>Refined Github:</strong> Refined GitHub is another Chrome extension that adds more than 200 features
                     to your GitHub. Most of these features are focused on improving the interface and experience. It
                     highlights
                     the most
@@ -134,7 +134,7 @@ fetch("./ASSETS/code.json")
                       Chrome</a> |
                     <a href="https://apps.apple.com/us/app/refined-github/id1519867270">Safari</a>
                     <a href="https://addons.mozilla.org/en-US/firefox/addon/refined-github-/">Firefox</a> | (Free)
-                    <br />
+                    <br/>
                   </p>
                 </li>
               </ol>
