@@ -89,7 +89,7 @@
     "heading": "GETTING GIT HELP",
     "data": [
       {
-        "des": "To GET GIT HELP",
+        "des": "",
         "com": "git command --help"
       }
     ]
@@ -209,7 +209,7 @@
     "heading": "MERGING BRANCHES",
     "subHead": [
       {
-        "head": "<br>1. MERGING BRANCHES USING FAST-FORWARD<br><br>",
+        "head": "1. MERGING BRANCHES USING FAST-FORWARD<br><br>",
         "data": [
           {
             "des": "To MERGE the BRANCHES",

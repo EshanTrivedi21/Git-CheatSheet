@@ -63,7 +63,7 @@ fetch("./ASSETS/code.json")
     });
     container.insertAdjacentHTML(
       "beforeend",
-      `<h2 id="github-extensions" class="searchItem"><br>GITHUB EXTENSIONS<br><br></h2>
+      `<h2 id="github-extensions" class="searchItem">GITHUB EXTENSIONS</h2>
             <div class="searchItem">
               <p>
       
