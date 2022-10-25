@@ -1,6 +1,6 @@
 [
   {
-    "heading": "TERMINAL BASICS<br><br>",
+    "heading": "TERMINAL BASICS",
     "data": [
       {
         "des": "It is the LIST command which LISTS all the contents of a Directory",
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "heading": "<br>SETTING GIT USER NAME AND EMAIL<br><br>",
+    "heading": "SETTING GIT USER NAME AND EMAIL",
     "data": [
       {
         "des": "To CHECK if git User-Name is set",
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "heading": "<br>GETTING GIT HELP<br><br>",
+    "heading": "GETTING GIT HELP",
     "data": [
       {
         "des": "To GET GIT HELP",
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "heading": "<br>CREATING A GIT REPOSITORY<br><br>",
+    "heading": "CREATING A GIT REPOSITORY",
     "data": [
       {
         "des": "To INITIALIZE a GIT REPOSITORY",
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "heading": "<br>STAGING AND COMMITTING<br><br>",
+    "heading": "STAGING AND COMMITING",
     "data": [
       {
         "des": "To ADD a FILE to the STAGING AREA",
@@ -161,7 +161,7 @@
     ]
   },
   {
-    "heading": "<br>GIT BRANCHING<br><br>",
+    "heading": "GIT BRANCHING",
     "data": [
       {
         "des": "LOGS all the branches of the Working Repository",
@@ -202,14 +202,14 @@
     ]
   },
   {
-    "heading": "<br>GIT IGNORE<br>",
+    "heading": "GIT IGNORE",
     "des": "<strong>STEP 1:</strong> Create a .gitignore file \n \n <strong>STEP 2:</strong> Add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited"
   },
   {
-    "heading": "<br>MERGING BRANCHES<br><br>",
+    "heading": "MERGING BRANCHES",
     "subHead": [
       {
-        "head": "1. MERGING BRANCHES USING FAST-FORWARD<br><br>",
+        "head": "<br>1. MERGING BRANCHES USING FAST-FORWARD<br><br>",
         "data": [
           {
             "des": "To MERGE the BRANCHES",
@@ -245,11 +245,11 @@
     ]
   },
   {
-    "heading": "<br>MERGE CONFLICTS<br><br>",
+    "heading": "MERGE CONFLICTS",
     "des": "<strong>STEP 1:</strong> OPEN UP files having merge conflicts \n\n <strong>STEP 2:</strong> REMOVE the conflicts \n\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>OPTION 1:</strong> ACCEPT INCOMING CHANGES \n\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>OPTION 2:</strong> ACCEPT CURRENT CHANGES \n\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>OPTION 3:</strong> ACCEPT BOTH CHANGES \n\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>OPTION 4:</strong> COMPARE CHANGES \n\n <strong>STEP 3:</strong> REMOVE the conflict markers \n\n <strong>STEP 4:</strong> STAGE and COMMIT the changes"
   },
   {
-    "heading": "<br>STASHING IN GIT<br><br>",
+    "heading": "STASHING IN GIT",
     "subHead": [
       {
         "head": "1. CHANGES WILL EITHER COME IN THE DESTINATION BRANCH<br>",
@@ -296,7 +296,7 @@
     ]
   },
   {
-    "heading": "<br>TIME TRAVELLING WITH GIT<br><br>",
+    "heading": "TIME TRAVELLING WITH GIT",
     "subHead": [
       {
         "head": "1. TO JUST CHECK WHAT THE REPOSITORY LOOKED LIKE IN THE COMMIT ID 604a39a<br><br>",
@@ -393,7 +393,7 @@
     ]
   },
   {
-    "heading": "<br>CREATING GITHUB RESPOSITORIES<br><br>",
+    "heading": "CREATING GITHUB REPOSITORIES",
     "subHead": [
       {
         "head": "1. BUILD A NEW REPOSITORY AND START WORKING FROM SCRATCH (BY REMOTING)<br><br>",
@@ -457,7 +457,7 @@
     ]
   },
   {
-    "heading": "<br>THE ORIGIN/MASTER THEORY<br><br>",
+    "heading": "THE ORIGIN/MASTER THEORY",
     "data": [
       {
         "des": "Origin/Master is called as a Remote Tracking Branch, it is a Remote Branch that represents our Local Branch. \n\n LOGS the remote tracking branch",
@@ -482,7 +482,7 @@
     ]
   },
   {
-    "heading": "<br>GIT FETCHING AND PULLING<br><br>",
+    "heading": "GIT FETCHING AND PULLING",
     "data": [
       {
         "des": "FETCHING allows to get changes from the Github Remote Repository to our Local Git Repository but doesn't change into the Working Directory \n\n To RECIEVE or FETCH the new commits",
@@ -503,7 +503,7 @@
     ]
   },
   {
-    "heading": "<br>FORCE PUSH AND PULL<br><br>",
+    "heading": "FORCE PUSH AND PULL",
     "data": [
       {
         "des": "This will DELETE your previous commits and push your current one. f signifies force",
@@ -516,11 +516,11 @@
     ]
   },
   {
-    "heading": "<br>GITHUB COLLABORATION<br><br>",
+    "heading": "GITHUB COLLABORATION",
     "des": "<strong>CENTRALIZED WORKFLOW:</strong> \n EVERY BODY WORKS ON THE SAME MAIN BRANCH AND PUSH AND PULL IN THE MAIN BRANCH ONLY. \n\n <strong>FEATURE BRANCH WORKFLOW:</strong> \n EVERY FEATURE IS PUSHED UPON ANOTHER INDEPENDANT BRANCH TO MINIMIZE MESS \n\n <strong>GITHUB PULL REQUEST WORKFLOW:</strong> \n Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch. \n\n <strong>GITHUB FORKS AND CLONE WORKFLOW:</strong> \n Forking nd then opening a pull request to the owner of the main repository."
   },
   {
-    "heading": "<br>GIT REBASING<br>",
+    "heading": "GIT REBASING",
     "subHead": [
       {
         "head": "1. TO REBASE THE NEW COMMITS<br><br>",
@@ -572,7 +572,7 @@
     ]
   },
   {
-    "heading": "<br>GIT TAGS<br><br>",
+    "heading": "GIT TAGS",
     "data": [
       {
         "des": "TAGS A COMMIT AND MARKS IT WITH THE TAG (DENOTES THE IMPORTANCE OF A COMMIT\n\nSemanting Versioning Format is widely used for tags and releases (v1.0.1) \n\n\n TO CHECKOUT THE CODE AT THE TAG, USED CHECKOUT",
@@ -621,7 +621,7 @@
     ]
   },
   {
-    "heading": "<br>GITHUB DESKTOP<br><br>",
+    "heading": "GITHUB DESKTOP",
     "des": "<strong>STEP 1:</strong> Download GitHub Desktop for Windows \n\n <strong>STEP 2:</strong> Click on “File” on the navbar, go down to “Options,” choose “Accounts,” and get authentication \n\n <strong>STEP 3:</strong> You can create a new repository by selecting the File menu and clicking New repository. \n\n <strong>STEP 4:</strong> You can add a repository from your local computer by selecting the File menu and clicking Add Local Repository. \n\n <strong>STEP 5:</strong> You can clone a repository from GitHub by selecting the File menu and clicking Clone Repository. \n\n <strong>STEP 6:</strong> You can use GitHub Desktop to create a branch of a project. \n\n <strong>STEP 7:</strong> After you make changes to a branch, you can review them in GitHub Desktop and make a commit to keep track of your changes. \n\n <strong>STEP 8:</strong> You can use GitHub Desktop to create issues or pull requests to collaborate on projects with other people. \n\n <strong>STEP 9:</strong> When you make changes to your local repositories or when other people make changes to the remote repositories, you will need to sync your local copy of the project with the remote repository."
   }
 ]
