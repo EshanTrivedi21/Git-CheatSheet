@@ -127,6 +127,7 @@ pre::-webkit-scrollbar-thumb {
 
 #myBtn {
   display: none;
+  visibility: hidden;
 }
 
 /* INFO BAR */
@@ -313,6 +314,7 @@ a:hover {
 
 @media only screen and (max-width: 480px) {
   #myBtn {
+    visibility: visible;
     position: fixed;
     bottom: 0%;
     right: 0%;
