@@ -123,13 +123,6 @@ pre::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/* SCROLL TO TOP BUTTON */
-
-#myBtn {
-  display: none;
-  visibility: hidden;
-}
-
 /* INFO BAR */
 
 .contributors {
@@ -262,7 +255,7 @@ a {
 }
 
 a:hover {
-  color: cornflowerblue;
+  color: gray;
 }
 
 .share-btn:hover {
