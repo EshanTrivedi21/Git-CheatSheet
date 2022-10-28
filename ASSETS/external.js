@@ -28,10 +28,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
