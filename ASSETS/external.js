@@ -1,9 +1,11 @@
 document.getElementById("searchbar").addEventListener("keyup", (e) => {
   search(e.target.value);
 });
+
 document.getElementById("searchbar2").addEventListener("keyup", (e) => {
   search(e.target.value);
 });
+
 function search(inp) {
   var input = inp;
   input = input.toLowerCase();
@@ -16,18 +18,7 @@ function search(inp) {
     }
   }
 }
-var mybutton = document.getElementById("myBtn");
-window.onscroll = function () {
-  scrollFunction();
-};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -38,8 +29,11 @@ function myFunction() {
 }
 
 /*scroll to top*/
+
 document.addEventListener("DOMContentLoaded", function () {
+  
   var t = document.querySelector(".vanillatop");
+
   function e(n) {
     var o = window.pageYOffset,
       a = Math.floor(Date.now());
@@ -53,14 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(t);
     })();
   }
-  t.addEventListener("click", function () {
-    window.requestAnimationFrame ? e(700) : window.scrollTo(0, 0);
-  }),
-    window.addEventListener("scroll", function () {
-      280 < document.body.scrollTop || 280 < document.documentElement.scrollTop
-        ? (t.removeAttribute("style", "transform: translateX(120px);"),
-          t.setAttribute("style", "transform: translateX(0);"))
-        : (t.removeAttribute("style", "transform: translateX(0);"),
-          t.setAttribute("style", "transform: translateX(120px);"));
-    });
+
+  window.addEventListener("scroll", function () {
+    20 < document.body.scrollTop || 20 < document.documentElement.scrollTop
+      ? (t.removeAttribute("style", "transform: translateX(120px);"),
+        t.setAttribute("style", "transform: translateX(0);"))
+      : (t.removeAttribute("style", "transform: translateX(0);"),
+        t.setAttribute("style", "transform: translateX(120px);"));
+  });
 });
