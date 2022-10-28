@@ -1,5 +1,5 @@
 # Git-CheatSheet
-## Your all in one Git, Github and Terminal Cheatsheet.. Feel free to contribute
+## Your all in one Git, Github and Terminal Cheatsheet.. Feel free to contribute and commit and raise PR
 ---
 
 ## Contributions Needed: 
