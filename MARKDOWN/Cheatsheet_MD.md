@@ -142,6 +142,26 @@ STAGES all files in the repository
 
 <br/>
 
+## UNDOING CHANGES IN THE REPOSITORY:
+
+*(If a developer wants to remove untracked files from a git working tree, the easiest way to do it is with the ‘git clean’ command)*
+
+<br/>
+
+DRY run
+
+    $ git clean -n         
+
+Force untracked file deletion
+
+    $ git clean -f                        
+
+Force untracked directory deletion
+
+    $ git clean -f -d       
+
+<br/>
+
 ## COMMITING A COMMIT:
 
 <br/>
