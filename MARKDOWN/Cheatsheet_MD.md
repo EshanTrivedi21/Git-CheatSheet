@@ -177,6 +177,11 @@ LOGS the changes
 
 *(git doesnt consider the files/folders which are in .gitignore)*
 
+> You may want to ignore certain files for multiple reasons:
+1) The files contain sensitive data.
+2) The files are system specific and do not need to exist on every machine’s copy.
+3) Excluding the files maintains system security rules and privileges. (Remember, Git repos only contain the files necessary to get tech support—not to share the entire software.)
+
 `STEP 1` :             create a .gitignore file
 
 `STEP 2` :             add files or folders inside the file to ignore, now the files are are untracked by github and wont be staged or commited
