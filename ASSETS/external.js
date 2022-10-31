@@ -31,7 +31,6 @@ function myFunction() {
 /*scroll to top*/
 
 document.addEventListener("DOMContentLoaded", function () {
-  
   var t = document.querySelector(".vanillatop");
 
   function e(n) {
