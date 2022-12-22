@@ -132,7 +132,7 @@ a.vanillatop:hover {
   margin: 0%;
 }
 
-#searchbar {
+#searchbar, #searchbar3 {
   margin: 2rem 0rem;
   width: 65%;
   padding: 1rem;
@@ -334,6 +334,23 @@ a:hover {
   background: #131313;
   box-shadow: 5px 5px 10px #090909, -5px -5px 10px #1d1d1d;
 }
+
+/* CONTENT SECTION */
+ 
+#content{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#content span{
+  padding: .3rem;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* MEDIA QUERY */
 

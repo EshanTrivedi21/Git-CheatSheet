@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/d4705f63a2.js" crossorigin="anonymous"></script>
   <script src="./ASSETS/command.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./ASSETS/styles.css" />
 </head>
 
@@ -98,6 +100,20 @@ REPOSITORY:           <a href="https://github.com/EshanTrivedi21/Git-CheatSheet"
       <div class="searchItem"></div>
     </div>
     <br />
+    <h2>Already in Github?</h2>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <input id="searchbar3" type="text" name="search" placeholder="Enter your username "/>
+      <button type="submit" class="btn btn-light mx-1" id="submit">Find</button>
+    </div>
+    <div id="content">
+      <span id="img"></span>
+      <span id="uname"></span>
+      <span id="bio"></span>
+      <span id="followers"></span>
+      <span id="following"></span>
+      <span id="joined"></span>
+      <span id="lastActive"></span>
+    </div>
     <h2>YOU DID IT, SIT BACK AND BE PROUD OF YOURSELF!</h2>
     <br /><br />
   </section>
@@ -133,5 +149,6 @@ REPOSITORY:           <a href="https://github.com/EshanTrivedi21/Git-CheatSheet"
 
 </body>
 <script src="./ASSETS/external.js"></script>
+<script src="./ASSETS/api.js"></script>
 
 </html>
