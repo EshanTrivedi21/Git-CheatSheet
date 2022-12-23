@@ -145,6 +145,11 @@ a.vanillatop:hover {
   box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
 }
 
+#searchbar3 {
+  margin: 2rem 0rem;
+  width: 30%;
+}
+
 #searchbar:focus {
   width: 85%;
   transition: all 0.4s;
@@ -252,6 +257,18 @@ code:hover > .copy-btn {
   justify-content: space-between;
 }
 
+#github {
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 26%;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  padding: 6px;
+  border-radius: 5px;
+  background: #111111;
+  box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1b1b1b;
+}
+
 .share_container {
   margin: 10px 40px;
   text-align: center;
@@ -268,7 +285,19 @@ code:hover > .copy-btn {
 .download-btn button {
   border: none;
   color: white;
-  padding: 12.5px 20px;
+  padding: 12px 20px;
+  margin: 17.5px;
+  border-radius: 5px;
+  background: #111111;
+  box-shadow: inset 6px 6px 12px #070707, inset -6px -6px 12px #1b1b1b;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.find-btn a {
+  border: none;
+  color: white;
+  padding: 15px 25px;
   margin: 17.5px;
   border-radius: 5px;
   background: #111111;
@@ -336,13 +365,27 @@ a:hover {
 }
 
 /* CONTENT SECTION */
- 
+
 #content{
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem 0rem;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  text-align: left;
+
+}
+
+.contentuser{
+  margin: 0rem 1rem;
+  padding: 0.7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background: #131313;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #090909, -5px -5px 10px #1d1d1d;
 }
 
 #content span{
@@ -351,6 +394,19 @@ a:hover {
   justify-content: center;
 }
 
+#content #uname{
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#img img {
+  border-radius: 0%;
+  height: 250px;
+  background: #131313; 
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #090909, -5px -5px 10px #1d1d1d;
+}
 
 /* MEDIA QUERY */
 
@@ -397,6 +453,27 @@ a:hover {
     padding: 2px;
     align-items: center;
     justify-content: center;
+  }
+
+  #github {
+    margin: 0px;
+  }
+
+  #content{
+    flex-direction: column;
+  }
+
+  .contentuser{
+    margin: 1rem 1rem;
+  }
+  
+  #img img {
+    width: 365px;
+    height: auto;
+  }
+
+  #searchbar3 {
+    width: 60%;
   }
 
   .share_container i {

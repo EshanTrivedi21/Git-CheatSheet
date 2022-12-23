@@ -5,6 +5,8 @@ submit.addEventListener("click", (e) => {
 
 const showGithub = (username) => {
 
+    document.getElementById("content").style.display = "flex";
+
     username = username.split(' ').join('');
 
     fetch("https://api.github.com/users/" + username)
@@ -18,15 +20,14 @@ const showGithub = (username) => {
                     window.alert("Username Not found. Please create your Github account.")
                 }
                 else {
-                    img.innerHTML = `<a target="_blank" href="https://github.com/${username}"> <img src="${response.avatar_url}" style="height: 10rem; width="10rem"; class="rounded-circle" /></a>`
-                    uname.innerHTML = "Name : " + response.name
-                    bio.innerHTML = "Bio : " + response.bio
-                    followers.innerHTML = "Followers : " + response.followers
-                    following.innerHTML = "Following : " + response.following
-                    joined.innerHTML = "Joined on " + response.created_at
-                    lastActive.innerHTML = "Last updated at " + response.updated_at
+                    img.innerHTML = `<a target="_blank" href="https://github.com/${username}"> <img src="${response.avatar_url}"/></a>`
+                    uname.innerHTML = response.name
+                    bio.innerHTML = `<strong> Bio </strong> : ${response.bio}`
+                    followers.innerHTML = `<strong> Followers </strong> : ${response.followers}`
+                    following.innerHTML = `<strong> Following </strong> : ${response.following}`
+                    joined.innerHTML = `<strong> Joined </strong> : ${response.created_at.slice(0,10)} , ${response.created_at.slice(11,19)}`
+                    repos.innerHTML = `<strong> Total Projects </strong> : ${response.public_repos}`
                 }
-
             }
         })
         .catch(err => console.error(err));
