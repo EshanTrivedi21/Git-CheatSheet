@@ -23,8 +23,8 @@ const showGithub = (username) => {
                     bio.innerHTML = "Bio : " + response.bio
                     followers.innerHTML = "Followers : " + response.followers
                     following.innerHTML = "Following : " + response.following
-                    lastActive.innerHTML = "Lasy activity at " + response.updated_at
                     joined.innerHTML = "Joined on " + response.created_at
+                    lastActive.innerHTML = "Last updated at " + response.updated_at
                 }
 
             }
